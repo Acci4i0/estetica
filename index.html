@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Estetica Skincare | San Giuseppe di Cassola (VI)</title>
+  <meta name="description" content="Estetica Skin Care, dal 1990 a San Giuseppe di Cassola (VI): trattamenti viso Comfort Zone, Starvac, massaggi metodo Renata França, Skin's Brazilian Wax e pedicure. Prezzi chiari, prenotazioni su WhatsApp o al telefono.">
+  <meta name="theme-color" content="#3F1521">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Belleza&family=Chivo+Mono:wght@400..500&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+  <!--
+    Dati presi da fonti pubbliche (Facebook dello studio, PagineGialle/PagineBianche, registro imprese):
+    telefono 0424 512529, WhatsApp 348 1515097, Via Ca' Baroncello 48, P.IVA 02709450247.
+    DA CONFERMARE CON LA TITOLARE: email (info@esteticaskincare.it è un segnaposto), prezzi e durate dei trattamenti.
+  -->
+
+  <!-- BARRA IN ALTO -->
+  <div class="topbar">
+    <header class="site-header bar">
+      <a class="logo" href="#top">Estetica Skincare</a>
+      <p class="site-header__owner">di Paola Ferronato<span class="site-header__since"> · dal 1990</span></p>
+    </header>
+
+    <nav class="site-menu" aria-label="Menu">
+      <div class="site-menu__item">
+        <button class="site-menu__btn bar" type="button" aria-expanded="false" aria-controls="panel-lavorazioni">
+          <span>Lavorazioni</span>
+          <svg class="site-menu__icon" viewBox="0 0 8 5" aria-hidden="true"><path d="M0 0h8L4 5z" fill="currentColor"/></svg>
+        </button>
+        <div class="menu-panel menu-panel--large" id="panel-lavorazioni" hidden>
+          <div class="price-list">
+            <div class="price-list__head panel-label" aria-hidden="true">
+              <span>#</span><span>Trattamento</span><span class="price-list__cat">Area</span><span class="price-list__time">Durata</span><span class="price-list__price">Prezzo</span>
+            </div>
+            <ul>
+              <li><a href="#t-recover-touch"><span class="price-list__num">01</span><span>Recover Touch Comfort Zone</span><span class="price-list__cat">Viso</span><span class="price-list__time">60 min</span><span class="price-list__price">€ 70</span></a></li>
+              <li><a href="#t-hydramemory"><span class="price-list__num">02</span><span>Trattamento idratante Hydramemory</span><span class="price-list__cat">Viso</span><span class="price-list__time">50 min</span><span class="price-list__price">€ 65</span></a></li>
+              <li><a href="#t-starvac-viso"><span class="price-list__num">03</span><span>Starvac viso anti-age</span><span class="price-list__cat">Viso</span><span class="price-list__time">30 min</span><span class="price-list__price">€ 50</span></a></li>
+              <li><a href="#t-detox"><span class="price-list__num">04</span><span>Trattamento detossinante</span><span class="price-list__cat">Corpo</span><span class="price-list__time">50 min</span><span class="price-list__price">€ 60</span></a></li>
+              <li><a href="#t-drenante-renata-franca"><span class="price-list__num">05</span><span>Massaggio drenante metodo Renata França</span><span class="price-list__cat">Corpo</span><span class="price-list__time">60 min</span><span class="price-list__price">€ 80</span></a></li>
+              <li><a href="#t-tranquillity-massage"><span class="price-list__num">06</span><span>Tranquillity Massage Comfort Zone</span><span class="price-list__cat">Massaggi</span><span class="price-list__time">45 min</span><span class="price-list__price">€ 60</span></a></li>
+              <li><a href="#t-modellante-renata-franca"><span class="price-list__num">07</span><span>Massaggio modellante metodo Renata França</span><span class="price-list__cat">Corpo</span><span class="price-list__time">60 min</span><span class="price-list__price">€ 80</span></a></li>
+              <li><a href="#t-massaggio-maori"><span class="price-list__num">08</span><span>Massaggio Maori</span><span class="price-list__cat">Massaggi</span><span class="price-list__time">50 min</span><span class="price-list__price">€ 65</span></a></li>
+              <li><a href="#t-epilazione"><span class="price-list__num">09</span><span>Epilazione laser e luce pulsata</span><span class="price-list__cat">Depilazione</span><span class="price-list__time">a zona</span><span class="price-list__price">da € 40</span></a></li>
+              <li><a href="#t-stretching-cellulaire"><span class="price-list__num">10</span><span>Stretching Cellulaire® Starvac</span><span class="price-list__cat">Corpo</span><span class="price-list__time">40 min</span><span class="price-list__price">€ 50</span></a></li>
+              <li><a href="#t-pedicure"><span class="price-list__num">11</span><span>Pedicure</span><span class="price-list__cat">Piedi</span><span class="price-list__time">50 min</span><span class="price-list__price">€ 35</span></a></li>
+              <li><a href="#t-brazilian-wax"><span class="price-list__num">12</span><span>Skin&#x27;s Brazilian Wax</span><span class="price-list__cat">Depilazione</span><span class="price-list__time">30 min</span><span class="price-list__price">€ 30</span></a></li>
+            </ul>
+            <p class="price-list__note">Prezzi a seduta. Si prenota su WhatsApp o al telefono.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-menu__item">
+        <button class="site-menu__btn bar" type="button" aria-expanded="false" aria-controls="panel-chi-siamo">
+          <span>Chi siamo</span>
+          <svg class="site-menu__icon" viewBox="0 0 8 5" aria-hidden="true"><path d="M0 0h8L4 5z" fill="currentColor"/></svg>
+        </button>
+        <div class="menu-panel" id="panel-chi-siamo" hidden>
+          <div class="about">
+            <section>
+              <h2 class="panel-label">Lo studio</h2>
+              <div class="about__text">
+                <p>Estetica Skin Care nasce nel 1990 a San Giuseppe di Cassola da un'idea di Paola Ferronato: prendersi cura delle donne di Bassano e dintorni e aiutarle a sentirsi bene nel proprio viso e nel proprio corpo.</p>
+                <p>Oggi lo studio è portato avanti da Paola e Chiara. Lavorano con i prodotti Comfort Zone e sono specializzate in antiage viso e rimodellamento corpo, con metodi non invasivi e percorsi seguiti passo dopo passo.</p>
+                <p>In più, oltre trent'anni di esperienza nella pedicure e l'esclusiva Skin's Brazilian Wax, pensata anche per le pelli più sensibili.</p>
+              </div>
+            </section>
+
+            <section>
+              <h2 class="panel-label">Posizione</h2>
+              <ul class="about__rows">
+                <li><span>Indirizzo</span><span>Via Ca' Baroncello, 48<br>36022 San Giuseppe di Cassola (VI)</span></li>
+                <li><span>Mappa</span><a href="https://www.google.com/maps/search/?api=1&amp;query=Estetica%20Skin%20Care%2C%20Via%20Ca%27%20Baroncello%2048%2C%20Cassola%20VI" target="_blank" rel="noopener">Apri in Google Maps</a></li>
+              </ul>
+            </section>
+
+            <section>
+              <h2 class="panel-label">Contatti</h2>
+              <ul class="about__rows">
+                <li><span>Telefono</span><a href="tel:+390424512529">0424 512529</a></li>
+                <li><span>WhatsApp</span><a href="https://wa.me/393481515097" target="_blank" rel="noopener">348 1515097</a></li>
+                <li><span>Email</span><a href="mailto:info@esteticaskincare.it">info@esteticaskincare.it</a></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <picture class="hero__media">
+        <source media="(max-width: 700px)" srcset="img/hero-mobile.jpg">
+        <img src="img/hero.jpg" alt="Primo piano di un viso con lentiggini e pelle naturale" fetchpriority="high">
+      </picture>
+
+      <div class="hero__content">
+        <h1 class="hero__title">Prima di trattare la tua pelle, la ascoltiamo. Niente protocolli uguali per tutti: solo cura su misura e tempo dedicato a te.</h1>
+        <p class="hero__claim">Qui la tua pelle è di casa.</p>
+        <a class="pill pill--wine" href="#trattamenti">Scopri trattamenti e prezzi</a>
+      </div>
+    </section>
+
+    <!-- TRATTAMENTI -->
+    <section class="treatments" id="trattamenti" aria-labelledby="treatments-title">
+      <div class="treatments__head">
+        <h2 id="treatments-title">Trattamenti</h2>
+        <p class="treatments__note">Prezzi a seduta. Si prenota su WhatsApp o al telefono.</p>
+      </div>
+
+      <!-- Prezzi e durate sono segnaposto: da sostituire con il listino della titolare -->
+      <div class="grid">
+        <article class="treatment" id="t-recover-touch">
+          <a class="card" href="https://wa.me/393481515097?text=Ciao%21%20Vorrei%20prenotare%3A%20Recover%20Touch%20Comfort%20Zone" target="_blank" rel="noopener" aria-label="Prenota Recover Touch Comfort Zone su WhatsApp">
+            <span class="card__thumb"><img src="img/trattamenti/recover-touch.jpg" alt="" loading="lazy"></span>
+            <span class="card__label">Prenota su WhatsApp</span>
+          </a>
+          <div class="treatment__info">
+            <h3 class="treatment__name">Recover Touch Comfort Zone</h3>
+            <p class="treatment__price">€ 70</p>
+            <p class="treatment__time">Viso · 60 min</p>
+          </div>
+        </article>
+
+        <article class="treatment" id="t-hydramemory">
+          <a class="card" href="https://wa.me/393481515097?text=Ciao%21%20Vorrei%20prenotare%3A%20Trattamento%20idratante%20Hydramemory" target="_blank" rel="noopener" aria-label="Prenota Trattamento idratante Hydramemory su WhatsApp">
+            <span class="card__thumb"><img src="img/trattamenti/hydramemory.jpg" alt="" loading="lazy"></span>
+            <span class="card__label">Prenota su WhatsApp</span>
+          </a>
+          <div class="treatment__info">
+            <h3 class="treatment__name">Trattamento idratante Hydramemory</h3>
+            <p class="treatment__price">€ 65</p>
+            <p class="treatment__time">Viso · 50 min</p>
+          </div>
+        </article>
+
+        <article class="treatment" id="t-starvac-viso">
+          <a class="card" href="https://wa.me/393481515097?text=Ciao%21%20Vorrei%20prenotare%3A%20Starvac%20viso%20anti-age" target="_blank" rel="noopener" aria-label="Prenota Starvac viso anti-age su WhatsApp">
+            <span class="card__thumb"><img src="img/trattamenti/starvac-viso.jpg" alt="" loading="lazy"></span>
+            <span class="card__label">Prenota su WhatsApp</span>
+          </a>
+          <div class="treatment__info">
+            <h3 class="treatment__name">Starvac viso anti-age</h3>
+            <p class="treatment__price">€ 50</p>
+            <p class="treatment__time">Viso · 30 min</p>
+          </div>
+        </article>
+
+        <article class="treatment" id="t-detox">
+          <a class="card" href="https://wa.me/393481515097?text=Ciao%21%20Vorrei%20prenotare%3A%20Trattamento%20detossinante" target="_blank" rel="noopener" aria-label="Prenota Trattamento detossinante su WhatsApp">
+            <span class="card__thumb"><img src="img/trattamenti/detox.jpg" alt="" loading="lazy"></span>
+            <span class="card__label">Prenota su WhatsApp</span>
+          </a>
+          <div class="treatment__info">
+            <h3 class="treatment__name">Trattamento detossinante</h3>
+            <p class="treatment__price">€ 60</p>
+            <p class="treatment__time">Corpo · 50 min</p>
+          </div>
+        </article>
+
+        <article class="treatment" id="t-drenante-renata-franca">
+          <a class="card" href="https://wa.me/393481515097?text=Ciao%21%20Vorrei%20prenotare%3A%20Massaggio%20drenante%20metodo%20Renata%20Fran%C3%A7a" target="_blank" rel="noopener" aria-label="Prenota Massaggio drenante metodo Renata França su WhatsApp">
+            <span class="card__thumb"><img src="img/trattamenti/drenante-renata-franca.jpg" alt="" loading="lazy"></span>
+            <span class="card__label">Prenota su WhatsApp</span>
+          </a>
+          <div class="treatment__info">
+            <h3 class="treatment__name">Massaggio drenante metodo Renata França</h3>
+            <p class="treatment__price">€ 80</p>
+            <p class="treatment__time">Corpo · 60 min</p>
+          </div>
+        </article>
+
+        <article class="treatment" id="t-tranquillity-massage">
+          <a class="card" href="https://wa.me/393481515097?text=Ciao%21%20Vorrei%20prenotare%3A%20Tranquillity%20Massage%20Comfort%20Zone" target="_blank" rel="noopener" aria-label="Prenota Tranquillity Massage Comfort Zone su WhatsApp">
+            <span class="card__thumb"><img src="img/trattamenti/tranquillity-massage.jpg" alt="" loading="lazy"></span>
+            <span class="card__label">Prenota su WhatsApp</span>
+          </a>
+          <div class="treatment__info">
+            <h3 class="treatment__name">Tranquillity Massage Comfort Zone</h3>
+            <p class="treatment__price">€ 60</p>
+            <p class="treatment__time">Massaggi · 45 min</p>
+          </div>
+        </article>
+
+        <article class="treatment" id="t-modellante-renata-franca">
+          <a class="card" href="https://wa.me/393481515097?text=Ciao%21%20Vorrei%20prenotare%3A%20Massaggio%20modellante%20metodo%20Renata%20Fran%C3%A7a" target="_blank" rel="noopener" aria-label="Prenota Massaggio modellante metodo Renata França su WhatsApp">
+            <span class="card__thumb"><img src="img/trattamenti/modellante-renata-franca.jpg" alt="" loading="lazy"></span>
+            <span class="card__label">Prenota su WhatsApp</span>
+          </a>
+          <div class="treatment__info">
+            <h3 class="treatment__name">Massaggio modellante metodo Renata França</h3>
+            <p class="treatment__price">€ 80</p>
+            <p class="treatment__time">Corpo · 60 min</p>
+          </div>
+        </article>
+
+        <article class="treatment" id="t-massaggio-maori">
+          <a class="card" href="https://wa.me/393481515097?text=Ciao%21%20Vorrei%20prenotare%3A%20Massaggio%20Maori" target="_blank" rel="noopener" aria-label="Prenota Massaggio Maori su WhatsApp">
+            <span class="card__thumb"><img src="img/trattamenti/massaggio-maori.jpg" alt="" loading="lazy"></span>
+            <span class="card__label">Prenota su WhatsApp</span>
+          </a>
+          <div class="treatment__info">
+            <h3 class="treatment__name">Massaggio Maori</h3>
+            <p class="treatment__price">€ 65</p>
+            <p class="treatment__time">Massaggi · 50 min</p>
+          </div>
+        </article>
+
+        <article class="treatment" id="t-epilazione">
+          <a class="card" href="https://wa.me/393481515097?text=Ciao%21%20Vorrei%20prenotare%3A%20Epilazione%20laser%20e%20luce%20pulsata" target="_blank" rel="noopener" aria-label="Prenota Epilazione laser e luce pulsata su WhatsApp">
+            <span class="card__thumb"><img src="img/trattamenti/epilazione.jpg" alt="" loading="lazy"></span>
+            <span class="card__label">Prenota su WhatsApp</span>
+          </a>
+          <div class="treatment__info">
+            <h3 class="treatment__name">Epilazione laser e luce pulsata</h3>
+            <p class="treatment__price">da € 40</p>
+            <p class="treatment__time">Depilazione · a zona</p>
+          </div>
+        </article>
+
+        <article class="treatment" id="t-stretching-cellulaire">
+          <a class="card" href="https://wa.me/393481515097?text=Ciao%21%20Vorrei%20prenotare%3A%20Stretching%20Cellulaire%C2%AE%20Starvac" target="_blank" rel="noopener" aria-label="Prenota Stretching Cellulaire® Starvac su WhatsApp">
+            <span class="card__thumb"><img src="img/trattamenti/stretching-cellulaire.jpg" alt="" loading="lazy"></span>
+            <span class="card__label">Prenota su WhatsApp</span>
+          </a>
+          <div class="treatment__info">
+            <h3 class="treatment__name">Stretching Cellulaire® Starvac</h3>
+            <p class="treatment__price">€ 50</p>
+            <p class="treatment__time">Corpo · 40 min</p>
+          </div>
+        </article>
+
+        <article class="treatment" id="t-pedicure">
+          <a class="card" href="https://wa.me/393481515097?text=Ciao%21%20Vorrei%20prenotare%3A%20Pedicure" target="_blank" rel="noopener" aria-label="Prenota Pedicure su WhatsApp">
+            <span class="card__thumb"><img src="img/trattamenti/pedicure.jpg" alt="" loading="lazy"></span>
+            <span class="card__label">Prenota su WhatsApp</span>
+          </a>
+          <div class="treatment__info">
+            <h3 class="treatment__name">Pedicure</h3>
+            <p class="treatment__price">€ 35</p>
+            <p class="treatment__time">Piedi · 50 min</p>
+          </div>
+        </article>
+
+        <article class="treatment" id="t-brazilian-wax">
+          <a class="card" href="https://wa.me/393481515097?text=Ciao%21%20Vorrei%20prenotare%3A%20Skin%27s%20Brazilian%20Wax" target="_blank" rel="noopener" aria-label="Prenota Skin&#x27;s Brazilian Wax su WhatsApp">
+            <span class="card__thumb"><img src="img/trattamenti/brazilian-wax.jpg" alt="" loading="lazy"></span>
+            <span class="card__label">Prenota su WhatsApp</span>
+          </a>
+          <div class="treatment__info">
+            <h3 class="treatment__name">Skin&#x27;s Brazilian Wax</h3>
+            <p class="treatment__price">€ 30</p>
+            <p class="treatment__time">Depilazione · 30 min</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contatti">
+    <div class="footer__stripes" aria-hidden="true"><span></span><span></span></div>
+
+    <div class="footer__inner">
+      <div class="footer__top">
+        <p class="footer__intro">Trattamenti viso e corpo<br>dal 1990 a San Giuseppe di Cassola</p>
+
+        <ul class="footer__list">
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Estetica%20Skin%20Care%2C%20Via%20Ca%27%20Baroncello%2048%2C%20Cassola%20VI" target="_blank" rel="noopener"><span class="footer__key">Dove</span><span>Via Ca' Baroncello, 48 · Cassola (VI)</span></a></li>
+          <li><a href="tel:+390424512529"><span class="footer__key">Tel</span><span>0424 512529</span></a></li>
+          <li><a href="https://wa.me/393481515097" target="_blank" rel="noopener"><span class="footer__key">WhatsApp</span><span>348 1515097</span></a></li>
+          <li><a href="mailto:info@esteticaskincare.it"><span class="footer__key">Email</span><span>info@esteticaskincare.it</span></a></li>
+        </ul>
+
+        <a class="footer__btn" href="#trattamenti">
+          <span>Trattamenti</span>
+          <svg viewBox="0 0 10 12" aria-hidden="true"><path d="M5 11V1M1 5l4-4 4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+        </a>
+      </div>
+
+      <div class="footer__legal">
+        <span>&copy; <span class="js-year">2026</span> Estetica Skin Care snc di Ferronato Paola &amp; C.</span>
+        <span>P.IVA 02709450247</span>
+        <span class="footer__legal-links"><a href="#">Privacy</a><a href="#">Cookie</a></span>
+      </div>
+
+      <p class="footer__wordmark" aria-hidden="true">Estetica Skincare</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,621 @@
+/* ==========================================================
+   Estetica Skincare
+   ========================================================== */
+
+:root {
+  --cream: #FFFAF1;
+  --wine: #3F1521;
+  --sky: #C3E8EB;
+  --peach: #FFC2A3;
+  --gold: #CCA969;
+  --forest: #283B2B;
+  --card-bg: #EFE7DA;
+
+  --sans: "Instrument Sans", system-ui, -apple-system, sans-serif;
+  --display: "Belleza", "Instrument Sans", sans-serif;
+  --mono: "Chivo Mono", "Courier New", monospace;
+
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+* { margin: 0; padding: 0; }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--cream);
+  color: var(--wine);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+address { font-style: normal; }
+button, input { font: inherit; color: inherit; }
+
+.sr-only {
+  position: absolute; width: 1px; height: 1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap;
+}
+
+:focus-visible { outline: 2px solid var(--sky); outline-offset: 3px; }
+
+/* ---------- Pill buttons ---------- */
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 45px;
+  padding: 13px 20px;
+  border-radius: 100px;
+  font-size: 14.4px;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  transition: background-color .25s var(--ease), color .25s var(--ease), transform .25s var(--ease);
+}
+.pill:hover { transform: translateY(-1px); }
+
+.pill--sky   { background: var(--sky);   color: var(--wine); }
+.pill--wine  { background: var(--wine);  color: var(--cream); }
+.pill--peach { background: var(--peach); color: var(--wine); }
+.pill--ghost { color: var(--cream); box-shadow: inset 0 0 0 1px rgba(255, 250, 241, .45); }
+
+.pill--sky:hover   { background: #b2dfe3; }
+.pill--wine:hover  { background: #561d2d; }
+.pill--peach:hover { background: #ffb38e; }
+.pill--ghost:hover { background: rgba(255, 250, 241, .1); }
+
+/* ---------- Barra in alto (struttura Yuri Roga) ---------- */
+
+body { position: relative; }
+
+/* copre tutta la pagina così la barra dei menu può restare "sticky" fino in fondo */
+.topbar {
+  --bar-h: 32px;
+  --bar-gap: 10px;
+  position: absolute;
+  inset: 0;
+  z-index: 50;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-content: start;
+  gap: var(--bar-gap);
+  padding: var(--bar-gap);
+  pointer-events: none;
+}
+.topbar > * { pointer-events: auto; }
+
+.bar {
+  height: var(--bar-h);
+  border-radius: calc(var(--bar-h) / 2);
+  background: rgba(255, 250, 241, .62);
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
+  color: var(--wine);
+}
+
+.site-header {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  column-gap: 20px;
+  align-items: center;
+  padding: 0 20px;
+}
+.logo {
+  font-family: var(--display);
+  font-size: 17px;
+  line-height: 1;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.site-header__owner {
+  font-size: 13px;
+  letter-spacing: .02em;
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.site-menu {
+  position: sticky;
+  top: var(--bar-gap);
+  align-self: start;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--bar-gap);
+}
+@media (min-width: 1281px) {
+  .site-menu__item { position: relative; }
+}
+
+.site-menu__btn {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  column-gap: 10px;
+  padding: 0 20px;
+  border: 0;
+  font-size: 13px;
+  letter-spacing: .02em;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color .2s var(--ease);
+}
+.site-menu__btn:hover,
+.site-menu__btn[aria-expanded="true"] { background: rgba(255, 250, 241, .9); }
+
+.site-menu__icon {
+  width: 8px;
+  height: 5px;
+  color: rgba(63, 21, 33, .35);
+  transition: color .2s var(--ease), transform .25s var(--ease);
+}
+.site-menu__btn:hover .site-menu__icon,
+.site-menu__btn[aria-expanded="true"] .site-menu__icon { color: var(--wine); }
+.site-menu__btn[aria-expanded="true"] .site-menu__icon { transform: rotate(180deg); }
+
+/* Tendine */
+.menu-panel {
+  position: absolute;
+  top: calc(100% + var(--bar-gap));
+  left: 0;
+  width: 100%;
+  max-height: calc(100vh - var(--bar-h) - var(--bar-gap) * 3);
+  max-height: calc(100svh - var(--bar-h) - var(--bar-gap) * 3);
+  overflow: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: none;
+  padding: 20px 20px 32px;
+  border-radius: calc(var(--bar-h) / 2);
+  background: rgba(255, 250, 241, .82);
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+  box-shadow: 0 24px 60px -36px rgba(63, 21, 33, .4);
+  color: var(--wine);
+}
+.menu-panel:not([hidden]) { animation: panel-in .22s var(--ease); }
+@keyframes panel-in { from { opacity: 0; transform: translateY(-6px); } }
+
+@media (min-width: 1281px) {
+  .menu-panel--large { width: calc(200% + var(--bar-gap)); }
+}
+
+.panel-label {
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: rgba(63, 21, 33, .55);
+}
+
+/* Lavorazioni: listino */
+.price-list__head,
+.price-list a {
+  display: grid;
+  grid-template-columns: 3em minmax(0, 1fr) 7em 5.5em 5em;
+  column-gap: 10px;
+  align-items: baseline;
+}
+.price-list__head { padding-bottom: 10px; }
+.price-list ul { list-style: none; }
+.price-list li { border-top: 1px solid rgba(63, 21, 33, .1); }
+.price-list a {
+  padding: 9px 0;
+  font-size: 14.4px;
+  line-height: 1.3;
+  transition: opacity .2s var(--ease);
+}
+.price-list__num,
+.price-list__cat,
+.price-list__time { color: rgba(63, 21, 33, .55); }
+.price-list__price { text-align: right; white-space: nowrap; }
+.price-list__note {
+  padding-top: 14px;
+  border-top: 1px solid rgba(63, 21, 33, .1);
+  font-size: 13px;
+  color: rgba(63, 21, 33, .65);
+}
+
+/* Chi siamo */
+.about { display: grid; gap: 28px; }
+.about__text { display: grid; gap: 10px; margin-top: 10px; font-size: 14.4px; line-height: 1.45; }
+.about__rows { margin-top: 10px; list-style: none; }
+.about__rows li {
+  display: grid;
+  grid-template-columns: 6.5em minmax(0, 1fr);
+  column-gap: 10px;
+  padding: 9px 0;
+  border-top: 1px solid rgba(63, 21, 33, .1);
+  font-size: 14.4px;
+  line-height: 1.3;
+}
+.about__rows li > :first-child { color: rgba(63, 21, 33, .55); }
+.about__rows a { transition: opacity .2s var(--ease); }
+
+@media (hover: hover) {
+  .price-list a:hover,
+  .about__rows a:hover { opacity: .55; }
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: 96px 24px 64px;
+  overflow: hidden;
+  color: var(--cream);
+  text-align: center;
+}
+
+.hero__media,
+.hero__media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.hero__media img { object-fit: cover; object-position: 50% 40%; }
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 50% 50%, rgba(45, 22, 26, .28), rgba(45, 22, 26, .12) 70%),
+    rgba(84, 84, 84, .14);
+}
+
+.hero__content {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__title,
+.hero__claim {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+  text-wrap: balance;
+  text-shadow: 0 1px 24px rgba(45, 22, 26, .25);
+}
+.hero__claim { margin-top: 18px; }
+.hero__content .pill { margin-top: 26px; }
+
+/* ---------- Trattamenti (griglia stile Yuri Roga) ---------- */
+
+.treatments {
+  padding: 112px 10px 140px;
+}
+
+.treatments__head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 0 30px 28px;
+}
+.treatments__head h2 {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.1;
+  color: var(--wine);
+}
+.treatments__note {
+  font-size: 14.4px;
+  line-height: 1.3;
+  color: rgba(63, 21, 33, .65);
+}
+
+.grid {
+  --cols: 4;
+  --gap: 10px;
+  --radius: calc(100vw / 18.9);
+  display: grid;
+  grid-template-columns: repeat(var(--cols), minmax(0, 1fr));
+  gap: 32px var(--gap);
+}
+
+.treatment { display: flex; flex-direction: column; scroll-margin-top: 64px; }
+
+.card {
+  position: relative;
+  display: grid;
+  aspect-ratio: 4 / 5;
+  border-radius: var(--radius);
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--card-bg);
+}
+
+.card__thumb {
+  grid-area: 1 / 1;
+  overflow: hidden;
+  border-radius: inherit;
+}
+.card__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* immagine leggermente "oltre" il bordo: in hover rientra (effetto Yuri Roga) */
+  transform: scale(1.06);
+  transition: transform .3s var(--ease);
+}
+
+.card__label {
+  grid-area: 1 / 1;
+  place-self: center;
+  z-index: 1;
+  max-width: calc(100% - 40px);
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+  padding: 6px 20px;
+  border-radius: 15px;
+  background: rgba(255, 250, 241, .5);
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+  color: var(--wine);
+  font-size: 13px;
+  line-height: 1.25;
+  letter-spacing: .06em;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(15px);
+  transition: opacity .2s var(--ease), transform .2s var(--ease);
+}
+
+/* Nome, prezzo e durata sotto la card: sempre visibili */
+.treatment__info {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 12px;
+  padding: 14px 18px 0;
+}
+.treatment__name {
+  font-family: var(--sans);
+  font-size: 17.6px;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+.treatment__price {
+  font-size: 17.6px;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+.treatment__time {
+  grid-column: 1 / -1;
+  margin-top: 2px;
+  font-size: 13px;
+  color: rgba(63, 21, 33, .6);
+}
+
+.card:hover .card__thumb img,
+.card:focus-visible .card__thumb img { transform: scale(1.005); }
+
+.card:hover .card__label,
+.card:focus-visible .card__label { opacity: 1; transform: none; }
+
+/* Touch: nessun hover, l'etichetta resta sempre visibile */
+@media (hover: none) {
+  .card__thumb img { transform: none; }
+  .card__label {
+    opacity: 1;
+    transform: none;
+    align-self: end;
+    margin-bottom: 12px;
+    font-size: 11px;
+    letter-spacing: .02em;
+    padding: 5px 12px;
+    max-width: calc(100% - 20px);
+  }
+}
+
+/* Comparsa allo scroll (solo con JS attivo) */
+.js .treatment.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity .7s var(--ease), transform .7s var(--ease);
+  transition-delay: var(--delay, 0ms);
+}
+.js .treatment.reveal.is-visible { opacity: 1; transform: none; }
+
+/* ---------- Footer (stile Vibrolux, versione essenziale) ---------- */
+
+.footer {
+  background: var(--forest);
+  color: var(--cream);
+}
+
+.footer__stripes span { display: block; height: 5px; }
+.footer__stripes span:first-child { background: var(--gold); }
+.footer__stripes span:last-child  { background: var(--sky); }
+
+.footer__inner {
+  container-type: inline-size;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-between;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 82px 120px 60px;
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 450;
+  line-height: 1.3;
+  letter-spacing: .01em;
+  text-transform: uppercase;
+}
+.footer__inner > * { grid-column: 1 / -1; }
+
+.footer__top,
+.footer__legal {
+  display: grid;
+  grid-template-columns: subgrid;
+  align-items: start;
+}
+
+.footer__intro {
+  padding-right: 8px;
+  color: rgba(255, 250, 241, .55);
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-right: 8px;
+  list-style: none;
+}
+.footer__list a {
+  display: flex;
+  transition: opacity .2s var(--ease);
+}
+.footer__key {
+  flex: 0 0 auto;
+  width: 7.5em;
+  color: rgba(255, 250, 241, .55);
+}
+
+.footer__btn {
+  justify-self: end;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 18px;
+  border-radius: 100px;
+  box-shadow: inset 0 0 0 1px rgba(255, 250, 241, .35);
+  transition: background-color .2s var(--ease), color .2s var(--ease), box-shadow .2s var(--ease);
+}
+.footer__btn svg { width: 10px; height: 12px; }
+.footer__btn:hover {
+  background: var(--peach);
+  color: var(--wine);
+  box-shadow: inset 0 0 0 1px var(--peach);
+}
+
+.footer__legal {
+  margin-top: 60px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 250, 241, .14);
+  color: rgba(255, 250, 241, .55);
+}
+.footer__legal > * { padding-right: 8px; }
+.footer__legal > :last-child { justify-self: end; padding-right: 0; }
+.footer__legal a { color: var(--cream); transition: opacity .2s var(--ease); }
+.footer__legal-links { display: flex; flex-wrap: wrap; gap: 8px 36px; }
+
+@media (hover: hover) {
+  .footer__list a:hover,
+  .footer__legal a:hover { opacity: .66; }
+}
+
+.footer__wordmark {
+  margin-top: 96px;
+  font-family: var(--display);
+  /* il logotipo occupa tutta la larghezza del contenitore */
+  font-size: 11.15cqw;
+  line-height: .8;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--peach);
+  user-select: none;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 1280px) {
+  .price-list__cat { display: none; }
+  .price-list__head,
+  .price-list a { grid-template-columns: 2.6em minmax(0, 1fr) 5em 4.6em; }
+}
+
+@media (max-width: 1180px) {
+  .footer__inner { padding-left: 48px; padding-right: 48px; }
+}
+
+@media (max-width: 900px) {
+  .hero__title,
+  .hero__claim { font-size: 30px; }
+}
+
+@media (max-width: 840px) {
+  .topbar { grid-template-columns: minmax(0, 1fr); }
+  .site-header { padding: 0 16px; }
+  .site-menu__btn { padding: 0 16px; }
+  .menu-panel { padding: 16px 16px 24px; }
+  .hero { padding-top: 120px; }
+
+  .grid { --cols: 2; }
+  .treatments { padding: 80px 10px 96px; }
+  .treatments__head { padding: 0 6px 22px; }
+  .treatments__head h2 { font-size: 30px; }
+  .grid { row-gap: 24px; }
+  .treatment__info { padding: 10px 6px 0; }
+  .treatment__name,
+  .treatment__price { font-size: 15px; }
+  .treatment__time { font-size: 12px; }
+}
+
+@media (max-width: 767px) {
+  .footer__inner {
+    grid-template-columns: 1fr;
+    padding: 72px 16px 48px;
+  }
+  .footer__top { row-gap: 32px; }
+  .footer__btn { justify-self: start; }
+  .footer__legal { margin-top: 48px; row-gap: 10px; }
+  .footer__legal > :last-child { justify-self: start; }
+  .footer__wordmark { margin-top: 64px; }
+}
+
+@media (max-width: 640px) {
+  .logo { font-size: 15px; }
+  .site-header__owner { font-size: 12px; }
+  .price-list__head,
+  .price-list a { grid-template-columns: 2.2em minmax(0, 1fr) auto 4.6em; }
+  .price-list a { font-size: 13.5px; }
+
+  .hero__title,
+  .hero__claim { font-size: 25px; letter-spacing: -0.035em; }
+
+  .treatments__head { flex-direction: column; align-items: flex-start; gap: 8px; }
+}
+
+@media (max-width: 480px) {
+  .site-header__since { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: .01ms !important; }
+  .js .treatment.reveal { opacity: 1; transform: none; }
+}
