@@ -265,6 +265,9 @@ body { position: relative; }
   overflow: hidden;
   color: var(--wine);
   text-align: center;
+  /* scorrendo si restringe verso il basso e arrotonda gli angoli (script.js) */
+  transform-origin: 50% 100%;
+  will-change: transform, border-radius;
   /* sfondo di riserva se WebGL non c'è: le stesse tinte della crema animata */
   background:
     radial-gradient(60% 80% at 20% 30%, #F6CDBB 0%, transparent 70%),

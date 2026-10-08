@@ -31,7 +31,8 @@ Any static server works, and so does opening `index.html` directly.
 ```
 index.html              the whole page: top bar and dropdowns, hero, treatments, footer
 styles.css              design tokens in :root, then one block per section
-script.js               the animated cream in the hero (WebGL), dropdowns, tiles fading in, year
+script.js               the hero's animated cream (WebGL) that ripples under the cursor,
+                        the hero rounding its corners on scroll, dropdowns, tiles fading in
 img/trattamenti/        one photo per treatment, named after it
 img/CREDITS.md          where the images come from
 ```
