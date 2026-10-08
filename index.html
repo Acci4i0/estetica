@@ -25,16 +25,16 @@
   <div class="topbar">
     <header class="site-header bar">
       <a class="logo" href="#top">Estetica Skincare</a>
-      <p class="site-header__owner">di Paola Ferronato<span class="site-header__since"> · dal 1990</span></p>
+      <p class="site-header__owner">Paola Ferronato<span class="site-header__since"> dal 1990</span></p>
     </header>
 
     <nav class="site-menu" aria-label="Menu">
       <div class="site-menu__item">
-        <button class="site-menu__btn bar" type="button" aria-expanded="false" aria-controls="panel-lavorazioni">
-          <span>Lavorazioni</span>
+        <button class="site-menu__btn bar" type="button" aria-expanded="false" aria-controls="panel-trattamenti">
+          <span>Trattamenti</span>
           <svg class="site-menu__icon" viewBox="0 0 8 5" aria-hidden="true"><path d="M0 0h8L4 5z" fill="currentColor"/></svg>
         </button>
-        <div class="menu-panel menu-panel--large" id="panel-lavorazioni" hidden>
+        <div class="menu-panel menu-panel--large" id="panel-trattamenti" hidden>
           <div class="price-list">
             <div class="price-list__head panel-label" aria-hidden="true">
               <span>#</span><span>Trattamento</span><span class="price-list__cat">Area</span><span class="price-list__time">Durata</span><span class="price-list__price">Prezzo</span>
@@ -100,8 +100,8 @@
 
     <!-- HERO -->
     <section class="hero" id="top">
-      <!-- crema liquida animata (WebGL, in script.js); senza WebGL resta lo sfondo sfumato del CSS -->
-      <canvas class="hero__canvas" aria-hidden="true"></canvas>
+      <!-- raso di crema animato (WebGL, in script.js); senza WebGL resta l'immagine ferma del CSS -->
+      <canvas class="hero__canvas" data-src="img/hero-satin.jpg" aria-hidden="true"></canvas>
 
       <div class="hero__content">
         <h1 class="hero__title">Prima di trattare la tua pelle, la ascoltiamo. Niente protocolli uguali per tutti: solo cura su misura e tempo dedicato a te.</h1>

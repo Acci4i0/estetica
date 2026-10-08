@@ -205,7 +205,7 @@ body { position: relative; }
   color: rgba(63, 21, 33, .55);
 }
 
-/* Lavorazioni: listino */
+/* Trattamenti: listino nella tendina */
 .price-list__head,
 .price-list a {
   display: grid;
@@ -268,12 +268,8 @@ body { position: relative; }
   /* scorrendo si restringe verso il basso e arrotonda gli angoli (script.js) */
   transform-origin: 50% 100%;
   will-change: transform, border-radius;
-  /* sfondo di riserva se WebGL non c'è: le stesse tinte della crema animata */
-  background:
-    radial-gradient(60% 80% at 20% 30%, #F6CDBB 0%, transparent 70%),
-    radial-gradient(55% 70% at 85% 75%, #CFE6E6 0%, transparent 70%),
-    radial-gradient(70% 90% at 60% 10%, #FFF4E8 0%, transparent 70%),
-    #EAD9CC;
+  /* senza WebGL (o prima che parta) resta il raso fermo */
+  background: #EDEDEB url("img/hero-satin.jpg") center / cover no-repeat;
 }
 
 .hero__canvas {
