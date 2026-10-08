@@ -100,10 +100,8 @@
 
     <!-- HERO -->
     <section class="hero" id="top">
-      <picture class="hero__media">
-        <source media="(max-width: 700px)" srcset="img/hero-mobile.jpg">
-        <img src="img/hero.jpg" alt="Primo piano di un viso con lentiggini e pelle naturale" fetchpriority="high">
-      </picture>
+      <!-- crema liquida animata (WebGL, in script.js); senza WebGL resta lo sfondo sfumato del CSS -->
+      <canvas class="hero__canvas" aria-hidden="true"></canvas>
 
       <div class="hero__content">
         <h1 class="hero__title">Prima di trattare la tua pelle, la ascoltiamo. Niente protocolli uguali per tutti: solo cura su misura e tempo dedicato a te.</h1>

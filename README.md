@@ -7,7 +7,7 @@ pedicure. Every treatment shows its price, and there is no online booking: peopl
 book on WhatsApp or by phone.
 
 Built in the visual language of [thefacespaceco.com](https://thefacespaceco.com)
-(full-bleed hero, cream and wine palette) and [yuriroga.com](https://yuriroga.com)
+(cream and wine palette, a hero with a single centred statement) and [yuriroga.com](https://yuriroga.com)
 (a pill bar with two dropdowns, rounded 4:5 tiles alternating a person and a
 texture), with a footer in the style of the Vibrolux site.
 
@@ -31,9 +31,7 @@ Any static server works, and so does opening `index.html` directly.
 ```
 index.html              the whole page: top bar and dropdowns, hero, treatments, footer
 styles.css              design tokens in :root, then one block per section
-script.js               dropdowns, tiles fading in on scroll, year in the footer
-img/hero.jpg            hero, desktop crop
-img/hero-mobile.jpg     hero, phone crop
+script.js               the animated cream in the hero (WebGL), dropdowns, tiles fading in, year
 img/trattamenti/        one photo per treatment, named after it
 img/CREDITS.md          where the images come from
 ```
