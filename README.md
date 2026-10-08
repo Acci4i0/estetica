@@ -35,7 +35,7 @@ script.js               dropdowns, tiles fading in on scroll, year in the footer
 img/hero.jpg            hero, desktop crop
 img/hero-mobile.jpg     hero, phone crop
 img/trattamenti/        one photo per treatment, named after it
-img/CREDITS.md          photographers and Unsplash links
+img/CREDITS.md          where the images come from
 ```
 
 ## Editing
