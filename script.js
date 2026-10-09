@@ -1,4 +1,4 @@
-// Hero: raso di crema bianco-perla che respira, animato in WebGL
+// Raso di crema bianco-perla che respira, animato in WebGL (hero e footer)
 // La base è un render del raso (img/hero-satin.jpg): lo shader lo fa ondeggiare piano come un
 // tessuto, ci fa scorrere sopra un velo di luce e, sotto il cursore, lo rifrange appena come
 // attraverso un velo d'acqua lasciando una scia di schiuma bianca che si dirada bolla per bolla.
@@ -264,8 +264,8 @@ function initCream(canvas) {
   }
 
   // muovendo il cursore resta una scia di schiuma; un tocco ne fa sbocciare un po' di più
-  const hero = canvas.parentElement;
-  hero.addEventListener('pointermove', (e) => {
+  const area = canvas.parentElement; // la hero o il pannello del footer
+  area.addEventListener('pointermove', (e) => {
     const [x, y] = toField(e);
     pointer.x = x;
     pointer.y = y;
@@ -276,51 +276,17 @@ function initCream(canvas) {
       pointer.lastY = y;
     }
   });
-  hero.addEventListener('pointerdown', (e) => {
+  area.addEventListener('pointerdown', (e) => {
     const [x, y] = toField(e);
     pointer.x = pointer.lastX = x;
     pointer.y = pointer.lastY = y;
     addFoam(x, y, 1.5);
   });
-  hero.addEventListener('pointerleave', () => { pointer.target = 0; });
+  area.addEventListener('pointerleave', () => { pointer.target = 0; });
 }
 
-const creamCanvas = document.querySelector('.hero__canvas');
-if (creamCanvas) initCream(creamCanvas);
-
-// Hero: scorrendo si stacca dai bordi e arrotonda gli angoli (come la home di Vibrolux)
-// Dal fondo della hero al 67% della finestra, per un terzo di finestra di scroll:
-// perde 16px di larghezza e gli angoli passano da 0 a 80px. Solo da 1081px in su.
-const heroEl = document.querySelector('.hero');
-const roundMedia = window.matchMedia('(min-width: 1081px) and (prefers-reduced-motion: no-preference)');
-let roundTicking = false;
-
-function roundHero() {
-  roundTicking = false;
-  if (!roundMedia.matches) {
-    heroEl.style.transform = '';
-    heroEl.style.borderRadius = '';
-    return;
-  }
-  const vh = window.innerHeight;
-  const bottom = heroEl.offsetTop + heroEl.offsetHeight - window.scrollY; // senza la trasformazione
-  const progress = Math.min(1, Math.max(0, (vh * 0.67 - bottom) / (vh * 0.33)));
-  heroEl.style.transform = `scale(${1 - progress * 16 / window.innerWidth})`;
-  heroEl.style.borderRadius = `${progress * 80}px`;
-}
-
-if (heroEl) {
-  const requestRound = () => {
-    if (!roundTicking) {
-      roundTicking = true;
-      requestAnimationFrame(roundHero);
-    }
-  };
-  window.addEventListener('scroll', requestRound, { passive: true });
-  window.addEventListener('resize', requestRound);
-  roundMedia.addEventListener('change', requestRound);
-  roundHero();
-}
+// lo stesso raso nella hero e nel footer: ognuno si anima solo quando è sullo schermo
+document.querySelectorAll('.cream-canvas').forEach(initCream);
 
 // Tendine del menu (Trattamenti / Chi siamo): una aperta alla volta
 const menuButtons = [...document.querySelectorAll('.site-menu__btn')];

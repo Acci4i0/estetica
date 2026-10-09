@@ -92,7 +92,7 @@ body { position: relative; }
 .bar {
   height: var(--bar-h);
   border-radius: calc(var(--bar-h) / 2);
-  background: rgba(255, 250, 241, .62);
+  background: rgba(236, 233, 229, .78);
   -webkit-backdrop-filter: blur(30px);
   backdrop-filter: blur(30px);
   color: var(--wine);
@@ -246,23 +246,27 @@ body { position: relative; }
 
 /* ---------- Hero ---------- */
 
+/* un pannello con gli angoli tondi come il footer, appena sotto la barra delle pillole */
+main { padding-top: 52px; }
+
 .hero {
   position: relative;
   height: clamp(480px, 70vh, 720px);
+  margin: 0 10px;
   display: grid;
   place-items: center;
-  padding: 72px 24px 48px;
+  padding: 48px 24px;
   overflow: hidden;
+  isolation: isolate;
+  border-radius: clamp(28px, calc(100vw / 18.9), 80px);
   color: var(--wine);
   text-align: center;
-  /* scorrendo si restringe verso il basso e arrotonda gli angoli (script.js) */
-  transform-origin: 50% 100%;
-  will-change: transform, border-radius;
   /* senza WebGL (o prima che parta) resta il raso fermo */
   background: #EDEDEB url("img/hero-satin.jpg") center / cover no-repeat;
 }
 
-.hero__canvas {
+/* raso animato (hero e footer): compare in dissolvenza quando è pronto */
+.cream-canvas {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -270,7 +274,7 @@ body { position: relative; }
   opacity: 0;
   transition: opacity 1.2s var(--ease);
 }
-.hero__canvas.is-ready { opacity: 1; }
+.cream-canvas.is-ready { opacity: 1; }
 
 /* alone chiaro dietro al testo, per leggerlo su ogni punto della crema */
 .hero::after {
@@ -451,12 +455,17 @@ body { position: relative; }
 .footer { padding: 0 10px 10px; }
 
 .footer__card {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
   container-type: inline-size;
   padding: 28px 28px 22px;
   border-radius: clamp(28px, calc(100vw / 18.9), 80px);
-  background: var(--pearl);
+  /* senza WebGL (o prima che parta) resta il raso fermo, come nella hero */
+  background: var(--pearl) url("img/hero-satin.jpg") center / cover no-repeat;
   color: var(--wine);
 }
+.footer__card > :not(.cream-canvas) { position: relative; z-index: 1; }
 
 .footer__pills {
   display: flex;
@@ -505,7 +514,7 @@ body { position: relative; }
 .footer__legal {
   margin-top: 22px;
   font-size: 12px;
-  color: rgba(63, 21, 33, .55);
+  color: rgba(63, 21, 33, .7);
 }
 .footer__legal a { transition: color .2s var(--ease); }
 .footer__legal a:hover { color: var(--wine); }
@@ -528,7 +537,8 @@ body { position: relative; }
   .site-header { padding: 0 16px; }
   .site-menu__btn { padding: 0 16px; }
   .menu-panel { padding: 16px 16px 24px; }
-  .hero { height: clamp(520px, 74vh, 640px); padding-top: 110px; }
+  main { padding-top: 94px; }
+  .hero { height: clamp(460px, 66vh, 580px); padding: 40px 18px; }
 
   .grid { --cols: 2; }
   .treatments { padding: 48px 10px 80px; }
