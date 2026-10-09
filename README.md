@@ -14,9 +14,10 @@ texture), with a footer in the style of the Vibrolux site.
 ## Stack
 
 - Plain HTML, CSS and a little JavaScript, no build step
-- [Instrument Sans](https://fonts.google.com/specimen/Instrument+Sans),
-  [Belleza](https://fonts.google.com/specimen/Belleza) and
-  [Chivo Mono](https://fonts.google.com/specimen/Chivo+Mono) from Google Fonts
+- [Instrument Sans](https://fonts.google.com/specimen/Instrument+Sans) and
+  [Belleza](https://fonts.google.com/specimen/Belleza), self-hosted in `fonts/`
+  (SIL Open Font License): the site makes no requests to third parties, so it
+  needs no cookie banner
 
 ## Running it
 
@@ -30,6 +31,9 @@ Any static server works, and so does opening `index.html` directly.
 
 ```
 index.html              the whole page: top bar and dropdowns, hero, treatments, footer
+privacy.html            privacy notice (GDPR)
+cookie.html             cookie policy: the site sets no cookies
+fonts/                  Belleza and Instrument Sans (woff2, Latin) with their licences
 styles.css              design tokens in :root, then one block per section
 script.js               the champagne satin that breathes in the hero and the footer
                         (WebGL over img/hero-satin.jpg) and foams under the cursor;
@@ -59,4 +63,6 @@ img/CREDITS.md          where the images come from
 - the email address: `info@esteticaskincare.it` is a placeholder (the domain
   was still free)
 - the street number: 48 in the listings, 50 in the business register
-- privacy and cookie pages: the links are placeholders
+- privacy and cookie pages: written for this site as it is (no forms, no cookies,
+  hosted on GitHub Pages); worth a quick check by whoever handles the studio's
+  privacy, and to update if forms, maps or analytics are ever added
