@@ -9,7 +9,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Belleza&family=Chivo+Mono:wght@400..500&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Belleza&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script>document.documentElement.classList.add('js')</script>
 </head>
@@ -269,32 +269,20 @@
 
   <!-- FOOTER -->
   <footer class="footer" id="contatti">
-    <div class="footer__stripes" aria-hidden="true"><span></span><span></span></div>
-
-    <div class="footer__inner">
-      <div class="footer__top">
-        <p class="footer__intro">Trattamenti viso e corpo<br>dal 1990 a San Giuseppe di Cassola</p>
-
-        <ul class="footer__list">
-          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Estetica%20Skin%20Care%2C%20Via%20Ca%27%20Baroncello%2048%2C%20Cassola%20VI" target="_blank" rel="noopener"><span class="footer__key">Dove</span><span>Via Ca' Baroncello, 48 · Cassola (VI)</span></a></li>
-          <li><a href="tel:+390424512529"><span class="footer__key">Tel</span><span>0424 512529</span></a></li>
-          <li><a href="https://wa.me/393481515097" target="_blank" rel="noopener"><span class="footer__key">WhatsApp</span><span>348 1515097</span></a></li>
-          <li><a href="mailto:info@esteticaskincare.it"><span class="footer__key">Email</span><span>info@esteticaskincare.it</span></a></li>
-        </ul>
-
-        <a class="footer__btn" href="#trattamenti">
-          <span>Trattamenti</span>
-          <svg viewBox="0 0 10 12" aria-hidden="true"><path d="M5 11V1M1 5l4-4 4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
-        </a>
-      </div>
-
-      <div class="footer__legal">
-        <span>&copy; <span class="js-year">2026</span> Estetica Skin Care snc di Ferronato Paola &amp; C.</span>
-        <span>P.IVA 02709450247</span>
-        <span class="footer__legal-links"><a href="#">Privacy</a><a href="#">Cookie</a></span>
-      </div>
+    <div class="footer__card">
+      <nav class="footer__pills" aria-label="Contatti">
+        <a class="footer__pill" href="https://www.google.com/maps/search/?api=1&amp;query=Estetica%20Skin%20Care%2C%20Via%20Ca%27%20Baroncello%2048%2C%20Cassola%20VI" target="_blank" rel="noopener">Via Ca' Baroncello 48, Cassola</a>
+        <a class="footer__pill" href="tel:+390424512529">0424 512529</a>
+        <a class="footer__pill" href="https://wa.me/393481515097" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="footer__pill" href="mailto:info@esteticaskincare.it" data-email="info@esteticaskincare.it" aria-label="Email: info@esteticaskincare.it"></a>
+        <a class="footer__pill footer__pill--wine" href="#trattamenti">Trattamenti ↑</a>
+      </nav>
 
       <p class="footer__wordmark" aria-hidden="true">Estetica Skincare</p>
+
+      <p class="footer__legal">
+        Estetica Skin Care snc · P.IVA 02709450247 · <a href="#">Privacy</a> · <a href="#">Cookie</a>
+      </p>
     </div>
   </footer>
 

@@ -6,14 +6,11 @@
   --cream: #FFFAF1;
   --wine: #3F1521;
   --sky: #C3E8EB;
-  --peach: #FFC2A3;
-  --gold: #CCA969;
-  --forest: #283B2B;
+  --pearl: #ECE9E5;
   --card-bg: #EFE7DA;
 
   --sans: "Instrument Sans", system-ui, -apple-system, sans-serif;
   --display: "Belleza", "Instrument Sans", sans-serif;
-  --mono: "Chivo Mono", "Courier New", monospace;
 
   --ease: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -69,15 +66,8 @@ button, input { font: inherit; color: inherit; }
 }
 .pill:hover { transform: translateY(-1px); }
 
-.pill--sky   { background: var(--sky);   color: var(--wine); }
-.pill--wine  { background: var(--wine);  color: var(--cream); }
-.pill--peach { background: var(--peach); color: var(--wine); }
-.pill--ghost { color: var(--cream); box-shadow: inset 0 0 0 1px rgba(255, 250, 241, .45); }
-
-.pill--sky:hover   { background: #b2dfe3; }
-.pill--wine:hover  { background: #561d2d; }
-.pill--peach:hover { background: #ffb38e; }
-.pill--ghost:hover { background: rgba(255, 250, 241, .1); }
+.pill--wine { background: var(--wine); color: var(--cream); }
+.pill--wine:hover { background: #561d2d; }
 
 /* ---------- Barra in alto (struttura Yuri Roga) ---------- */
 
@@ -456,108 +446,69 @@ body { position: relative; }
 }
 .js .treatment.reveal.is-visible { opacity: 1; transform: none; }
 
-/* ---------- Footer (stile Vibrolux, versione essenziale) ---------- */
+/* ---------- Footer: pannello perla con le pillole della barra in alto ---------- */
 
-.footer {
-  background: var(--forest);
-  color: var(--cream);
-}
+.footer { padding: 0 10px 10px; }
 
-.footer__stripes span { display: block; height: 5px; }
-.footer__stripes span:first-child { background: var(--gold); }
-.footer__stripes span:last-child  { background: var(--sky); }
-
-.footer__inner {
+.footer__card {
   container-type: inline-size;
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  justify-content: space-between;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 82px 120px 60px;
-  font-family: var(--mono);
-  font-size: 12px;
-  font-weight: 450;
-  line-height: 1.3;
-  letter-spacing: .01em;
-  text-transform: uppercase;
-}
-.footer__inner > * { grid-column: 1 / -1; }
-
-.footer__top,
-.footer__legal {
-  display: grid;
-  grid-template-columns: subgrid;
-  align-items: start;
+  padding: 28px 28px 22px;
+  border-radius: clamp(28px, calc(100vw / 18.9), 80px);
+  background: var(--pearl);
+  color: var(--wine);
 }
 
-.footer__intro {
-  padding-right: 8px;
-  color: rgba(255, 250, 241, .55);
-}
-
-.footer__list {
+.footer__pills {
   display: flex;
-  flex-direction: column;
-  gap: 8px;
-  padding-right: 8px;
-  list-style: none;
-}
-.footer__list a {
-  display: flex;
-  transition: opacity .2s var(--ease);
-}
-.footer__key {
-  flex: 0 0 auto;
-  width: 7.5em;
-  color: rgba(255, 250, 241, .55);
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-.footer__btn {
-  justify-self: end;
+.footer__pill {
+  height: 32px;
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  padding: 11px 18px;
-  border-radius: 100px;
-  box-shadow: inset 0 0 0 1px rgba(255, 250, 241, .35);
-  transition: background-color .2s var(--ease), color .2s var(--ease), box-shadow .2s var(--ease);
+  padding: 0 18px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, .7);
+  font-size: 13px;
+  letter-spacing: .02em;
+  white-space: nowrap;
+  transition: background-color .2s var(--ease), color .2s var(--ease);
 }
-.footer__btn svg { width: 10px; height: 12px; }
-.footer__btn:hover {
-  background: var(--peach);
-  color: var(--wine);
-  box-shadow: inset 0 0 0 1px var(--peach);
-}
+.footer__pill:hover { background: #fff; }
 
-.footer__legal {
-  margin-top: 60px;
-  padding-top: 24px;
-  border-top: 1px solid rgba(255, 250, 241, .14);
-  color: rgba(255, 250, 241, .55);
-}
-.footer__legal > * { padding-right: 8px; }
-.footer__legal > :last-child { justify-self: end; padding-right: 0; }
-.footer__legal a { color: var(--cream); transition: opacity .2s var(--ease); }
-.footer__legal-links { display: flex; flex-wrap: wrap; gap: 8px 36px; }
+/* come su Yuri Roga: «Email», e al passaggio l'indirizzo */
+.footer__pill[data-email]::before { content: "Email"; }
+.footer__pill[data-email]:hover::before { content: attr(data-email); }
 
-@media (hover: hover) {
-  .footer__list a:hover,
-  .footer__legal a:hover { opacity: .66; }
+.footer__pill--wine {
+  margin-left: auto;
+  background: var(--wine);
+  color: var(--cream);
 }
+.footer__pill--wine:hover { background: #561d2d; }
 
 .footer__wordmark {
-  margin-top: 96px;
+  margin-top: clamp(48px, 7cqw, 96px);
   font-family: var(--display);
-  /* il logotipo occupa tutta la larghezza del contenitore */
+  /* il logotipo occupa tutta la larghezza del pannello */
   font-size: 11.15cqw;
   line-height: .8;
   letter-spacing: -0.01em;
+  text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
-  color: var(--peach);
   user-select: none;
 }
+
+.footer__legal {
+  margin-top: 22px;
+  font-size: 12px;
+  color: rgba(63, 21, 33, .55);
+}
+.footer__legal a { transition: color .2s var(--ease); }
+.footer__legal a:hover { color: var(--wine); }
 
 /* ---------- Responsive ---------- */
 
@@ -565,10 +516,6 @@ body { position: relative; }
   .price-list__cat { display: none; }
   .price-list__head,
   .price-list a { grid-template-columns: 2.6em minmax(0, 1fr) 5em 4.6em; }
-}
-
-@media (max-width: 1180px) {
-  .footer__inner { padding-left: 48px; padding-right: 48px; }
 }
 
 @media (max-width: 900px) {
@@ -595,15 +542,10 @@ body { position: relative; }
 }
 
 @media (max-width: 767px) {
-  .footer__inner {
-    grid-template-columns: 1fr;
-    padding: 72px 16px 48px;
-  }
-  .footer__top { row-gap: 32px; }
-  .footer__btn { justify-self: start; }
-  .footer__legal { margin-top: 48px; row-gap: 10px; }
-  .footer__legal > :last-child { justify-self: start; }
-  .footer__wordmark { margin-top: 64px; }
+  .footer__card { padding: 20px 16px 18px; }
+  .footer__pill { padding: 0 14px; font-size: 12px; }
+  .footer__pill--wine { margin-left: 0; }
+  .footer__legal { font-size: 11px; }
 }
 
 @media (max-width: 640px) {

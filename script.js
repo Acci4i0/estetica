@@ -383,6 +383,3 @@ cards.forEach((card, i) => {
   card.style.setProperty('--delay', `${(i % cols()) * 80}ms`);
   revealer.observe(card);
 });
-
-// Anno nel footer
-document.querySelectorAll('.js-year').forEach((el) => { el.textContent = new Date().getFullYear(); });
