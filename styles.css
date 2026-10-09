@@ -6,7 +6,7 @@
   --cream: #FFFAF1;
   --wine: #3F1521;
   --sky: #C3E8EB;
-  --pearl: #ECE9E5;
+  --sand: #E8DED2;
   --card-bg: #EFE7DA;
 
   --sans: "Instrument Sans", system-ui, -apple-system, sans-serif;
@@ -92,7 +92,7 @@ body { position: relative; }
 .bar {
   height: var(--bar-h);
   border-radius: calc(var(--bar-h) / 2);
-  background: rgba(236, 233, 229, .78);
+  background: rgba(232, 222, 210, .82);
   -webkit-backdrop-filter: blur(30px);
   backdrop-filter: blur(30px);
   color: var(--wine);
@@ -262,7 +262,7 @@ main { padding-top: 52px; }
   color: var(--wine);
   text-align: center;
   /* senza WebGL (o prima che parta) resta il raso fermo */
-  background: #EDEDEB url("img/hero-satin.jpg") center / cover no-repeat;
+  background: var(--sand) url("img/hero-satin.jpg?v=2") center / cover no-repeat;
 }
 
 /* raso animato (hero e footer): compare in dissolvenza quando è pronto */
@@ -450,7 +450,7 @@ main { padding-top: 52px; }
 }
 .js .treatment.reveal.is-visible { opacity: 1; transform: none; }
 
-/* ---------- Footer: pannello perla con le pillole della barra in alto ---------- */
+/* ---------- Footer: pannello di raso con le pillole della barra in alto ---------- */
 
 .footer { padding: 0 10px 10px; }
 
@@ -462,7 +462,7 @@ main { padding-top: 52px; }
   padding: 28px 28px 22px;
   border-radius: clamp(28px, calc(100vw / 18.9), 80px);
   /* senza WebGL (o prima che parta) resta il raso fermo, come nella hero */
-  background: var(--pearl) url("img/hero-satin.jpg") center / cover no-repeat;
+  background: var(--sand) url("img/hero-satin.jpg?v=2") center / cover no-repeat;
   color: var(--wine);
 }
 .footer__card > :not(.cream-canvas) { position: relative; z-index: 1; }
@@ -479,13 +479,13 @@ main { padding-top: 52px; }
   align-items: center;
   padding: 0 18px;
   border-radius: 16px;
-  background: rgba(255, 255, 255, .7);
+  background: rgba(255, 251, 244, .72);
   font-size: 13px;
   letter-spacing: .02em;
   white-space: nowrap;
   transition: background-color .2s var(--ease), color .2s var(--ease);
 }
-.footer__pill:hover { background: #fff; }
+.footer__pill:hover { background: #FFFBF4; }
 
 /* come su Yuri Roga: «Email», e al passaggio l'indirizzo */
 .footer__pill[data-email]::before { content: "Email"; }

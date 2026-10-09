@@ -10,6 +10,7 @@ texture.
 Sono immagini provvisorie: quando lo studio avrà foto proprie dei trattamenti,
 vanno sostituite tenendo lo stesso formato (880×1100, 4:5) e lo stesso nome file.
 
-La hero parte da `hero-satin.jpg`, un raso di crema bianco-perla generato con lo
-stesso modello: in `script.js` uno shader WebGL lo fa ondeggiare piano e ci disegna
+Hero e footer partono da `hero-satin.jpg`, un raso generato con lo stesso modello e
+poi ricolorato in toni champagne e sabbia (le stesse tinte del fondo delle foto dei
+trattamenti): in `script.js` uno shader WebGL lo fa ondeggiare piano e ci disegna
 sopra la schiuma che segue il cursore.

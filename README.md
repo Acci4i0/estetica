@@ -31,7 +31,7 @@ Any static server works, and so does opening `index.html` directly.
 ```
 index.html              the whole page: top bar and dropdowns, hero, treatments, footer
 styles.css              design tokens in :root, then one block per section
-script.js               the pearl-white satin that breathes in the hero and the footer
+script.js               the champagne satin that breathes in the hero and the footer
                         (WebGL over img/hero-satin.jpg) and foams under the cursor;
                         dropdowns, tiles fading in
 img/hero-satin.jpg      the satin the hero animation starts from

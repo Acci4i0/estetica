@@ -1,4 +1,4 @@
-// Raso di crema bianco-perla che respira, animato in WebGL (hero e footer)
+// Raso di crema color champagne che respira, animato in WebGL (hero e footer)
 // La base è un render del raso (img/hero-satin.jpg): lo shader lo fa ondeggiare piano come un
 // tessuto, ci fa scorrere sopra un velo di luce e, sotto il cursore, lo rifrange appena come
 // attraverso un velo d'acqua lasciando una scia di schiuma bianca che si dirada bolla per bolla.
@@ -139,7 +139,7 @@ void main() {
                     on2 * smoothstep(0.28, 0.40, c2.x) * smoothstep(0.52, 0.42, c2.x));
     float glint = max(on1 * smoothstep(0.10, 0.0, length(c1.zw - vec2(-0.13, 0.13))),
                       on2 * smoothstep(0.10, 0.0, length(c2.zw - vec2(-0.12, 0.12))));
-    vec3 milk = vec3(1.0, 1.0, 0.995);
+    vec3 milk = vec3(1.0, 0.988, 0.962);   // schiuma avorio
     col = mix(col, milk, smoothstep(0.03, 0.65, dens) * 0.80);
     col = mix(col, milk, bub * dens * 0.30);
     col -= rim * dens * 0.07;
