@@ -11,8 +11,8 @@ on WhatsApp or by phone. Prices will be added later.
 Built in the visual language of [thefacespaceco.com](https://thefacespaceco.com)
 (cream and wine palette, a hero with a single centred statement) and [yuriroga.com](https://yuriroga.com)
 (a pill bar with two dropdowns, Trattamenti and Chi siamo, rounded 4:5 tiles alternating a person and a
-texture), with a footer in the style of the Vibrolux site. The "Lo studio" text
-takes its tone from [esteticatiare.com](https://www.esteticatiare.com).
+texture), with a footer in the style of the Vibrolux site. The short text in
+*Chi siamo* takes its tone from [esteticatiare.com](https://www.esteticatiare.com).
 
 ## Stack
 
@@ -33,9 +33,9 @@ Any static server works, and so does opening `index.html` directly.
 ## Structure
 
 ```
-index.html              the whole page: top bar and dropdowns, hero, Lo studio,
-                        treatments by area, Tecnologia, Prodotti, footer, and the
-                        <dialog> that shows a treatment
+index.html              the whole page: top bar and dropdowns, hero, treatments
+                        by area, Tecnologia, Prodotti, footer, and the <dialog>
+                        that shows a treatment
 privacy.html            privacy notice (GDPR)
 cookie.html             cookie policy: the site sets no cookies
 fonts/                  Belleza and Instrument Sans (woff2, Latin) with their licences
@@ -43,7 +43,7 @@ styles.css              design tokens in :root, then one block per section
 script.js               the champagne satin that breathes in the hero and the footer
                         (WebGL over img/hero-satin.jpg) and foams under the cursor;
                         dropdowns, area and product-line tabs, the treatment dialog,
-                        tiles fading in
+                        the product shelf arrows, tiles fading in
 img/hero-satin.jpg      the satin the hero animation starts from
 img/trattamenti/        one photo per treatment, named after it (t-<name> in the page)
 img/prodotti/           Comfort Zone product photos on white, named line-product
@@ -61,8 +61,11 @@ img/CREDITS.md          where the images come from
   `…/estetica/#t-hydra-glow` opens that treatment directly.
 - **Prices:** not shown for now. When they arrive, they fit next to the duration
   in `.treatment__time` and in the dropdown rows.
-- **Products:** the *Prodotti* section has one tab per line; a product used in a
-  treatment is listed in that treatment's `.product-chips` with the same photo.
+- **Products:** the *Prodotti* section lists the lines on the left; each line
+  shows its products in a row on a sand panel (the white of the photos disappears
+  with `mix-blend-mode: multiply`), with arrows when they don't fit. A product used
+  in a treatment is listed in that treatment's `.product-chips` with the same
+  photo. `…/estetica/#line-renight` opens a line directly.
 - **Contacts:** phone `0424 512529`, WhatsApp `348 1515097` (`393481515097` in
   the links), address and email appear in the *Chi siamo* dropdown and in the
   footer.

@@ -348,13 +348,34 @@ document.querySelectorAll('[role="tablist"]').forEach((list) => {
   tabs.forEach((tab, i) => {
     tab.addEventListener('click', () => selectTab(tab));
     tab.addEventListener('keydown', (e) => {
-      const step = { ArrowRight: 1, ArrowLeft: -1 }[e.key];
+      const step = { ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1 }[e.key];
       if (!step) return;
+      e.preventDefault();
       const next = tabs[(i + step + tabs.length) % tabs.length];
       selectTab(next);
       next.focus();
     });
   });
+});
+
+// Prodotti: le frecce fanno scorrere la fila e si spengono agli estremi
+document.querySelectorAll('.line').forEach((line) => {
+  const shelf = line.querySelector('.shelf');
+  const nav = line.querySelector('.shelf-nav');
+  if (!shelf || !nav) return;
+  const [prev, next] = nav.querySelectorAll('button');
+  const update = () => {
+    const max = shelf.scrollWidth - shelf.clientWidth;
+    nav.hidden = max <= 1;
+    prev.disabled = shelf.scrollLeft <= 1;
+    next.disabled = shelf.scrollLeft >= max - 1;
+  };
+  [prev, next].forEach((btn) => btn.addEventListener('click', () => {
+    shelf.scrollBy({ left: Number(btn.dataset.dir) * shelf.clientWidth * 0.8 });
+  }));
+  shelf.addEventListener('scroll', update, { passive: true });
+  // scatta anche quando la linea viene mostrata (da nascosta ha larghezza zero)
+  new ResizeObserver(update).observe(shelf);
 });
 
 // Mostra il pannello che contiene un elemento (es. la card aperta dalla tendina)
@@ -410,9 +431,10 @@ document.querySelectorAll('a[href^="#t-"], a[href^="#line-"]').forEach((a) => {
   });
 });
 
-// Indirizzo condiviso con la scheda aperta (…/#t-hydra-glow)
-const linked = location.hash.startsWith('#t-') && document.getElementById(location.hash.slice(1));
-if (linked) openTreatment(linked);
+// Indirizzo condiviso con la scheda aperta (…/#t-hydra-glow) o con una linea (…/#line-renight)
+const linked = location.hash.length > 1 && document.getElementById(location.hash.slice(1));
+if (linked?.matches('.treatment')) openTreatment(linked);
+else if (linked?.matches('.line')) revealPanel(linked);
 
 // Card trattamenti: comparsa allo scroll, sfalsata per colonna
 const cols = () => (window.matchMedia('(max-width: 840px)').matches ? 2 : 4);
