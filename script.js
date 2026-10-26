@@ -332,8 +332,89 @@ document.addEventListener('keydown', (e) => {
   open?.focus();
 });
 
+// Schede (aree dei trattamenti, linee di prodotti): un pannello visibile alla volta
+function selectTab(tab) {
+  tab.parentElement.querySelectorAll('[role="tab"]').forEach((t) => {
+    const selected = t === tab;
+    t.setAttribute('aria-selected', String(selected));
+    t.tabIndex = selected ? 0 : -1;
+    document.getElementById(t.getAttribute('aria-controls')).hidden = !selected;
+  });
+}
+
+document.querySelectorAll('[role="tablist"]').forEach((list) => {
+  const tabs = [...list.querySelectorAll('[role="tab"]')];
+  selectTab(tabs.find((t) => t.getAttribute('aria-selected') === 'true'));
+  tabs.forEach((tab, i) => {
+    tab.addEventListener('click', () => selectTab(tab));
+    tab.addEventListener('keydown', (e) => {
+      const step = { ArrowRight: 1, ArrowLeft: -1 }[e.key];
+      if (!step) return;
+      const next = tabs[(i + step + tabs.length) % tabs.length];
+      selectTab(next);
+      next.focus();
+    });
+  });
+});
+
+// Mostra il pannello che contiene un elemento (es. la card aperta dalla tendina)
+function revealPanel(el) {
+  const panel = el.closest('[role="tabpanel"]');
+  if (panel) selectTab(document.querySelector(`[aria-controls="${panel.id}"]`));
+}
+
+// Scheda del trattamento: la finestra prende foto, nome e testo dalla card
+const sheet = document.getElementById('sheet');
+const sheetImg = sheet.querySelector('.sheet__media img');
+let sheetFrom = null;
+
+function openTreatment(article) {
+  revealPanel(article);
+  const time = article.querySelector('.treatment__time').textContent;
+  sheetImg.src = article.querySelector('.card__thumb img').src;
+  sheet.querySelector('.sheet__meta').textContent = `${article.dataset.area} · ${time}`;
+  sheet.querySelector('.sheet__title').innerHTML = article.querySelector('.treatment__name').innerHTML;
+  sheet.querySelector('.sheet__detail').innerHTML = article.querySelector('.treatment__detail').innerHTML;
+  sheet.querySelector('.sheet__body').scrollTop = 0;
+  sheetFrom = article;
+  if (!sheet.open) sheet.showModal();
+  history.replaceState(null, '', `#${article.id}`);
+}
+
+sheet.addEventListener('close', () => {
+  history.replaceState(null, '', location.pathname + location.search);
+  // si torna sulla card, anche se la scheda era stata aperta dalla tendina
+  sheetFrom?.querySelector('.card').focus();
+});
+sheet.querySelector('.sheet__close').addEventListener('click', () => sheet.close());
+// click sullo sfondo scuro fuori dalla finestra
+sheet.addEventListener('click', (e) => { if (e.target === sheet) sheet.close(); });
+
+document.querySelectorAll('.treatment .card').forEach((card) => {
+  card.addEventListener('click', () => openTreatment(card.closest('.treatment')));
+});
+
+// I link a un trattamento (#t-…) aprono la sua scheda; quelli a una linea (#line-…) la mostrano
+document.querySelectorAll('a[href^="#t-"], a[href^="#line-"]').forEach((a) => {
+  a.addEventListener('click', (e) => {
+    const target = document.getElementById(a.hash.slice(1));
+    if (!target) return;
+    e.preventDefault();
+    closePanels();
+    if (target.matches('.treatment')) {
+      openTreatment(target);
+    } else {
+      revealPanel(target);
+      document.getElementById('prodotti').scrollIntoView();
+    }
+  });
+});
+
+// Indirizzo condiviso con la scheda aperta (…/#t-hydra-glow)
+const linked = location.hash.startsWith('#t-') && document.getElementById(location.hash.slice(1));
+if (linked) openTreatment(linked);
+
 // Card trattamenti: comparsa allo scroll, sfalsata per colonna
-const cards = document.querySelectorAll('.treatment');
 const cols = () => (window.matchMedia('(max-width: 840px)').matches ? 2 : 4);
 
 const revealer = new IntersectionObserver((entries) => {
@@ -344,8 +425,15 @@ const revealer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.15 });
 
-cards.forEach((card, i) => {
+document.querySelectorAll('.grid').forEach((grid) => {
+  grid.querySelectorAll('.treatment').forEach((card, i) => {
+    card.classList.add('reveal');
+    card.style.setProperty('--delay', `${(i % cols()) * 80}ms`);
+    revealer.observe(card);
+  });
+});
+document.querySelectorAll('.tech .treatment').forEach((card, i) => {
   card.classList.add('reveal');
-  card.style.setProperty('--delay', `${(i % cols()) * 80}ms`);
+  card.style.setProperty('--delay', `${i * 80}ms`);
   revealer.observe(card);
 });

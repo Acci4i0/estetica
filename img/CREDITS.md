@@ -1,14 +1,18 @@
 # Immagini
 
-Le dodici immagini dei trattamenti in `trattamenti/`
-sono state generate con l'AI di Figma (modelli GPT Image 2.5 e, per
-`trattamenti/epilazione.jpg`, Gemini 3.1 Flash Image) come un unico servizio
+Le immagini dei trattamenti in `trattamenti/` sono state generate con l'AI di
+Figma (modelli GPT Image 2.5 e Gemini 3.1 Flash Image) come un unico servizio
 fotografico: fondo sabbia `#E8DED2`, luce morbida dall'alto a sinistra, palette
-crema, pesca e celeste del sito. Le card alternano a scacchiera una persona e una
-texture.
+crema, sabbia e celeste del sito. In ogni area le card alternano a scacchiera una
+persona e una texture.
 
 Sono immagini provvisorie: quando lo studio avrà foto proprie dei trattamenti,
 vanno sostituite tenendo lo stesso formato (880×1100, 4:5) e lo stesso nome file.
+
+Le foto dei prodotti in `prodotti/` (600×600, fondo bianco) vengono dai materiali
+per i centri Comfort Zone (cartella `comfortzone-materiali` di Davines), ritagliate
+e portate tutte allo stesso formato. Il nome del file è linea + prodotto, per
+esempio `skin-regimen-vitamin-c-serum.jpg`. La linea Dermalena per ora non ha foto.
 
 Hero e footer partono da `hero-satin.jpg`, un raso generato con lo stesso modello e
 poi ricolorato in toni champagne e sabbia (le stesse tinte del fondo delle foto dei

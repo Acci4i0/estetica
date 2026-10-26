@@ -1,15 +1,18 @@
 # Estetica Skin Care — website
 
 A one-page site for Estetica Skin Care snc di Ferronato Paola & C., a beauty
-studio in San Giuseppe di Cassola (VI) since 1990: face and body treatments with
-Comfort Zone products, Starvac, Renata França massages, Skin's Brazilian Wax and
-pedicure. Every treatment shows its price, and there is no online booking: people
-book on WhatsApp or by phone.
+studio in San Giuseppe di Cassola (VI) since 1990, where Paola Ferronato works on
+her own. The treatments come from the studio's Comfort Zone menu (September 2026),
+grouped by area: face, body and massages, hair removal and pedicure, plus two
+technologies (Starvac and Wave pressotherapy). Every treatment opens a card with a
+short description and the products used. There is no online booking: people book
+on WhatsApp or by phone. Prices will be added later.
 
 Built in the visual language of [thefacespaceco.com](https://thefacespaceco.com)
 (cream and wine palette, a hero with a single centred statement) and [yuriroga.com](https://yuriroga.com)
 (a pill bar with two dropdowns, Trattamenti and Chi siamo, rounded 4:5 tiles alternating a person and a
-texture), with a footer in the style of the Vibrolux site.
+texture), with a footer in the style of the Vibrolux site. The "Lo studio" text
+takes its tone from [esteticatiare.com](https://www.esteticatiare.com).
 
 ## Stack
 
@@ -30,36 +33,49 @@ Any static server works, and so does opening `index.html` directly.
 ## Structure
 
 ```
-index.html              the whole page: top bar and dropdowns, hero, treatments, footer
+index.html              the whole page: top bar and dropdowns, hero, Lo studio,
+                        treatments by area, Tecnologia, Prodotti, footer, and the
+                        <dialog> that shows a treatment
 privacy.html            privacy notice (GDPR)
 cookie.html             cookie policy: the site sets no cookies
 fonts/                  Belleza and Instrument Sans (woff2, Latin) with their licences
 styles.css              design tokens in :root, then one block per section
 script.js               the champagne satin that breathes in the hero and the footer
                         (WebGL over img/hero-satin.jpg) and foams under the cursor;
-                        dropdowns, tiles fading in
+                        dropdowns, area and product-line tabs, the treatment dialog,
+                        tiles fading in
 img/hero-satin.jpg      the satin the hero animation starts from
-img/trattamenti/        one photo per treatment, named after it
+img/trattamenti/        one photo per treatment, named after it (t-<name> in the page)
+img/prodotti/           Comfort Zone product photos on white, named line-product
 img/CREDITS.md          where the images come from
 ```
 
 ## Editing
 
-- **Treatments:** each tile in `#trattamenti` in [`index.html`](index.html) has a
-  matching row in the *Trattamenti* dropdown: keep name, price and duration the
-  same in both. The tile opens WhatsApp with "Vorrei prenotare: …" already
-  written.
+- **Treatments:** each `article.treatment` in [`index.html`](index.html) holds the
+  tile (photo, name, duration) and, in `.treatment__detail`, what the dialog shows:
+  description, products used, the WhatsApp link with "Vorrei prenotare: …" already
+  written. Without JavaScript the same text simply sits under the tile. The
+  *Trattamenti* dropdown lists every treatment with a `#t-…` link that opens its
+  dialog, so a new treatment needs a row there too. A link like
+  `…/estetica/#t-hydra-glow` opens that treatment directly.
+- **Prices:** not shown for now. When they arrive, they fit next to the duration
+  in `.treatment__time` and in the dropdown rows.
+- **Products:** the *Prodotti* section has one tab per line; a product used in a
+  treatment is listed in that treatment's `.product-chips` with the same photo.
 - **Contacts:** phone `0424 512529`, WhatsApp `348 1515097` (`393481515097` in
   the links), address and email appear in the *Chi siamo* dropdown and in the
   footer.
-- **Photos:** 880×1100 JPEG (4:5). The grid alternates a person and a texture,
-  row by row like a chessboard, so a new photo keeps the kind of the one it
-  replaces.
+- **Photos:** 880×1100 JPEG (4:5). In each area the grid alternates a person and a
+  texture, row by row like a chessboard, so a new photo keeps the kind of the one
+  it replaces.
 
 ## Still to confirm with the studio
 
-- prices and durations: placeholders, only the 45 minutes of the Tranquillity
-  Massage are known
+- prices
+- durations of the Bamboo Massage and the pedicure (50 minutes are placeholders),
+  and how long Starvac and the pressotherapy last
+- photos for the Dermalena line
 - the email address: `info@esteticaskincare.it` is a placeholder (the domain
   was still free)
 - the street number: 48 in the listings, 50 in the business register

@@ -3,3 +3,6 @@
 
 # local editor and tooling settings
 .claude/
+
+# materials from the studio, kept out of the published site
+Menu Trattamenti*.pdf
