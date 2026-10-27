@@ -271,7 +271,8 @@ main { padding-top: 52px; }
 
 .hero {
   position: relative;
-  height: clamp(480px, 70vh, 720px);
+  /* un rettangolo più largo che alto */
+  height: clamp(420px, 60vh, 600px);
   margin: 0 10px;
   display: grid;
   place-items: center;
@@ -1045,7 +1046,8 @@ html:has(.viewer[open]) { overflow: hidden; }
   .site-menu__btn { padding: 0 16px; }
   .menu-panel { padding: 16px 16px 24px; }
   main { padding-top: 94px; }
-  .hero { height: clamp(460px, 66vh, 580px); padding: 40px 18px; }
+  /* su telefono soprattutto: più larga che alta, ma mai più bassa del testo */
+  .hero { height: auto; min-height: clamp(270px, 60vw, 400px); padding: 28px 18px; }
 
   .grid { --cols: 2; }
   /* scacchiera anche a due colonne (persona, crema / crema, persona): l'ordine è
@@ -1156,8 +1158,9 @@ html:has(.viewer[open]) { overflow: hidden; }
   .logo { font-size: 15px; }
   .site-header__owner { font-size: 12px; }
 
-  .hero__title { font-size: 25px; letter-spacing: -0.035em; }
-  .hero__claim { font-size: 21px; }
+  .hero__title { font-size: 22px; letter-spacing: -0.03em; }
+  .hero__claim { margin-top: 10px; font-size: 19px; }
+  .hero__content .pill { margin-top: 16px; min-height: 40px; padding: 10px 18px; }
 
   .treatments__head { flex-direction: column; align-items: flex-start; gap: 8px; }
 }
