@@ -75,8 +75,8 @@ img/CREDITS.md          where the images come from
 - **Cache:** `styles.css` and `script.js` are linked as `?v=…`; raise the number
   after changing them, so browsers don't keep the old copy.
 - **Contacts:** phone `0424 512529`, WhatsApp `348 1515097` (`393481515097` in
-  the links), address and email appear in the *Chi siamo* dropdown and in the
-  footer.
+  the links), email `skincareglp@gmail.com`; they appear in the *Chi siamo*
+  dropdown, in the footer and in the privacy and cookie pages.
 - **Photos:** 880×1100 JPEG (4:5). In each area the grid alternates a person and a
   texture, row by row like a chessboard, so a new photo keeps the kind of the one
   it replaces. The order is written for four columns; on phones (two columns) the
@@ -91,8 +91,6 @@ img/CREDITS.md          where the images come from
 - the background video: it comes from a Pinterest pin of rawpixel.com
   ("Smooth flowing abstract, 4k video"); check that rawpixel's licence covers
   use on the studio's site, or buy/download it from rawpixel directly
-- the email address: `info@esteticaskincare.it` is a placeholder (the domain
-  was still free)
 - the street number: 48 in the listings, 50 in the business register
 - privacy and cookie pages: written for this site as it is (no forms, no cookies,
   hosted on GitHub Pages); worth a quick check by whoever handles the studio's
