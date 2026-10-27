@@ -70,7 +70,7 @@ img/CREDITS.md          where the images come from
   in a treatment is listed in that treatment's `.product-chips` with the same
   photo. Tapping a product opens it full page, with arrows (or a swipe) to the
   others of the same line. `…/estetica/#line-renight` opens a line directly.
-- **Cache:** `styles.css` and `script.js` are linked as `?v=5`; raise the number
+- **Cache:** `styles.css` and `script.js` are linked as `?v=…`; raise the number
   after changing them, so browsers don't keep the old copy.
 - **Contacts:** phone `0424 512529`, WhatsApp `348 1515097` (`393481515097` in
   the links), address and email appear in the *Chi siamo* dropdown and in the
