@@ -282,27 +282,17 @@ main { padding-top: 52px; }
   border-radius: clamp(28px, calc(100vw / 18.9), 80px);
   color: var(--wine);
   text-align: center;
-  /* prima che parta il video (o senza) resta il suo primo fotogramma */
+  /* finché l'animazione non è caricata si vede il suo primo fotogramma */
   background: var(--sand) url("img/crema.jpg") center / cover no-repeat;
 }
 
-/* video della crema (hero e footer) */
-.bg-video {
-  position: absolute;
-  inset: 0;
+/* la crema che scorre (hero e footer) */
+.bg-cream { position: absolute; inset: 0; }
+.bg-cream img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-/* il video compare solo quando gira davvero: prima (o se il telefono non lo fa
-   partire) si vede il suo primo fotogramma, che è lo sfondo del pannello */
-.js .bg-video { opacity: 0; transition: opacity .8s var(--ease); }
-.js .bg-video.is-playing { opacity: 1; }
-/* Safari su iPhone: niente pulsante "play" disegnato sopra il video */
-.bg-video::-webkit-media-controls,
-.bg-video::-webkit-media-controls-start-playback-button {
-  display: none !important;
-  -webkit-appearance: none;
 }
 
 /* alone chiaro dietro alla scritta, per leggerla su ogni punto della crema */
@@ -927,7 +917,7 @@ html:has(.viewer[open]) { overflow: hidden; }
 .viewer__nav--next { right: 24px; }
 .viewer__close { top: 20px; right: 20px; }
 
-/* ---------- Footer: pannello con il video della crema e le pillole della barra in alto ---------- */
+/* ---------- Footer: pannello con la crema che scorre e le pillole della barra in alto ---------- */
 
 .footer { padding: 0 10px 10px; }
 
@@ -938,11 +928,11 @@ html:has(.viewer[open]) { overflow: hidden; }
   container-type: inline-size;
   padding: 28px 28px 22px;
   border-radius: clamp(28px, calc(100vw / 18.9), 80px);
-  /* come nella hero: prima del video resta il suo primo fotogramma */
+  /* come nella hero: prima dell'animazione resta il suo primo fotogramma */
   background: var(--sand) url("img/crema.jpg") center / cover no-repeat;
   color: var(--wine);
 }
-.footer__card > :not(.bg-video) { position: relative; z-index: 1; }
+.footer__card > :not(.bg-cream) { position: relative; z-index: 1; }
 
 .footer__pills {
   display: flex;

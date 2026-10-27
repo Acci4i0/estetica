@@ -16,8 +16,9 @@ tutti sulla stessa linea, come su uno scaffale. In `prodotti/grandi/` le stesse 
 per la vista a tutta pagina. Il nome del file è linea + prodotto, per
 esempio `skin-regimen-vitamin-c-serum.jpg`. La linea Dermalena per ora non ha foto.
 
-Lo sfondo di hero e footer è `../video/crema.mp4`, una crema che scorre presa da un
+Lo sfondo di hero e footer è `../video/crema.avif`, una crema che scorre presa da un
 pin di Pinterest di rawpixel.com («Smooth flowing abstract, 4k video»): 736×414,
 accorciato a 9 secondi con una dissolvenza tra la fine e l'inizio, così il giro
-ricomincia senza stacchi. `crema.jpg` è il suo primo fotogramma. Prima di andare
+ricomincia senza stacchi, e salvato come immagine animata AVIF (gira da sola
+anche dove i video sono bloccati). `crema.jpg` è il suo primo fotogramma. Prima di andare
 online con il sito vero va verificata la licenza di rawpixel per questo video.

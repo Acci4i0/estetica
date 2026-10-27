@@ -40,13 +40,13 @@ privacy.html            privacy notice (GDPR)
 cookie.html             cookie policy: the site sets no cookies
 fonts/                  Belleza and Instrument Sans (woff2, Latin) with their licences
 styles.css              design tokens in :root, then one block per section
-script.js               starts the cream video in the hero and the footer when it is
-                        on screen (and keeps it still with reduced motion);
-                        dropdowns, area and product-line tabs, the treatment dialog,
+script.js               dropdowns, area and product-line tabs, the treatment dialog,
                         the product shelf arrows, tiles fading in
-video/crema.mp4         flowing cream, the background of the hero and the footer
-                        (9 s, cross-faded so the loop has no jump)
-img/crema.jpg           its first frame, shown until the video plays
+video/crema.avif        flowing cream, the background of the hero and the footer: an
+                        animated AVIF image (9 s, cross-faded so the loop has no
+                        jump). As an image it always plays on its own, also on
+                        iPhones in Low Power Mode, and never shows a play button
+img/crema.jpg           its first frame, shown while it loads and where AVIF is missing
 img/trattamenti/        one photo per treatment, named after it (t-<name> in the page)
 img/prodotti/           Comfort Zone product photos on white, named line-product;
                         grandi/ holds the same photos at 900×1200 for the full-page view
