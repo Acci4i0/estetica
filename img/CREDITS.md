@@ -16,7 +16,8 @@ tutti sulla stessa linea, come su uno scaffale. In `prodotti/grandi/` le stesse 
 per la vista a tutta pagina. Il nome del file è linea + prodotto, per
 esempio `skin-regimen-vitamin-c-serum.jpg`. La linea Dermalena per ora non ha foto.
 
-Hero e footer partono da `hero-satin.jpg`, un raso generato con lo stesso modello e
-poi ricolorato in toni champagne e sabbia (le stesse tinte del fondo delle foto dei
-trattamenti): in `script.js` uno shader WebGL lo fa ondeggiare piano e ci disegna
-sopra la schiuma che segue il cursore.
+Lo sfondo di hero e footer è `../video/crema.mp4`, una crema che scorre presa da un
+pin di Pinterest di rawpixel.com («Smooth flowing abstract, 4k video»): 736×414,
+accorciato a 9 secondi con una dissolvenza tra la fine e l'inizio, così il giro
+ricomincia senza stacchi. `crema.jpg` è il suo primo fotogramma. Prima di andare
+online con il sito vero va verificata la licenza di rawpixel per questo video.

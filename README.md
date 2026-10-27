@@ -40,11 +40,13 @@ privacy.html            privacy notice (GDPR)
 cookie.html             cookie policy: the site sets no cookies
 fonts/                  Belleza and Instrument Sans (woff2, Latin) with their licences
 styles.css              design tokens in :root, then one block per section
-script.js               the champagne satin that breathes in the hero and the footer
-                        (WebGL over img/hero-satin.jpg) and foams under the cursor;
+script.js               starts the cream video in the hero and the footer when it is
+                        on screen (and keeps it still with reduced motion);
                         dropdowns, area and product-line tabs, the treatment dialog,
                         the product shelf arrows, tiles fading in
-img/hero-satin.jpg      the satin the hero animation starts from
+video/crema.mp4         flowing cream, the background of the hero and the footer
+                        (9 s, cross-faded so the loop has no jump)
+img/crema.jpg           its first frame, shown until the video plays
 img/trattamenti/        one photo per treatment, named after it (t-<name> in the page)
 img/prodotti/           Comfort Zone product photos on white, named line-product;
                         grandi/ holds the same photos at 900×1200 for the full-page view
@@ -77,7 +79,8 @@ img/CREDITS.md          where the images come from
   footer.
 - **Photos:** 880×1100 JPEG (4:5). In each area the grid alternates a person and a
   texture, row by row like a chessboard, so a new photo keeps the kind of the one
-  it replaces.
+  it replaces. The order is written for four columns; on phones (two columns) the
+  CSS swaps the 3rd/4th and 5th/6th card of every eight to keep the chessboard.
 
 ## Still to confirm with the studio
 
@@ -85,6 +88,9 @@ img/CREDITS.md          where the images come from
 - durations of the Bamboo Massage and the pedicure (50 minutes are placeholders),
   and how long Starvac and the pressotherapy last
 - photos for the Dermalena line
+- the background video: it comes from a Pinterest pin of rawpixel.com
+  ("Smooth flowing abstract, 4k video"); check that rawpixel's licence covers
+  use on the studio's site, or buy/download it from rawpixel directly
 - the email address: `info@esteticaskincare.it` is a placeholder (the domain
   was still free)
 - the street number: 48 in the listings, 50 in the business register

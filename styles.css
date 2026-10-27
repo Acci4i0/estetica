@@ -281,20 +281,18 @@ main { padding-top: 52px; }
   border-radius: clamp(28px, calc(100vw / 18.9), 80px);
   color: var(--wine);
   text-align: center;
-  /* senza WebGL (o prima che parta) resta il raso fermo */
-  background: var(--sand) url("img/hero-satin.jpg?v=2") center / cover no-repeat;
+  /* prima che parta il video (o senza) resta il suo primo fotogramma */
+  background: var(--sand) url("img/crema.jpg") center / cover no-repeat;
 }
 
-/* raso animato (hero e footer): compare in dissolvenza quando è pronto */
-.cream-canvas {
+/* video della crema (hero e footer) */
+.bg-video {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  opacity: 0;
-  transition: opacity 1.2s var(--ease);
+  object-fit: cover;
 }
-.cream-canvas.is-ready { opacity: 1; }
 
 /* alone chiaro dietro al testo, per leggerlo su ogni punto della crema */
 .hero::after {
@@ -909,7 +907,7 @@ html:has(.viewer[open]) { overflow: hidden; }
 .viewer__nav--next { right: 24px; }
 .viewer__close { top: 20px; right: 20px; }
 
-/* ---------- Footer: pannello di raso con le pillole della barra in alto ---------- */
+/* ---------- Footer: pannello con il video della crema e le pillole della barra in alto ---------- */
 
 .footer { padding: 0 10px 10px; }
 
@@ -920,11 +918,11 @@ html:has(.viewer[open]) { overflow: hidden; }
   container-type: inline-size;
   padding: 28px 28px 22px;
   border-radius: clamp(28px, calc(100vw / 18.9), 80px);
-  /* senza WebGL (o prima che parta) resta il raso fermo, come nella hero */
-  background: var(--sand) url("img/hero-satin.jpg?v=2") center / cover no-repeat;
+  /* come nella hero: prima del video resta il suo primo fotogramma */
+  background: var(--sand) url("img/crema.jpg") center / cover no-repeat;
   color: var(--wine);
 }
-.footer__card > :not(.cream-canvas) { position: relative; z-index: 1; }
+.footer__card > :not(.bg-video) { position: relative; z-index: 1; }
 
 .footer__pills {
   display: flex;
@@ -1050,6 +1048,14 @@ html:has(.viewer[open]) { overflow: hidden; }
   .hero { height: clamp(460px, 66vh, 580px); padding: 40px 18px; }
 
   .grid { --cols: 2; }
+  /* scacchiera anche a due colonne (persona, crema / crema, persona): l'ordine è
+     pensato per quattro colonne, quindi in ogni gruppo di otto card la 3ª e la 4ª,
+     e la 5ª e la 6ª, si scambiano di colonna */
+  .grid:has(> :nth-child(4)) { grid-auto-flow: row dense; }
+  .grid:has(> :nth-child(4)) > :nth-child(8n+3),
+  .grid:has(> :nth-child(4)) > :nth-child(8n+5) { grid-column: 2; }
+  .grid:has(> :nth-child(4)) > :nth-child(8n+4),
+  .grid:has(> :nth-child(4)) > :nth-child(8n+6) { grid-column: 1; }
   .treatments { padding: 48px 10px 80px; }
   .treatments__head { padding: 0 6px 22px; }
   .treatments__head h2 { font-size: 30px; }

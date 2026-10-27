@@ -9,7 +9,7 @@
 
   <link rel="preload" href="fonts/instrument-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/belleza-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="styles.css?v=6">
+  <link rel="stylesheet" href="styles.css?v=8">
   <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
@@ -148,8 +148,8 @@
 
     <!-- HERO -->
     <section class="hero" id="top">
-      <!-- raso di crema animato (WebGL, in script.js); senza WebGL resta l'immagine ferma del CSS -->
-      <canvas class="cream-canvas" data-src="img/hero-satin.jpg?v=2" aria-hidden="true"></canvas>
+      <!-- crema che scorre: script.js la fa partire quando è sullo schermo; ferma, resta il primo fotogramma -->
+      <video class="bg-video" muted loop playsinline preload="auto" poster="img/crema.jpg" aria-hidden="true"><source src="video/crema.mp4" type="video/mp4"></video>
 
       <div class="hero__content">
         <h1 class="hero__title">Prima di trattare la tua pelle, la ascolto. Niente protocolli uguali per tutti: solo cura su misura e tempo dedicato a te.</h1>
@@ -1120,8 +1120,8 @@
   <!-- FOOTER -->
   <footer class="footer" id="contatti">
     <div class="footer__card">
-      <!-- lo stesso raso animato della hero (script.js) -->
-      <canvas class="cream-canvas" data-src="img/hero-satin.jpg?v=2" aria-hidden="true"></canvas>
+      <!-- lo stesso video della hero -->
+      <video class="bg-video" muted loop playsinline preload="metadata" poster="img/crema.jpg" aria-hidden="true"><source src="video/crema.mp4" type="video/mp4"></video>
 
       <nav class="footer__pills" aria-label="Contatti">
         <a class="footer__pill" href="https://www.google.com/maps/search/?api=1&amp;query=Estetica%20Skin%20Care%2C%20Via%20Ca%27%20Baroncello%2048%2C%20Cassola%20VI" target="_blank" rel="noopener">Via Ca' Baroncello 48, Cassola</a>
@@ -1172,6 +1172,6 @@
     </button>
   </dialog>
 
-  <script src="script.js?v=5" defer></script>
+  <script src="script.js?v=7" defer></script>
 </body>
 </html>
