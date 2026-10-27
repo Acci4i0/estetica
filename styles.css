@@ -609,17 +609,15 @@ main { padding-top: 52px; }
 }
 .tech__intro {
   grid-column: span 2;
-  align-self: center;
+  align-self: start;
   padding: 0 30px;
 }
+/* titolo di sezione, come Trattamenti e Prodotti */
 .tech__title {
-  margin-top: 12px;
-  max-width: 12em;
   font-family: var(--display);
   font-size: 40px;
   font-weight: 400;
   line-height: 1.1;
-  text-wrap: balance;
 }
 .tech__text {
   margin-top: 18px;
@@ -1102,7 +1100,7 @@ html:has(.viewer[open]) { overflow: hidden; }
   /* il testo parte all'altezza della prima card */
   .tech__intro { grid-column: 1; grid-row: 1 / span 2; align-self: start; padding: 0 4px 0 6px; }
   .tech .treatment { grid-column: 2; }
-  .tech__title { margin-top: 8px; font-size: 22px; }
+  .tech__title { font-size: 30px; }
   .tech__text { margin-top: 12px; font-size: 13px; line-height: 1.45; }
   .tech .treatment__videos { line-height: 1.6; }
 
