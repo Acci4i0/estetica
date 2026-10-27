@@ -18,6 +18,11 @@ const videoWatcher = new IntersectionObserver((entries) => {
     }
   });
 });
+videos.forEach((v) => {
+  const shown = () => v.classList.add('is-playing');
+  v.addEventListener('playing', shown);
+  if (!v.paused) shown(); // già partito prima dello script
+});
 if (stillMotion) {
   videos.forEach((v) => v.pause());
 } else {

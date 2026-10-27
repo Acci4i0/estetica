@@ -294,6 +294,16 @@ main { padding-top: 52px; }
   height: 100%;
   object-fit: cover;
 }
+/* il video compare solo quando gira davvero: prima (o se il telefono non lo fa
+   partire) si vede il suo primo fotogramma, che è lo sfondo del pannello */
+.js .bg-video { opacity: 0; transition: opacity .8s var(--ease); }
+.js .bg-video.is-playing { opacity: 1; }
+/* Safari su iPhone: niente pulsante "play" disegnato sopra il video */
+.bg-video::-webkit-media-controls,
+.bg-video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
+}
 
 /* alone chiaro dietro alla scritta, per leggerla su ogni punto della crema */
 .hero::after {
