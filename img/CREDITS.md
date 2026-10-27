@@ -12,7 +12,8 @@ vanno sostituite tenendo lo stesso formato (880×1100, 4:5) e lo stesso nome fil
 Le foto dei prodotti in `prodotti/` vengono dai materiali per i centri Comfort
 Zone (cartella `comfortzone-materiali` di Davines): fondo bianco, prodotto
 ritagliato e appoggiato in basso in un formato 450×600, così nella pagina stanno
-tutti sulla stessa linea, come su uno scaffale. Il nome del file è linea + prodotto, per
+tutti sulla stessa linea, come su uno scaffale. In `prodotti/grandi/` le stesse foto a 900×1200,
+per la vista a tutta pagina. Il nome del file è linea + prodotto, per
 esempio `skin-regimen-vitamin-c-serum.jpg`. La linea Dermalena per ora non ha foto.
 
 Hero e footer partono da `hero-satin.jpg`, un raso generato con lo stesso modello e

@@ -460,11 +460,6 @@ main { padding-top: 52px; }
   line-height: 1.25;
   letter-spacing: -0.01em;
 }
-.treatment__time {
-  margin-top: 2px;
-  font-size: 13px;
-  color: rgba(63, 21, 33, .6);
-}
 .treatment__videos { margin-top: 8px; font-size: 13px; }
 .treatment__videos a,
 .treatment__links a {
@@ -553,8 +548,10 @@ main { padding-top: 52px; }
 
 .card:hover .card__label,
 .card:focus-visible .card__label { opacity: 1; transform: none; }
+.card__name { display: none; }
 
-/* Touch: nessun hover, l'etichetta resta sempre visibile */
+/* Touch: nessun hover, la pillola resta sempre visibile e porta il nome del
+   trattamento, che quindi non si ripete sotto la card */
 @media (hover: none) {
   .card__thumb img { transform: none; }
   .card__label {
@@ -562,11 +559,15 @@ main { padding-top: 52px; }
     transform: none;
     align-self: end;
     margin-bottom: 12px;
-    font-size: 11px;
-    letter-spacing: .02em;
-    padding: 5px 12px;
+    font-size: 12px;
+    letter-spacing: .01em;
+    padding: 6px 14px;
     max-width: calc(100% - 20px);
   }
+  .card__cta { display: none; }
+  .card__name { display: inline; }
+  .treatment__name { display: none; }
+  .treatment__info:not(:has(.treatment__videos)) { display: none; }
 }
 
 /* Comparsa allo scroll (solo con JS attivo) */
@@ -620,7 +621,7 @@ main { padding-top: 52px; }
 }
 
 .brands__list { display: none; }
-.js .brands__list { display: block; padding: 0 30px; }
+.js .brands__list { display: block; padding: 44px 30px 0; }
 
 .brand-tab {
   width: 100%;
@@ -640,7 +641,7 @@ main { padding-top: 52px; }
   cursor: pointer;
   transition: color .2s var(--ease), background-color .2s var(--ease);
 }
-.brand-tab:last-child { border-bottom: 1px solid rgba(63, 21, 33, .1); }
+.brand-tab:first-child { border-top: 0; padding-top: 0; }
 .brand-tab:hover,
 .brand-tab[aria-selected="true"] { color: var(--wine); }
 
@@ -729,7 +730,23 @@ main { padding-top: 52px; }
 /* pochi prodotti stanno in mezzo; tanti partono da sinistra e scorrono */
 .product:first-child { margin-left: auto; }
 .product:last-child { margin-right: auto; }
-.product img { width: 100%; height: auto; mix-blend-mode: multiply; }
+.product__btn {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  text-align: inherit;
+  cursor: zoom-in;
+}
+.product img {
+  width: 100%;
+  height: auto;
+  mix-blend-mode: multiply;
+  transition: transform .3s var(--ease);
+}
+.product__btn:hover img { transform: translateY(-4px); }
 .product__name { display: block; margin-top: 2px; font-size: 13.5px; line-height: 1.3; }
 
 /* Dermalena, ancora senza foto */
@@ -823,6 +840,74 @@ html:has(.sheet[open]) { overflow: hidden; }
 }
 .sheet__close:hover { background: var(--sand); }
 .sheet__close svg { width: 12px; height: 12px; }
+
+/* ---------- Prodotto a tutta pagina ---------- */
+
+.viewer {
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: var(--sand);
+  color: var(--wine);
+}
+.viewer[open] {
+  display: grid;
+  place-items: center;
+  animation: fade-in .3s var(--ease);
+}
+.viewer::backdrop { background: var(--sand); }
+html:has(.viewer[open]) { overflow: hidden; }
+
+.viewer__figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  padding: 72px 24px 40px;
+  text-align: center;
+}
+/* il fondo bianco della foto sparisce nella sabbia */
+.viewer__img {
+  width: auto;
+  height: min(68dvh, 880px);
+  max-width: min(86vw, 660px);
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+.viewer[open] .viewer__img { animation: viewer-in .4s var(--ease); }
+@keyframes viewer-in { from { opacity: 0; transform: translateY(12px); } }
+.viewer figcaption { display: grid; gap: 8px; }
+.viewer__name {
+  font-family: var(--display);
+  font-size: clamp(30px, 4vw, 48px);
+  line-height: 1.05;
+}
+
+.viewer__nav {
+  position: absolute;
+  top: 50%;
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  margin-top: -24px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 250, 241, .7);
+  color: var(--wine);
+  cursor: pointer;
+  transition: background-color .2s var(--ease);
+}
+.viewer__nav:hover { background: var(--cream); }
+.viewer__nav svg { width: 18px; height: 12px; }
+.viewer__nav--prev { left: 24px; }
+.viewer__nav--prev svg { transform: scaleX(-1); }
+.viewer__nav--next { right: 24px; }
+.viewer__close { top: 20px; right: 20px; }
 
 /* ---------- Footer: pannello di raso con le pillole della barra in alto ---------- */
 
@@ -973,7 +1058,6 @@ html:has(.sheet[open]) { overflow: hidden; }
   .grid { row-gap: 24px; }
   .treatment__info { padding: 10px 6px 0; }
   .treatment__name { font-size: 15px; }
-  .treatment__time,
   .treatment__videos { font-size: 12px; }
   .treatment__detail { padding: 10px 6px 0; font-size: 13.5px; }
 
@@ -998,20 +1082,20 @@ html:has(.sheet[open]) { overflow: hidden; }
   .products { padding: 0 10px 80px; }
   .js .brands {
     grid-template-columns: max-content minmax(0, 1fr);
-    gap: 12px;
+    gap: 10px;
     align-items: stretch;
   }
-  .js .brands__list { padding: 0 0 0 6px; }
-  .brand-tab { gap: 4px; padding: 8px 0 7px; font-size: 14px; white-space: nowrap; }
-  .line { min-height: 0; gap: 18px; padding: 22px 0 18px; }
-  .line__top { flex-direction: column; align-items: flex-start; gap: 12px; padding: 0 14px; }
+  .js .brands__list { padding: 20px 0 0 4px; }
+  .brand-tab { gap: 4px; padding: 8px 0 7px; font-size: 13px; white-space: nowrap; }
+  .line { min-height: 0; gap: 18px; padding: 20px 0 16px; }
+  .line__top { flex-direction: column; align-items: flex-start; gap: 12px; padding: 0 12px; }
   .line__name { font-size: 24px; }
   .line__uses { margin-top: 8px; font-size: 11.5px; line-height: 1.45; }
   .shelf-nav__btn { width: 32px; height: 32px; }
-  .shelf { gap: 2px; padding: 0 14px; scroll-padding: 0 14px; }
-  .product { flex-basis: 116px; }
+  .shelf { gap: 2px; padding: 0 12px; scroll-padding: 0 12px; }
+  .product { flex-basis: calc(50% - 1px); }
   .product__name { font-size: 11.5px; }
-  .line__mark { padding: 0 14px; font-size: 40px; }
+  .line__mark { padding: 0 12px; font-size: 40px; }
 }
 
 @media (max-width: 767px) {
@@ -1037,6 +1121,13 @@ html:has(.sheet[open]) { overflow: hidden; }
   .sheet__title { font-size: 30px; }
   .sheet__detail .treatment__desc { font-size: 16px; }
   .sheet__close { top: 12px; right: 12px; }
+  .viewer__figure { gap: 14px; padding: 64px 16px 96px; }
+  .viewer__img { height: min(58dvh, 560px); }
+  .viewer__name { font-size: 30px; }
+  /* frecce in basso, sotto il nome, dove arriva il pollice */
+  .viewer__nav { top: auto; bottom: 28px; margin-top: 0; width: 44px; height: 44px; }
+  .viewer__nav--prev { left: calc(50% - 52px); }
+  .viewer__nav--next { right: calc(50% - 52px); }
   .product-chips { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .product-chip__img { border-radius: 18px; }
   .product-chip__name { font-size: 12.5px; }
@@ -1062,5 +1153,7 @@ html:has(.sheet[open]) { overflow: hidden; }
   *, *::before, *::after { transition-duration: .01ms !important; }
   .js .treatment.reveal { opacity: 1; transform: none; }
   .sheet[open],
-  .sheet[open]::backdrop { animation: none; }
+  .sheet[open]::backdrop,
+  .viewer[open],
+  .viewer[open] .viewer__img { animation: none; }
 }

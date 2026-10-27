@@ -378,6 +378,48 @@ document.querySelectorAll('.line').forEach((line) => {
   new ResizeObserver(update).observe(shelf);
 });
 
+// Prodotto a tutta pagina: si apre toccandolo, le frecce (o lo swipe) passano agli
+// altri della stessa linea. La foto grande sta in img/prodotti/grandi/.
+const viewer = document.getElementById('viewer');
+const viewerImg = viewer.querySelector('.viewer__img');
+let viewerItems = [];
+let viewerIndex = 0;
+
+function showProduct(i) {
+  viewerIndex = (i + viewerItems.length) % viewerItems.length;
+  const btn = viewerItems[viewerIndex];
+  const small = btn.querySelector('img').src;
+  viewerImg.src = small;
+  const large = new Image();
+  large.onload = () => { if (viewerItems[viewerIndex] === btn) viewerImg.src = large.src; };
+  large.src = small.replace('/prodotti/', '/prodotti/grandi/');
+  viewer.querySelector('.viewer__name').innerHTML = btn.querySelector('.product__name').innerHTML;
+  viewer.querySelector('.viewer__line').textContent = btn.closest('.line').querySelector('.line__name').textContent;
+  viewer.querySelectorAll('.viewer__nav').forEach((nav) => { nav.hidden = viewerItems.length < 2; });
+}
+
+document.querySelectorAll('.product__btn').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    viewerItems = [...btn.closest('.shelf').querySelectorAll('.product__btn')];
+    showProduct(viewerItems.indexOf(btn));
+    viewer.showModal();
+  });
+});
+viewer.querySelector('.viewer__nav--prev').addEventListener('click', () => showProduct(viewerIndex - 1));
+viewer.querySelector('.viewer__nav--next').addEventListener('click', () => showProduct(viewerIndex + 1));
+viewer.querySelector('.viewer__close').addEventListener('click', () => viewer.close());
+viewer.addEventListener('keydown', (e) => {
+  if (e.key === 'ArrowRight') showProduct(viewerIndex + 1);
+  if (e.key === 'ArrowLeft') showProduct(viewerIndex - 1);
+});
+let swipeX = null;
+viewer.addEventListener('touchstart', (e) => { swipeX = e.touches[0].clientX; }, { passive: true });
+viewer.addEventListener('touchend', (e) => {
+  const dx = e.changedTouches[0].clientX - swipeX;
+  if (Math.abs(dx) > 50 && viewerItems.length > 1) showProduct(viewerIndex + (dx < 0 ? 1 : -1));
+});
+viewer.addEventListener('close', () => viewerItems[viewerIndex]?.focus());
+
 // Mostra il pannello che contiene un elemento (es. la card aperta dalla tendina)
 function revealPanel(el) {
   const panel = el.closest('[role="tabpanel"]');
@@ -391,9 +433,8 @@ let sheetFrom = null;
 
 function openTreatment(article) {
   revealPanel(article);
-  const time = article.querySelector('.treatment__time').textContent;
   sheetImg.src = article.querySelector('.card__thumb img').src;
-  sheet.querySelector('.sheet__meta').textContent = `${article.dataset.area} · ${time}`;
+  sheet.querySelector('.sheet__meta').textContent = `${article.dataset.area} · ${article.dataset.time}`;
   sheet.querySelector('.sheet__title').innerHTML = article.querySelector('.treatment__name').innerHTML;
   sheet.querySelector('.sheet__detail').innerHTML = article.querySelector('.treatment__detail').innerHTML;
   sheet.querySelector('.sheet__body').scrollTop = 0;
@@ -432,7 +473,7 @@ document.querySelectorAll('a[href^="#t-"], a[href^="#line-"]').forEach((a) => {
 });
 
 // Indirizzo condiviso con la scheda aperta (…/#t-hydra-glow) o con una linea (…/#line-renight)
-const linked = location.hash.length > 1 && document.getElementById(location.hash.slice(1));
+const linked = document.getElementById(location.hash.slice(1));
 if (linked?.matches('.treatment')) openTreatment(linked);
 else if (linked?.matches('.line')) revealPanel(linked);
 

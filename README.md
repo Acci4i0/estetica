@@ -46,26 +46,32 @@ script.js               the champagne satin that breathes in the hero and the fo
                         the product shelf arrows, tiles fading in
 img/hero-satin.jpg      the satin the hero animation starts from
 img/trattamenti/        one photo per treatment, named after it (t-<name> in the page)
-img/prodotti/           Comfort Zone product photos on white, named line-product
+img/prodotti/           Comfort Zone product photos on white, named line-product;
+                        grandi/ holds the same photos at 900×1200 for the full-page view
 img/CREDITS.md          where the images come from
 ```
 
 ## Editing
 
 - **Treatments:** each `article.treatment` in [`index.html`](index.html) holds the
-  tile (photo, name, duration) and, in `.treatment__detail`, what the dialog shows:
+  tile (photo and name; the duration is in `data-time` and shows in the dialog,
+  not on the tile; on phones the name sits in the pill on the photo) and, in
+  `.treatment__detail`, what the dialog shows:
   description, products used, the WhatsApp link with "Vorrei prenotare: …" already
   written. Without JavaScript the same text simply sits under the tile. The
   *Trattamenti* dropdown lists every treatment with a `#t-…` link that opens its
   dialog, so a new treatment needs a row there too. A link like
   `…/estetica/#t-hydra-glow` opens that treatment directly.
 - **Prices:** not shown for now. When they arrive, they fit next to the duration
-  in `.treatment__time` and in the dropdown rows.
+  in the dialog (`data-time`) and in the dropdown rows.
 - **Products:** the *Prodotti* section lists the lines on the left; each line
   shows its products in a row on a sand panel (the white of the photos disappears
   with `mix-blend-mode: multiply`), with arrows when they don't fit. A product used
   in a treatment is listed in that treatment's `.product-chips` with the same
-  photo. `…/estetica/#line-renight` opens a line directly.
+  photo. Tapping a product opens it full page, with arrows (or a swipe) to the
+  others of the same line. `…/estetica/#line-renight` opens a line directly.
+- **Cache:** `styles.css` and `script.js` are linked as `?v=5`; raise the number
+  after changing them, so browsers don't keep the old copy.
 - **Contacts:** phone `0424 512529`, WhatsApp `348 1515097` (`393481515097` in
   the links), address and email appear in the *Chi siamo* dropdown and in the
   footer.
