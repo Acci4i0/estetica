@@ -1,13 +1,31 @@
-// Video della crema (hero e footer): parte quando è sullo schermo e si ferma quando
+// Video della crema (hero e footer): gira quando è sullo schermo e si ferma quando
 // esce; con "riduci movimento" resta fermo sul primo fotogramma.
 const stillMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const videos = document.querySelectorAll('.bg-video');
+const onScreen = new Set();
+const playVideo = (v) => {
+  v.muted = true; // i telefoni fanno partire da soli solo i video muti
+  v.play().catch(() => {});
+};
 const videoWatcher = new IntersectionObserver((entries) => {
   entries.forEach(({ target, isIntersecting }) => {
-    if (isIntersecting) target.play().catch(() => {});
-    else target.pause();
+    if (isIntersecting) {
+      onScreen.add(target);
+      playVideo(target);
+    } else {
+      onScreen.delete(target);
+      target.pause();
+    }
   });
 });
-if (!stillMotion) document.querySelectorAll('.bg-video').forEach((v) => videoWatcher.observe(v));
+if (stillMotion) {
+  videos.forEach((v) => v.pause());
+} else {
+  videos.forEach((v) => videoWatcher.observe(v));
+  // l'iPhone in risparmio energetico non li fa partire da soli: ci riprova al primo tocco
+  const retry = () => onScreen.forEach((v) => v.paused && playVideo(v));
+  ['touchend', 'click'].forEach((type) => document.addEventListener(type, retry, { passive: true }));
+}
 
 // Tendine del menu (Trattamenti / Chi siamo): una aperta alla volta
 const menuButtons = [...document.querySelectorAll('.site-menu__btn')];
