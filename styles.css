@@ -643,7 +643,6 @@ main { padding-top: 52px; }
 .brand-tab:last-child { border-bottom: 1px solid rgba(63, 21, 33, .1); }
 .brand-tab:hover,
 .brand-tab[aria-selected="true"] { color: var(--wine); }
-.brand-tab__count { font-family: var(--sans); font-size: 12px; letter-spacing: .02em; }
 
 .line {
   display: flex;
@@ -989,7 +988,8 @@ html:has(.sheet[open]) { overflow: hidden; }
     gap: 20px 10px;
     padding: 0 10px 80px;
   }
-  .tech__intro { grid-column: 1; grid-row: 1 / span 2; padding: 0 4px 0 6px; }
+  /* il testo parte all'altezza della prima card */
+  .tech__intro { grid-column: 1; grid-row: 1 / span 2; align-self: start; padding: 0 4px 0 6px; }
   .tech .treatment { grid-column: 2; }
   .tech__title { margin-top: 8px; font-size: 22px; }
   .tech__text { margin-top: 12px; font-size: 13px; line-height: 1.45; }
@@ -997,22 +997,21 @@ html:has(.sheet[open]) { overflow: hidden; }
 
   .products { padding: 0 10px 80px; }
   .js .brands {
-    grid-template-columns: minmax(0, 1.05fr) minmax(0, 2fr);
-    gap: 8px;
+    grid-template-columns: max-content minmax(0, 1fr);
+    gap: 12px;
     align-items: stretch;
   }
-  .js .brands__list { padding: 0 2px 0 6px; }
+  .js .brands__list { padding: 0 0 0 6px; }
   .brand-tab { gap: 4px; padding: 8px 0 7px; font-size: 14px; white-space: nowrap; }
-  .brand-tab__count { font-size: 10px; }
   .line { min-height: 0; gap: 18px; padding: 22px 0 18px; }
-  .line__top { flex-direction: column; align-items: flex-start; gap: 12px; padding: 0 16px; }
+  .line__top { flex-direction: column; align-items: flex-start; gap: 12px; padding: 0 14px; }
   .line__name { font-size: 24px; }
   .line__uses { margin-top: 8px; font-size: 11.5px; line-height: 1.45; }
   .shelf-nav__btn { width: 32px; height: 32px; }
-  .shelf { gap: 2px; padding: 0 16px; scroll-padding: 0 16px; }
-  .product { flex-basis: 104px; }
+  .shelf { gap: 2px; padding: 0 14px; scroll-padding: 0 14px; }
+  .product { flex-basis: 116px; }
   .product__name { font-size: 11.5px; }
-  .line__mark { padding: 0 16px; font-size: 40px; }
+  .line__mark { padding: 0 14px; font-size: 40px; }
 }
 
 @media (max-width: 767px) {
