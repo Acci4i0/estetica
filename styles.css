@@ -246,7 +246,7 @@ body { position: relative; }
 /* Chi siamo */
 .about { display: grid; gap: 28px; }
 .about__text { display: grid; gap: 10px; margin-top: 10px; font-size: 14.4px; line-height: 1.45; }
-.about__rows { margin-top: 10px; list-style: none; }
+.about__rows { list-style: none; }
 .about__rows li {
   display: grid;
   grid-template-columns: 6.5em minmax(0, 1fr);
