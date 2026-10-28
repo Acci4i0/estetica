@@ -147,9 +147,14 @@ function openTreatment(article) {
   sheet.querySelector('.sheet__meta').textContent = `${article.dataset.area} · ${article.dataset.time}`;
   sheet.querySelector('.sheet__title').innerHTML = article.querySelector('.treatment__name').innerHTML;
   sheet.querySelector('.sheet__detail').innerHTML = article.querySelector('.treatment__detail').innerHTML;
-  sheet.querySelector('.sheet__body').scrollTop = 0;
   sheetFrom = article;
   if (!sheet.open) sheet.showModal();
+  // si parte sempre dall'inizio della scheda: Safari, aprendola, la fa scorrere
+  // fino al primo pulsante (Prenota su WhatsApp, in fondo)
+  const body = sheet.querySelector('.sheet__body');
+  body.scrollTop = 0;
+  sheet.scrollTop = 0;
+  requestAnimationFrame(() => { body.scrollTop = 0; });
   history.replaceState(null, '', `#${article.id}`);
 }
 
