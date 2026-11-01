@@ -1,8 +1,9 @@
-# Deploys the static site (index.html, styles.css, script.js, img/) to GitHub Pages
+# Deploys the static site (index.html, styles.css, script.js, img/) to GitHub Pages,
+# after writing the treatments from data/ into index.html (scripts/build.mjs)
 name: Deploy static content to Pages
 
 on:
-  # Runs on pushes targeting the default branch
+  # Runs on pushes targeting the default branch, including the edits saved from the Pages CMS panel
   push:
     branches: ["main"]
 
@@ -30,6 +31,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      # sharp shrinks the photos uploaded from the panel; it goes outside the checkout so it
+      # isn't published, and if it fails to install the photos are simply left as they are
+      - name: Build the page from data/
+        run: |
+          npm install --no-save --no-package-lock --no-audit --no-fund --prefix "$RUNNER_TEMP/tools" sharp@0.35.5 || echo "sharp not installed"
+          node scripts/build.mjs --foto
+        env:
+          SHARP_DIR: ${{ runner.temp }}/tools
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact

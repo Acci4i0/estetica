@@ -10,7 +10,7 @@
   <link rel="preload" href="fonts/instrument-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/belleza-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="video/crema.avif" as="image" type="image/avif">
-  <link rel="stylesheet" href="styles.css?v=14">
+  <link rel="stylesheet" href="styles.css?v=15">
   <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
@@ -20,8 +20,11 @@
     telefono 0424 512529, WhatsApp 348 1515097, Via Ca' Baroncello 48, P.IVA 02709450247.
     Trattamenti, durate e descrizioni dal menu Comfort Zone dello studio (settembre 2026).
     Email dello studio: skincareglp@gmail.com.
-    DA CONFERMARE CON LA TITOLARE: prezzi (per ora non mostrati),
-    durata del Bamboo Massage e della pedicure.
+    DA CONFERMARE CON LA TITOLARE: durata del Bamboo Massage e della pedicure.
+
+    Trattamenti, prezzi e prodotti vengono dai file in data/: le parti tra i segni "dati:…" e
+    "/dati:…" le scrive scripts/build.mjs, quindi non vanno modificate a mano.
+    Paola cambia i trattamenti dal pannello (.pages.yml), GitHub rigenera e pubblica.
   -->
 
   <!-- BARRA IN ALTO -->
@@ -39,6 +42,7 @@
         </button>
         <div class="menu-panel menu-panel--large" id="panel-trattamenti" hidden>
           <div class="menu-cats">
+            <!-- dati:menu -->
             <div class="menu-cats__col">
               <section>
                 <h2 class="panel-label">Viso</h2>
@@ -104,6 +108,7 @@
                 </ul>
               </section>
             </div>
+            <!-- /dati:menu -->
           </div>
           <p class="menu-cats__note">Si prenota su WhatsApp o al telefono. <a href="#prodotti">I prodotti →</a></p>
         </div>
@@ -159,6 +164,7 @@
         <h2 id="treatments-title">Trattamenti</h2>
       </div>
 
+      <!-- dati:aree -->
       <div class="tabs" role="tablist" aria-label="Aree di trattamento">
         <button class="tab" type="button" role="tab" id="tab-viso" aria-controls="cat-viso" aria-selected="true">Viso<span class="tab__count">12</span></button>
         <button class="tab" type="button" role="tab" id="tab-corpo" aria-controls="cat-corpo" aria-selected="false">Corpo e massaggi<span class="tab__count">16</span></button>
@@ -858,6 +864,7 @@
           </aside>
         </div>
       </div>
+      <!-- /dati:aree -->
     </section>
 
     <!-- TECNOLOGIA -->
@@ -866,6 +873,7 @@
         <h2 class="tech__title" id="tech-title">Tecnologia</h2>
         <p class="tech__text">Accanto ai trattamenti manuali uso due tecnologie di cui mi fido: Starvac, per viso e corpo, e la pressoterapia Wave. Le propongo solo quando servono, dentro un percorso pensato per te.</p>
       </div>
+      <!-- dati:tecnologia -->
       <article class="treatment" id="t-starvac" data-area="Tecnologia" data-time="Viso e corpo">
         <button class="card" type="button" aria-label="Starvac: scopri il trattamento">
           <span class="card__thumb"><img src="img/trattamenti/starvac.jpg" alt="" width="880" height="1100" loading="lazy"></span>
@@ -878,8 +886,8 @@
         <div class="treatment__detail">
           <p class="treatment__desc">Il metodo francese dello Stretching Cellulaire®: un'aspirazione delicata e due rulli massaggiano la pelle in profondità. Sul viso stimola tono e luminosità e attenua le rughe; sul corpo drena, leviga la cellulite e rassoda.</p>
           <ul class="treatment__links">
-            <li><a href="https://www.facebook.com/esteticaskincare/videos/trattamenti-viso-con-metodologia-starvac/5054137538040862/" target="_blank" rel="noopener">Video Starvac viso su Facebook ↗</a></li>
-            <li><a href="https://www.facebook.com/reel/1746513595763666/" target="_blank" rel="noopener">Video Starvac corpo su Facebook ↗</a></li>
+            <li><a href="https://www.facebook.com/esteticaskincare/videos/trattamenti-viso-con-metodologia-starvac/5054137538040862/" target="_blank" rel="noopener">Video viso ↗</a></li>
+            <li><a href="https://www.facebook.com/reel/1746513595763666/" target="_blank" rel="noopener">Video corpo ↗</a></li>
           </ul>
           <p class="treatment__book">
             <a class="pill pill--wine" href="https://wa.me/393481515097?text=Ciao%21%20Vorrei%20prenotare%3A%20Starvac" target="_blank" rel="noopener">Prenota su WhatsApp</a>
@@ -903,6 +911,7 @@
           </p>
         </div>
       </article>
+      <!-- /dati:tecnologia -->
     </section>
 
     <!-- PRODOTTI -->
@@ -912,6 +921,7 @@
       </div>
 
       <div class="brands">
+        <!-- dati:prodotti -->
         <div class="brands__list" role="tablist" aria-label="Linee di prodotti" aria-orientation="vertical">
           <button class="brand-tab" type="button" role="tab" id="tab-line-skin-regimen" aria-controls="line-skin-regimen" aria-selected="true"><span>Skin Regimen</span></button>
           <button class="brand-tab" type="button" role="tab" id="tab-line-sublime" aria-controls="line-sublime" aria-selected="false"><span>Sublime Skin</span></button>
@@ -1122,6 +1132,7 @@
           </div>
           <p class="line__mark" aria-hidden="true">Dermalena</p>
         </div>
+        <!-- /dati:prodotti -->
       </div>
     </section>
 
@@ -1182,6 +1193,6 @@
     </button>
   </dialog>
 
-  <script src="script.js?v=11" defer></script>
+  <script src="script.js?v=12" defer></script>
 </body>
 </html>

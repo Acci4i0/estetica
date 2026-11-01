@@ -1,0 +1,262 @@
+{
+  "linee": [
+    {
+      "id": "skin-regimen",
+      "nome": "Skin Regimen",
+      "prodotti": [
+        {
+          "id": "skin-regimen-multi-acid-ampoule",
+          "nome": "Multi Acid Ampoule"
+        },
+        {
+          "id": "skin-regimen-enzyme-exfoliator",
+          "nome": "Enzyme Exfoliator"
+        },
+        {
+          "id": "skin-regimen-ha4-jelly-serum",
+          "nome": "HA4 Jelly Serum"
+        },
+        {
+          "id": "skin-regimen-charcoal-mask",
+          "nome": "Charcoal Mask"
+        },
+        {
+          "id": "skin-regimen-detox-cleanser",
+          "nome": "Detox Cleanser"
+        },
+        {
+          "id": "skin-regimen-microalgae-essence",
+          "nome": "Microalgae Essence"
+        },
+        {
+          "id": "skin-regimen-vitamin-c-serum",
+          "nome": "Vitamin C Serum"
+        },
+        {
+          "id": "skin-regimen-pink-kaolin-mask",
+          "nome": "Pink Kaolin Mask"
+        },
+        {
+          "id": "skin-regimen-collagen-serum",
+          "nome": "Collagen Serum"
+        },
+        {
+          "id": "skin-regimen-tripeptide-gel",
+          "nome": "Tripeptide Gel"
+        },
+        {
+          "id": "skin-regimen-polypeptide-rich-cream",
+          "nome": "Polypeptide Rich Cream"
+        }
+      ]
+    },
+    {
+      "id": "sublime",
+      "nome": "Sublime Skin",
+      "prodotti": [
+        {
+          "id": "sublime-peel-pads",
+          "nome": "Peel Pads"
+        },
+        {
+          "id": "sublime-intensive-serum",
+          "nome": "Intensive Serum"
+        },
+        {
+          "id": "sublime-glow-drops",
+          "nome": "Precious Glow Drops"
+        },
+        {
+          "id": "sublime-lift-mask",
+          "nome": "Lift Mask"
+        },
+        {
+          "id": "sublime-lift-firm-ampoule",
+          "nome": "Lift & Firm Ampoule"
+        },
+        {
+          "id": "sublime-rich-cream",
+          "nome": "Rich Cream"
+        },
+        {
+          "id": "sublime-cream",
+          "nome": "Cream"
+        }
+      ]
+    },
+    {
+      "id": "hydramemory",
+      "nome": "Hydramemory",
+      "prodotti": [
+        {
+          "id": "hydramemory-water-source-serum",
+          "nome": "Water Source Serum"
+        },
+        {
+          "id": "hydramemory-hybrid-glow",
+          "nome": "Hybrid Glow"
+        },
+        {
+          "id": "hydramemory-plump-mask",
+          "nome": "Plump Mask"
+        },
+        {
+          "id": "hydramemory-body-lotion",
+          "nome": "Body Lotion"
+        }
+      ]
+    },
+    {
+      "id": "renight",
+      "nome": "Renight",
+      "prodotti": [
+        {
+          "id": "renight-oil",
+          "nome": "Oil"
+        },
+        {
+          "id": "renight-cream",
+          "nome": "Cream"
+        },
+        {
+          "id": "renight-mask",
+          "nome": "Mask"
+        }
+      ]
+    },
+    {
+      "id": "luminant",
+      "nome": "Luminant",
+      "prodotti": [
+        {
+          "id": "luminant-serum",
+          "nome": "Serum"
+        },
+        {
+          "id": "luminant-cream",
+          "nome": "Cream"
+        },
+        {
+          "id": "luminant-defense",
+          "nome": "Defense"
+        }
+      ]
+    },
+    {
+      "id": "remedy",
+      "nome": "Remedy",
+      "prodotti": [
+        {
+          "id": "remedy-toner",
+          "nome": "Toner"
+        },
+        {
+          "id": "remedy-serum",
+          "nome": "Serum"
+        },
+        {
+          "id": "remedy-cream",
+          "nome": "Cream"
+        }
+      ]
+    },
+    {
+      "id": "essential",
+      "nome": "Essential",
+      "prodotti": [
+        {
+          "id": "essential-toner",
+          "nome": "Toner"
+        },
+        {
+          "id": "essential-milk",
+          "nome": "Milk"
+        }
+      ]
+    },
+    {
+      "id": "body",
+      "nome": "Body Strategist",
+      "nei_trattamenti": "Nei trattamenti corpo e nei massaggi.",
+      "prodotti": [
+        {
+          "id": "body-osmotic-cream-mud",
+          "nome": "Osmotic Cream Mud"
+        },
+        {
+          "id": "body-thermo-cream",
+          "nome": "Thermo Cream"
+        },
+        {
+          "id": "body-attack-serum",
+          "nome": "Attack Serum"
+        },
+        {
+          "id": "body-cryo-leg-gel",
+          "nome": "Cryo Leg Gel"
+        },
+        {
+          "id": "body-contour-cream",
+          "nome": "Contour Cream"
+        },
+        {
+          "id": "body-deep-toning-tool",
+          "nome": "Deep Toning Tool"
+        },
+        {
+          "id": "body-cream-gel",
+          "nome": "Cream Gel"
+        },
+        {
+          "id": "body-d-age",
+          "nome": "D-Age"
+        },
+        {
+          "id": "body-peel-scrub",
+          "nome": "Peel Scrub"
+        },
+        {
+          "id": "body-bust-serum",
+          "nome": "Bust Serum"
+        },
+        {
+          "id": "body-oil",
+          "nome": "Oil"
+        },
+        {
+          "id": "body-arnica",
+          "nome": "Arnica"
+        }
+      ]
+    },
+    {
+      "id": "sun-soul",
+      "nome": "Sun Soul",
+      "prodotti": [
+        {
+          "id": "sun-soul-face-cream-spf50",
+          "nome": "Face Cream SPF 50+"
+        }
+      ]
+    },
+    {
+      "id": "tranquillity",
+      "nome": "Tranquillity",
+      "prodotti": [
+        {
+          "id": "tranquillity-oil",
+          "nome": "Tranquillity Oil"
+        }
+      ]
+    },
+    {
+      "id": "dermalena",
+      "nome": "Dermalena",
+      "prodotti": [],
+      "scheda": {
+        "nome": "Linea Dermalena",
+        "sottotitolo": "Cura dei piedi"
+      }
+    }
+  ]
+}

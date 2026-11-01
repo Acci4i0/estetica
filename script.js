@@ -144,7 +144,7 @@ let sheetFrom = null;
 function openTreatment(article) {
   revealPanel(article);
   sheetImg.src = article.querySelector('.card__thumb img').src;
-  sheet.querySelector('.sheet__meta').textContent = `${article.dataset.area} · ${article.dataset.time}`;
+  sheet.querySelector('.sheet__meta').textContent = [article.dataset.area, article.dataset.time].filter(Boolean).join(' · ');
   sheet.querySelector('.sheet__title').innerHTML = article.querySelector('.treatment__name').innerHTML;
   sheet.querySelector('.sheet__detail').innerHTML = article.querySelector('.treatment__detail').innerHTML;
   sheetFrom = article;

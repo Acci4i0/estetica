@@ -1,0 +1,192 @@
+# Il pannello di Paola: Pages CMS (https://app.pagescms.org) legge questo file e le fa modificare
+# i trattamenti in data/trattamenti/, un file per area. Ogni salvataggio è un commit su main e
+# GitHub ripubblica il sito (vedi .github/workflows/static.yml). Layout e grafica restano nel codice.
+
+media:
+  input: img/trattamenti
+  output: img/trattamenti
+  extensions: [jpg, jpeg, png, webp]
+  rename: safe
+
+settings:
+  commit:
+    templates:
+      create: "Pannello: aggiunto {path}"
+      update: "Pannello: aggiornato {path}"
+      delete: "Pannello: eliminato {path}"
+      rename: "Pannello: {oldPath} rinominato in {newPath}"
+
+components:
+  trattamenti:
+    type: object
+    label: Trattamenti
+    description: Tocca un trattamento per aprirlo. Trascinalo per cambiare il suo posto nella pagina.
+    list:
+      collapsible:
+        collapsed: true
+        summary: "{nome}"
+    fields:
+      # usato nei link (…/#t-hydra-glow): resta lo stesso anche se il nome cambia
+      - name: id
+        type: string
+        hidden: true
+      - name: nome
+        label: Nome
+        type: string
+        required: true
+        options:
+          maxlength: 50
+      - name: prezzo
+        label: Prezzo in euro
+        type: number
+        description: Solo il numero, per esempio 60. Se lo lasci vuoto, il prezzo non compare.
+        options:
+          min: 0
+      - name: prezzo_da
+        label: Prezzo di partenza
+        type: boolean
+        description: Acceso, davanti al prezzo compare «da» (per esempio «da 15 €»), utile quando il prezzo cambia in base alla zona.
+      - name: durata
+        label: Durata
+        type: string
+        description: Per esempio «50 min». Se la durata non è fissa, due o tre parole come «A zona».
+        options:
+          maxlength: 20
+      - name: descrizione
+        label: Descrizione
+        type: text
+        required: true
+        description: Due o tre frasi. Una riga vuota comincia un nuovo paragrafo.
+        options:
+          maxlength: 600
+      - name: foto
+        label: Foto
+        type: image
+        description: Meglio verticale. Il sito la ritaglia e la alleggerisce da solo; senza foto compare la crema.
+      - name: prodotti
+        label: Prodotti usati
+        type: select
+        description: Facoltativi. Compaiono nella scheda del trattamento, con la loro foto.
+        options:
+          multiple: true
+          placeholder: Scegli i prodotti
+          values:
+            # dati:prodotti
+            - { name: skin-regimen-multi-acid-ampoule, label: "Skin Regimen · Multi Acid Ampoule" }
+            - { name: skin-regimen-enzyme-exfoliator, label: "Skin Regimen · Enzyme Exfoliator" }
+            - { name: skin-regimen-ha4-jelly-serum, label: "Skin Regimen · HA4 Jelly Serum" }
+            - { name: skin-regimen-charcoal-mask, label: "Skin Regimen · Charcoal Mask" }
+            - { name: skin-regimen-detox-cleanser, label: "Skin Regimen · Detox Cleanser" }
+            - { name: skin-regimen-microalgae-essence, label: "Skin Regimen · Microalgae Essence" }
+            - { name: skin-regimen-vitamin-c-serum, label: "Skin Regimen · Vitamin C Serum" }
+            - { name: skin-regimen-pink-kaolin-mask, label: "Skin Regimen · Pink Kaolin Mask" }
+            - { name: skin-regimen-collagen-serum, label: "Skin Regimen · Collagen Serum" }
+            - { name: skin-regimen-tripeptide-gel, label: "Skin Regimen · Tripeptide Gel" }
+            - { name: skin-regimen-polypeptide-rich-cream, label: "Skin Regimen · Polypeptide Rich Cream" }
+            - { name: sublime-peel-pads, label: "Sublime Skin · Peel Pads" }
+            - { name: sublime-intensive-serum, label: "Sublime Skin · Intensive Serum" }
+            - { name: sublime-glow-drops, label: "Sublime Skin · Precious Glow Drops" }
+            - { name: sublime-lift-mask, label: "Sublime Skin · Lift Mask" }
+            - { name: sublime-lift-firm-ampoule, label: "Sublime Skin · Lift & Firm Ampoule" }
+            - { name: sublime-rich-cream, label: "Sublime Skin · Rich Cream" }
+            - { name: sublime-cream, label: "Sublime Skin · Cream" }
+            - { name: hydramemory-water-source-serum, label: "Hydramemory · Water Source Serum" }
+            - { name: hydramemory-hybrid-glow, label: "Hydramemory · Hybrid Glow" }
+            - { name: hydramemory-plump-mask, label: "Hydramemory · Plump Mask" }
+            - { name: hydramemory-body-lotion, label: "Hydramemory · Body Lotion" }
+            - { name: renight-oil, label: "Renight · Oil" }
+            - { name: renight-cream, label: "Renight · Cream" }
+            - { name: renight-mask, label: "Renight · Mask" }
+            - { name: luminant-serum, label: "Luminant · Serum" }
+            - { name: luminant-cream, label: "Luminant · Cream" }
+            - { name: luminant-defense, label: "Luminant · Defense" }
+            - { name: remedy-toner, label: "Remedy · Toner" }
+            - { name: remedy-serum, label: "Remedy · Serum" }
+            - { name: remedy-cream, label: "Remedy · Cream" }
+            - { name: essential-toner, label: "Essential · Toner" }
+            - { name: essential-milk, label: "Essential · Milk" }
+            - { name: body-osmotic-cream-mud, label: "Body Strategist · Osmotic Cream Mud" }
+            - { name: body-thermo-cream, label: "Body Strategist · Thermo Cream" }
+            - { name: body-attack-serum, label: "Body Strategist · Attack Serum" }
+            - { name: body-cryo-leg-gel, label: "Body Strategist · Cryo Leg Gel" }
+            - { name: body-contour-cream, label: "Body Strategist · Contour Cream" }
+            - { name: body-deep-toning-tool, label: "Body Strategist · Deep Toning Tool" }
+            - { name: body-cream-gel, label: "Body Strategist · Cream Gel" }
+            - { name: body-d-age, label: "Body Strategist · D-Age" }
+            - { name: body-peel-scrub, label: "Body Strategist · Peel Scrub" }
+            - { name: body-bust-serum, label: "Body Strategist · Bust Serum" }
+            - { name: body-oil, label: "Body Strategist · Oil" }
+            - { name: body-arnica, label: "Body Strategist · Arnica" }
+            - { name: sun-soul-face-cream-spf50, label: "Sun Soul · Face Cream SPF 50+" }
+            - { name: tranquillity-oil, label: "Tranquillity · Tranquillity Oil" }
+            - { name: dermalena, label: "Dermalena · Linea Dermalena" }
+            # /dati:prodotti
+      - name: video
+        label: Video
+        type: object
+        description: Facoltativi. Link a un video del trattamento, per esempio su Facebook.
+        list: true
+        fields:
+          - name: titolo
+            label: Titolo
+            type: string
+            description: Per esempio «Video viso».
+            options:
+              maxlength: 30
+          - name: link
+            label: Link
+            type: string
+            pattern:
+              regex: "^https?://\\S+$"
+              message: Incolla l'indirizzo completo, che comincia con https://
+
+content:
+  - name: trattamenti
+    label: Trattamenti
+    type: group
+    items:
+      - name: viso
+        label: Viso
+        type: file
+        path: data/trattamenti/viso.json
+        format: json
+        operations: { create: false, delete: false }
+        fields:
+          - name: trattamenti
+            component: trattamenti
+      - name: corpo
+        label: Corpo e massaggi
+        type: file
+        path: data/trattamenti/corpo.json
+        format: json
+        operations: { create: false, delete: false }
+        fields:
+          - name: trattamenti
+            component: trattamenti
+      - name: epilazione
+        label: Epilazione
+        type: file
+        path: data/trattamenti/epilazione.json
+        format: json
+        operations: { create: false, delete: false }
+        fields:
+          - name: trattamenti
+            component: trattamenti
+      - name: pedicure
+        label: Pedicure
+        type: file
+        path: data/trattamenti/pedicure.json
+        format: json
+        operations: { create: false, delete: false }
+        fields:
+          - name: trattamenti
+            component: trattamenti
+      - name: tecnologia
+        label: Tecnologia
+        type: file
+        path: data/trattamenti/tecnologia.json
+        format: json
+        operations: { create: false, delete: false }
+        fields:
+          - name: trattamenti
+            component: trattamenti

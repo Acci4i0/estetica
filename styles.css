@@ -461,7 +461,7 @@ main { padding-top: 52px; }
   transition: opacity .2s var(--ease), transform .2s var(--ease);
 }
 
-/* Nome e durata sotto la card: sempre visibili (i prezzi arriveranno) */
+/* Nome sotto la card: sempre visibile (durata e prezzo stanno nella scheda) */
 .treatment__info { padding: 14px 18px 0; }
 .treatment__name {
   font-family: var(--sans);
@@ -491,6 +491,12 @@ main { padding-top: 52px; }
   line-height: 1.45;
 }
 .js .treatment__detail { display: none; }
+
+.treatment__price {
+  font-family: var(--display);
+  font-size: 22px;
+  line-height: 1.1;
+}
 
 .treatment__links { list-style: none; display: grid; gap: 4px; }
 

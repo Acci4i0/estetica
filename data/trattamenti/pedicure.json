@@ -1,0 +1,17 @@
+{
+  "trattamenti": [
+    {
+      "id": "pedicure",
+      "nome": "Pedicure",
+      "prezzo": "",
+      "prezzo_da": false,
+      "durata": "50 min",
+      "descrizione": "Unghie, cuticole e pelle dei piedi curate con calma e con oltre trent'anni di esperienza. Si chiude con un massaggio e, se lo desideri, con lo smalto.",
+      "foto": "img/trattamenti/pedicure.jpg",
+      "prodotti": [
+        "dermalena"
+      ],
+      "video": []
+    }
+  ]
+}

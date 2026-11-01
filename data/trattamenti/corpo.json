@@ -1,0 +1,226 @@
+{
+  "trattamenti": [
+    {
+      "id": "osmotic-bliss-massage",
+      "nome": "Osmotic Bliss Massage",
+      "prezzo": "",
+      "prezzo_da": false,
+      "durata": "50 min",
+      "descrizione": "Un massaggio drenante profondo che riduce la ritenzione di liquidi e dà subito leggerezza. Con la Osmotic Cream Mud tonifica anche la muscolatura: la pelle appare più compatta già dalla prima volta.",
+      "foto": "img/trattamenti/osmotic-bliss-massage.jpg",
+      "prodotti": [
+        "body-osmotic-cream-mud"
+      ],
+      "video": []
+    },
+    {
+      "id": "3in1-treatment",
+      "nome": "3in1 Treatment",
+      "prezzo": "",
+      "prezzo_da": false,
+      "durata": "60 min",
+      "descrizione": "Rimodellante, in tre fasi: una fase termogenica che riattiva la microcircolazione, un massaggio lipolitico vigoroso e una fase drenante e tonificante. Riduce adiposità e cellulite e lascia le gambe leggere.",
+      "foto": "img/trattamenti/3in1-treatment.jpg",
+      "prodotti": [
+        "body-thermo-cream",
+        "body-attack-serum",
+        "body-cryo-leg-gel"
+      ],
+      "video": []
+    },
+    {
+      "id": "detox-and-drain",
+      "nome": "Detox & Drain",
+      "prezzo": "",
+      "prezzo_da": false,
+      "durata": "50 min",
+      "descrizione": "Un trattamento intensivo per la cellulite, drenante e detossinante, con l'acqua termale di Bormio e oli essenziali.",
+      "foto": "img/trattamenti/detox-and-drain.jpg",
+      "prodotti": [
+        "body-cryo-leg-gel",
+        "body-oil"
+      ],
+      "video": []
+    },
+    {
+      "id": "thermal-mud",
+      "nome": "Thermal Mud",
+      "prezzo": "",
+      "prezzo_da": false,
+      "durata": "50 min",
+      "descrizione": "Con le acque termali di Bormio, disintossica e combatte la cellulite. Oli essenziali e alghe purificano i tessuti, aiutano a eliminare le tossine e riattivano il metabolismo. Adatto a ogni tipo di cellulite.",
+      "foto": "img/trattamenti/thermal-mud.jpg",
+      "prodotti": [
+        "body-attack-serum",
+        "body-contour-cream"
+      ],
+      "video": []
+    },
+    {
+      "id": "gua-sha-mud-massage",
+      "nome": "Gua Sha Mud Massage",
+      "prezzo": "",
+      "prezzo_da": false,
+      "durata": "50 min",
+      "descrizione": "Ispirato alla medicina tradizionale cinese, si fa con il gua sha in acciaio. Dinamico e stimolante: rimodella, rivitalizza, aiuta la postura e scioglie la stanchezza.",
+      "foto": "img/trattamenti/gua-sha-mud-massage.jpg",
+      "prodotti": [
+        "body-osmotic-cream-mud",
+        "body-oil"
+      ],
+      "video": []
+    },
+    {
+      "id": "thermoshock",
+      "nome": "Thermoshock Treatment",
+      "prezzo": "",
+      "prezzo_da": false,
+      "durata": "50 min",
+      "descrizione": "Un trattamento intensivo in tre fasi, tra caldo e freddo, che rimodella, riattiva e tonifica: un'azione d'urto sulle adiposità localizzate.",
+      "foto": "img/trattamenti/thermoshock.jpg",
+      "prodotti": [
+        "body-thermo-cream",
+        "body-cryo-leg-gel"
+      ],
+      "video": []
+    },
+    {
+      "id": "cellulite-shaping",
+      "nome": "Cellulite Shaping Massage",
+      "prezzo": "",
+      "prezzo_da": false,
+      "durata": "50 min",
+      "descrizione": "Un massaggio rimodellante e rivitalizzante: riattiva la circolazione e aiuta a eliminare i liquidi in eccesso.",
+      "foto": "img/trattamenti/cellulite-shaping.jpg",
+      "prodotti": [
+        "body-contour-cream",
+        "body-attack-serum"
+      ],
+      "video": []
+    },
+    {
+      "id": "bamboo-massage",
+      "nome": "Bamboo Massage",
+      "prezzo": "",
+      "prezzo_da": false,
+      "durata": "50 min",
+      "descrizione": "Canne di bambù di diverse misure scorrono e premono sul corpo come un mattarello: sciolgono le tensioni, drenano i liquidi e modellano la silhouette. Un massaggio avvolgente e profondo.",
+      "foto": "img/trattamenti/bamboo-massage.jpg",
+      "prodotti": [
+        "body-oil",
+        "body-cream-gel"
+      ],
+      "video": []
+    },
+    {
+      "id": "head-spa",
+      "nome": "Head Spa",
+      "prezzo": "",
+      "prezzo_da": false,
+      "durata": "60 min",
+      "descrizione": "Un rituale che parte dalla testa e si allarga a tutto il corpo. Acqua calda e manualità profonde sciolgono le tensioni di collo, spalle e schiena, fino a mani e piedi: silenzio, leggerezza, equilibrio.",
+      "foto": "img/trattamenti/head-spa.jpg",
+      "prodotti": [
+        "tranquillity-oil"
+      ],
+      "video": []
+    },
+    {
+      "id": "active-toning",
+      "nome": "Active Toning",
+      "prezzo": "",
+      "prezzo_da": false,
+      "durata": "50 min",
+      "descrizione": "Rassodante, rimodellante e rimineralizzante: potenzia i risultati dell'allenamento e aiuta a eliminare le tossine. L'argilla gialla brasiliana reintegra vitamine e sali minerali, il bamboo roller scioglie le tensioni. Per chi è attivo, viaggia molto o è sotto stress.",
+      "foto": "img/trattamenti/active-toning.jpg",
+      "prodotti": [
+        "body-deep-toning-tool",
+        "body-cream-gel"
+      ],
+      "video": []
+    },
+    {
+      "id": "back-and-neck-massage",
+      "nome": "Back and Neck Massage",
+      "prezzo": "",
+      "prezzo_da": false,
+      "durata": "50 min",
+      "descrizione": "Un massaggio intensivo per testa, collo, spalle e schiena: dà sollievo subito, e un sollievo che dura se lo fai con regolarità. Per chi accumula lì le tensioni e vuole muscoli più elastici.",
+      "foto": "img/trattamenti/back-and-neck-massage.jpg",
+      "prodotti": [
+        "tranquillity-oil",
+        "body-arnica"
+      ],
+      "video": []
+    },
+    {
+      "id": "collagen-wellness",
+      "nome": "Collagen Wellness",
+      "prezzo": "",
+      "prezzo_da": false,
+      "durata": "50 min",
+      "descrizione": "Il benessere della pelle di tutto il corpo, a ogni età. Formule alle alghe, tecniche professionali e uno strumento innovativo detossinano, energizzano e stimolano collagene ed elastina: ideale ai primi segni del tempo o nei periodi di stress.",
+      "foto": "img/trattamenti/collagen-wellness.jpg",
+      "prodotti": [
+        "body-d-age",
+        "body-oil"
+      ],
+      "video": []
+    },
+    {
+      "id": "double-peel-body",
+      "nome": "Double Peel Body",
+      "prezzo": "",
+      "prezzo_da": false,
+      "durata": "60 min",
+      "descrizione": "Un peeling meccanico e chimico insieme, per rigenerare la pelle in profondità. La lascia compatta, liscia e morbida, più elastica e idratata, e la protegge dai radicali liberi.",
+      "foto": "img/trattamenti/double-peel-body.jpg",
+      "prodotti": [
+        "body-peel-scrub",
+        "hydramemory-body-lotion"
+      ],
+      "video": []
+    },
+    {
+      "id": "maternity-massage",
+      "nome": "Maternity Massage",
+      "prezzo": "",
+      "prezzo_da": false,
+      "durata": "60 min",
+      "descrizione": "Un massaggio delicato, elasticizzante e nutriente, in gravidanza e dopo il parto. Riduce il gonfiore, migliora la circolazione e mantiene la pelle morbida, elastica e tonica.",
+      "foto": "img/trattamenti/maternity-massage.jpg",
+      "prodotti": [
+        "body-oil",
+        "hydramemory-body-lotion"
+      ],
+      "video": []
+    },
+    {
+      "id": "vital-bust",
+      "nome": "Vital Bust",
+      "prezzo": "",
+      "prezzo_da": false,
+      "durata": "50 min",
+      "descrizione": "Attivi rassodanti e tonificanti ridanno nutrimento ed elasticità alla zona delicata del seno, che appare più compatta e tonica. Per tutte le età, anche per prevenire la perdita di tono.",
+      "foto": "img/trattamenti/vital-bust.jpg",
+      "prodotti": [
+        "body-bust-serum"
+      ],
+      "video": []
+    },
+    {
+      "id": "fisiosport-massage",
+      "nome": "Fisiosport Massage",
+      "prezzo": "",
+      "prezzo_da": false,
+      "durata": "50 min",
+      "descrizione": "Ispirato al massaggio sportivo e al Rolfing, con manualità energiche e profonde. Per chi fa sport, prima e dopo l'allenamento, e per chi vuole una postura migliore e più flessibilità.",
+      "foto": "img/trattamenti/fisiosport-massage.jpg",
+      "prodotti": [
+        "body-arnica",
+        "body-oil"
+      ],
+      "video": []
+    }
+  ]
+}

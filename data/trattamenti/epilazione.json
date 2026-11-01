@@ -1,0 +1,37 @@
+{
+  "trattamenti": [
+    {
+      "id": "epilazione-liposolubile",
+      "nome": "Epilazione liposolubile",
+      "prezzo": "",
+      "prezzo_da": false,
+      "durata": "A zona",
+      "descrizione": "La ceretta classica, con cera tiepida a rullo e strisce: veloce e precisa su gambe, braccia e zone ampie.",
+      "foto": "img/trattamenti/epilazione-liposolubile.jpg",
+      "prodotti": [],
+      "video": []
+    },
+    {
+      "id": "laser-luce-pulsata",
+      "nome": "Laser luce pulsata",
+      "prezzo": "",
+      "prezzo_da": false,
+      "durata": "A zona",
+      "descrizione": "Epilazione progressiva con la luce pulsata: seduta dopo seduta i peli si diradano e la pelle resta liscia più a lungo. Si comincia con una valutazione della pelle e del pelo.",
+      "foto": "img/trattamenti/laser-luce-pulsata.jpg",
+      "prodotti": [],
+      "video": []
+    },
+    {
+      "id": "epilazione-elastique",
+      "nome": "Epilazione Elastique",
+      "prezzo": "",
+      "prezzo_da": false,
+      "durata": "A zona",
+      "descrizione": "Una cera elastica a bassa temperatura che si toglie senza strisce. Delicata sulle zone sensibili, come inguine, ascelle e viso, e precisa anche sui peli più corti.",
+      "foto": "img/trattamenti/epilazione-elastique.jpg",
+      "prodotti": [],
+      "video": []
+    }
+  ]
+}

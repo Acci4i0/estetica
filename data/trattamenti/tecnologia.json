@@ -1,0 +1,35 @@
+{
+  "trattamenti": [
+    {
+      "id": "starvac",
+      "nome": "Starvac",
+      "prezzo": "",
+      "prezzo_da": false,
+      "durata": "Viso e corpo",
+      "descrizione": "Il metodo francese dello Stretching Cellulaire®: un'aspirazione delicata e due rulli massaggiano la pelle in profondità. Sul viso stimola tono e luminosità e attenua le rughe; sul corpo drena, leviga la cellulite e rassoda.",
+      "foto": "img/trattamenti/starvac.jpg",
+      "prodotti": [],
+      "video": [
+        {
+          "titolo": "Video viso",
+          "link": "https://www.facebook.com/esteticaskincare/videos/trattamenti-viso-con-metodologia-starvac/5054137538040862/"
+        },
+        {
+          "titolo": "Video corpo",
+          "link": "https://www.facebook.com/reel/1746513595763666/"
+        }
+      ]
+    },
+    {
+      "id": "pressoterapia-wave",
+      "nome": "Pressoterapia Wave",
+      "prezzo": "",
+      "prezzo_da": false,
+      "durata": "Gambe e corpo",
+      "descrizione": "Gambali che si gonfiano e si sgonfiano a onde, dal piede verso l'alto, come un massaggio linfodrenante. Aiuta la circolazione, riduce gonfiore e ritenzione e lascia le gambe leggere. Si fa sdraiate e rilassate, anche dopo un trattamento corpo.",
+      "foto": "img/trattamenti/pressoterapia-wave.jpg",
+      "prodotti": [],
+      "video": []
+    }
+  ]
+}
