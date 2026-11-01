@@ -132,12 +132,20 @@ in a minute or two. Her guide, in Italian, is [`GUIDA-PANNELLO.md`](GUIDA-PANNEL
 Setting it up, once (it needs the GitHub account that owns the repository):
 
 1. Push this repository to `main`.
-2. Open [app.pagescms.org](https://app.pagescms.org), sign in with GitHub and install the
+2. On GitHub, *Settings → Pages → Build and deployment → Source*: **GitHub Actions**.
+   With "Deploy from a branch" GitHub also publishes the files as they are, after the
+   workflow, and Paola's edits don't show: the committed `index.html` is regenerated
+   only inside the workflow.
+3. Open [app.pagescms.org](https://app.pagescms.org), sign in with GitHub and install the
    Pages CMS GitHub App on `Acci4i0/estetica` only.
-3. Open the repository in Pages CMS, go to *Collaborators*, press *Invite* and enter
+4. Open the repository in Pages CMS, go to *Collaborators*, press *Invite* and enter
    Paola's email. She gets an invitation; after that she signs in with her email and a
    6-digit code that arrives by mail (no password, no GitHub account).
-4. Check that her first save shows up on the site (Actions tab on GitHub).
+5. Check that her first save shows up on the site (Actions tab on GitHub).
+
+To try the panel as Paola before inviting her, invite an address of yours that isn't the
+one of your GitHub account (with Gmail, `name+paola@gmail.com` reaches the same inbox) and
+sign in from a private window: with the GitHub address Pages CMS signs you in as the owner.
 
 Pages CMS only reads and writes files in the repository, so nothing is locked in: if
 the service ever goes away, the data and the site stay as they are. The panel's own
