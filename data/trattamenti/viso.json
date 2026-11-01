@@ -3,7 +3,7 @@
     {
       "id": "longevity-peel",
       "nome": "Longevity Peel Facial",
-      "prezzo": "",
+      "prezzo": 10,
       "prezzo_da": false,
       "durata": "50 min",
       "descrizione": "Il rimedio alla stanchezza della vita di città e ai segni che lascia sul viso. Alfa-idrossiacidi, acido ialuronico e peptidi rinnovano la pelle, contrastano rughe e perdita di tono e le ridanno un aspetto sano e compatto.",
@@ -12,13 +12,11 @@
         "skin-regimen-multi-acid-ampoule",
         "skin-regimen-enzyme-exfoliator",
         "skin-regimen-ha4-jelly-serum"
-      ],
-      "video": []
+      ]
     },
     {
       "id": "longevity-detox",
       "nome": "Longevity Detox Facial",
-      "prezzo": "",
       "prezzo_da": false,
       "durata": "50 min",
       "descrizione": "Libera la pelle da smog e impurità e contrasta i primi segni del tempo. Una maschera peel-off con clorella e carbone vegetale, insieme a manualità di massaggio specifiche, dà subito un effetto detossinante, rassodante e antigravità.",
@@ -27,13 +25,11 @@
         "skin-regimen-detox-cleanser",
         "skin-regimen-charcoal-mask",
         "skin-regimen-microalgae-essence"
-      ],
-      "video": []
+      ]
     },
     {
       "id": "longevity-vitaminic",
       "nome": "Longevity Vitaminic Facial",
-      "prezzo": "",
       "prezzo_da": false,
       "durata": "50 min",
       "descrizione": "Per la pelle spenta e grigia, con macchie e primi segni del tempo. Dopo una pulizia profonda, una maschera illuminante all'argilla e un'alta dose di vitamina C ridanno tono e luce; lo skin stretching ridensifica il viso.",
@@ -41,13 +37,11 @@
       "prodotti": [
         "skin-regimen-vitamin-c-serum",
         "skin-regimen-pink-kaolin-mask"
-      ],
-      "video": []
+      ]
     },
     {
       "id": "longevity-pro-collagen",
       "nome": "Longevity Pro Collagen",
-      "prezzo": "",
       "prezzo_da": false,
       "durata": "50 min",
       "descrizione": "Migliora tono e compattezza: aumenta elasticità e idratazione e attenua le rughe dovute al rilassamento della pelle. Il massaggio con il Rolling Roulage e una maschera professionale la lasciano più liscia e piena.",
@@ -56,13 +50,11 @@
         "skin-regimen-collagen-serum",
         "skin-regimen-tripeptide-gel",
         "skin-regimen-polypeptide-rich-cream"
-      ],
-      "video": []
+      ]
     },
     {
       "id": "super-peel",
       "nome": "Super Peel",
-      "prezzo": "",
       "prezzo_da": false,
       "durata": "50 min",
       "descrizione": "Un doppio peeling intensivo con alfa e poliidrossiacidi, adatto a ogni pelle, dalla più sensibile alla più resistente. Attenua linee d'espressione e rughe e lascia la pelle levigatissima: ideale per ringiovanire la pelle matura.",
@@ -71,13 +63,11 @@
         "sublime-peel-pads",
         "sublime-intensive-serum",
         "sublime-cream"
-      ],
-      "video": []
+      ]
     },
     {
       "id": "ultra-glow-peel",
       "nome": "Ultra Glow Peel",
-      "prezzo": "",
       "prezzo_da": false,
       "durata": "50 min",
       "descrizione": "Un peeling intensivo per un incarnato uniforme e luminoso, quando il tono è spento o compaiono macchie scure. Rinnova la pelle in profondità: perfetto ai cambi di stagione.",
@@ -85,13 +75,11 @@
       "prodotti": [
         "sublime-peel-pads",
         "sublime-glow-drops"
-      ],
-      "video": []
+      ]
     },
     {
       "id": "pro-lift",
       "nome": "Pro Lift",
-      "prezzo": "",
       "prezzo_da": false,
       "durata": "50 min",
       "descrizione": "Effetto lifting e filler naturale, con una maschera peel-off e il massaggio Kobido. Restituisce pienezza e ridisegna i volumi del viso.",
@@ -100,13 +88,11 @@
         "sublime-lift-mask",
         "sublime-lift-firm-ampoule",
         "sublime-cream"
-      ],
-      "video": []
+      ]
     },
     {
       "id": "50-repair",
       "nome": "50+ Repair",
-      "prezzo": "",
       "prezzo_da": false,
       "durata": "60 min",
       "descrizione": "Il trattamento più completo contro assottigliamento, secchezza e perdita di densità della pelle in menopausa. Texture nutrienti in olio e due tecniche di massaggio, Dermal Petrissage e Kobido, la rivitalizzano e la sostengono.",
@@ -114,13 +100,11 @@
       "prodotti": [
         "sublime-rich-cream",
         "sublime-intensive-serum"
-      ],
-      "video": []
+      ]
     },
     {
       "id": "recover-touch",
       "nome": "Recover Touch",
-      "prezzo": "",
       "prezzo_da": false,
       "durata": "60 min",
       "descrizione": "Nutriente e antiossidante, ripara i danni di sole, smog e tempo. Bacche di goji e olio di macadamia nutrono la pelle e ricostruiscono la sua barriera: torna liscia e ringiovanita.",
@@ -129,13 +113,11 @@
         "renight-oil",
         "renight-mask",
         "renight-cream"
-      ],
-      "video": []
+      ]
     },
     {
       "id": "hydra-glow",
       "nome": "Hydra Glow",
-      "prezzo": "",
       "prezzo_da": false,
       "durata": "50 min",
       "descrizione": "Luminosità immediata, idratazione profonda e nuova vitalità. Acido lattico, acido ialuronico e fico d'India funzionano ancora meglio con il freddo degli ice spoons, che tonifica.",
@@ -144,13 +126,11 @@
         "hydramemory-water-source-serum",
         "hydramemory-plump-mask",
         "hydramemory-hybrid-glow"
-      ],
-      "video": []
+      ]
     },
     {
       "id": "3-bright-facial",
       "nome": "3-Bright Facial",
-      "prezzo": "",
       "prezzo_da": false,
       "durata": "50 min",
       "descrizione": "Un trattamento intensivo contro macchie, iperpigmentazione e tono irregolare, in tre tempi: correzione, luminosità e prevenzione. Adatto a tutte le carnagioni, anche in gravidanza.",
@@ -159,13 +139,11 @@
         "luminant-serum",
         "luminant-cream",
         "luminant-defense"
-      ],
-      "video": []
+      ]
     },
     {
       "id": "remedy-facial",
       "nome": "Remedy Facial",
-      "prezzo": "",
       "prezzo_da": false,
       "durata": "50 min",
       "descrizione": "Per la pelle sensibile e delicata. Prebiotici dalla barbabietola da zucchero e olio di marula leniscono gli arrossamenti e rafforzano le difese naturali della pelle.",
@@ -174,8 +152,7 @@
         "remedy-toner",
         "remedy-serum",
         "remedy-cream"
-      ],
-      "video": []
+      ]
     }
   ]
 }
