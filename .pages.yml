@@ -119,7 +119,15 @@ components:
             - { name: body-arnica, label: "Body Strategist · Arnica" }
             - { name: sun-soul-face-cream-spf50, label: "Sun Soul · Face Cream SPF 50+" }
             - { name: tranquillity-oil, label: "Tranquillity · Tranquillity Oil" }
-            - { name: dermalena, label: "Dermalena · Linea Dermalena" }
+            - { name: dermalena-essenza, label: "Dermalena · Essenza (crema mani e piedi)" }
+            - { name: dermalena-elisir, label: "Dermalena · Elisir (crema mani e piedi riparatrice)" }
+            - { name: dermalena-ultimate, label: "Dermalena · Ultimate (crema multifunzionale)" }
+            - { name: dermalena-piuma, label: "Dermalena · Piuma (crema gel piedi)" }
+            - { name: dermalena-dinamica, label: "Dermalena · Dinamica (crema piedi deodorante)" }
+            - { name: dermalena-velluto, label: "Dermalena · Velluto (scrub naturale)" }
+            - { name: dermalena-ripara, label: "Dermalena · Ripara (lozione riparatrice unghie)" }
+            - { name: dermalena-protegge, label: "Dermalena · Protegge (lozione protettiva unghie)" }
+            - { name: dermalena-rigenera, label: "Dermalena · Rigenera (lozione levigante unghie)" }
             # /dati:prodotti
       - name: video
         label: Video

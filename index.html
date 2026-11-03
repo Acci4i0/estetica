@@ -6,6 +6,9 @@
   <title>Estetica Skincare | San Giuseppe di Cassola (VI)</title>
   <meta name="description" content="Estetica Skin Care, dal 1990 a San Giuseppe di Cassola (VI): Paola Ferronato e i suoi trattamenti viso e corpo Comfort Zone, massaggi, Starvac, pressoterapia, epilazione e pedicure. Si prenota su WhatsApp o al telefono.">
   <meta name="theme-color" content="#3F1521">
+  <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
   <link rel="preload" href="fonts/instrument-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/belleza-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -848,7 +851,10 @@
               <p class="treatment__desc">Unghie, cuticole e pelle dei piedi curate con calma e con oltre trent'anni di esperienza. Si chiude con un massaggio e, se lo desideri, con lo smalto.</p>
               <p class="panel-label">Prodotti usati</p>
               <ul class="product-chips">
-                <li class="product-chip"><span class="product-chip__img product-chip__img--text">Dermalena</span><span><span class="product-chip__name">Linea Dermalena</span><span class="product-chip__line">Cura dei piedi</span></span></li>
+                <li class="product-chip"><span class="product-chip__img"><img src="img/prodotti/dermalena-essenza.jpg" alt="" width="450" height="600" loading="lazy"></span><span><span class="product-chip__name">Essenza</span><span class="product-chip__line">Dermalena</span></span></li>
+                <li class="product-chip"><span class="product-chip__img"><img src="img/prodotti/dermalena-piuma.jpg" alt="" width="450" height="600" loading="lazy"></span><span><span class="product-chip__name">Piuma</span><span class="product-chip__line">Dermalena</span></span></li>
+                <li class="product-chip"><span class="product-chip__img"><img src="img/prodotti/dermalena-dinamica.jpg" alt="" width="450" height="600" loading="lazy"></span><span><span class="product-chip__name">Dinamica</span><span class="product-chip__line">Dermalena</span></span></li>
+                <li class="product-chip"><span class="product-chip__img"><img src="img/prodotti/dermalena-ripara.jpg" alt="" width="450" height="600" loading="lazy"></span><span><span class="product-chip__name">Ripara</span><span class="product-chip__line">Dermalena</span></span></li>
               </ul>
               <p class="treatment__book">
                 <a class="pill pill--wine" href="https://wa.me/393481515097?text=Ciao%21%20Vorrei%20prenotare%3A%20Pedicure" target="_blank" rel="noopener">Prenota su WhatsApp</a>
@@ -1129,8 +1135,22 @@
               <h3 class="line__name">Dermalena</h3>
               <p class="line__uses">Nei trattamenti: <a href="#t-pedicure">Pedicure</a></p>
             </div>
+            <div class="shelf-nav">
+              <button class="shelf-nav__btn shelf-nav__btn--prev" type="button" data-dir="-1" aria-label="Prodotti precedenti"><svg viewBox="0 0 16 10" aria-hidden="true"><path d="M1 5h14M11 1l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></button>
+              <button class="shelf-nav__btn" type="button" data-dir="1" aria-label="Prodotti successivi"><svg viewBox="0 0 16 10" aria-hidden="true"><path d="M1 5h14M11 1l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></button>
+            </div>
           </div>
-          <p class="line__mark" aria-hidden="true">Dermalena</p>
+          <ul class="shelf">
+            <li class="product"><button class="product__btn" type="button" aria-label="Essenza, crema mani e piedi: guarda il prodotto"><img src="img/prodotti/dermalena-essenza.jpg" alt="" width="450" height="600" loading="lazy"><span class="product__name">Essenza<span class="product__type">Crema mani e piedi</span></span></button></li>
+            <li class="product"><button class="product__btn" type="button" aria-label="Elisir, crema mani e piedi riparatrice: guarda il prodotto"><img src="img/prodotti/dermalena-elisir.jpg" alt="" width="450" height="600" loading="lazy"><span class="product__name">Elisir<span class="product__type">Crema mani e piedi riparatrice</span></span></button></li>
+            <li class="product"><button class="product__btn" type="button" aria-label="Ultimate, crema multifunzionale: guarda il prodotto"><img src="img/prodotti/dermalena-ultimate.jpg" alt="" width="450" height="600" loading="lazy"><span class="product__name">Ultimate<span class="product__type">Crema multifunzionale</span></span></button></li>
+            <li class="product"><button class="product__btn" type="button" aria-label="Piuma, crema gel piedi: guarda il prodotto"><img src="img/prodotti/dermalena-piuma.jpg" alt="" width="450" height="600" loading="lazy"><span class="product__name">Piuma<span class="product__type">Crema gel piedi</span></span></button></li>
+            <li class="product"><button class="product__btn" type="button" aria-label="Dinamica, crema piedi deodorante: guarda il prodotto"><img src="img/prodotti/dermalena-dinamica.jpg" alt="" width="450" height="600" loading="lazy"><span class="product__name">Dinamica<span class="product__type">Crema piedi deodorante</span></span></button></li>
+            <li class="product"><button class="product__btn" type="button" aria-label="Velluto, scrub naturale: guarda il prodotto"><img src="img/prodotti/dermalena-velluto.jpg" alt="" width="450" height="600" loading="lazy"><span class="product__name">Velluto<span class="product__type">Scrub naturale</span></span></button></li>
+            <li class="product"><button class="product__btn" type="button" aria-label="Ripara, lozione riparatrice unghie: guarda il prodotto"><img src="img/prodotti/dermalena-ripara.jpg" alt="" width="450" height="600" loading="lazy"><span class="product__name">Ripara<span class="product__type">Lozione riparatrice unghie</span></span></button></li>
+            <li class="product"><button class="product__btn" type="button" aria-label="Protegge, lozione protettiva unghie: guarda il prodotto"><img src="img/prodotti/dermalena-protegge.jpg" alt="" width="450" height="600" loading="lazy"><span class="product__name">Protegge<span class="product__type">Lozione protettiva unghie</span></span></button></li>
+            <li class="product"><button class="product__btn" type="button" aria-label="Rigenera, lozione levigante unghie: guarda il prodotto"><img src="img/prodotti/dermalena-rigenera.jpg" alt="" width="450" height="600" loading="lazy"><span class="product__name">Rigenera<span class="product__type">Lozione levigante unghie</span></span></button></li>
+          </ul>
         </div>
         <!-- /dati:prodotti -->
       </div>

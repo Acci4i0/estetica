@@ -68,9 +68,11 @@ video/crema.avif        flowing cream, the background of the hero and the footer
                         iPhones in Low Power Mode, and never shows a play button
 img/crema.jpg           its first frame, shown while it loads and where AVIF is missing
 img/trattamenti/        one photo per treatment, named after it (t-<name> in the page)
-img/prodotti/           Comfort Zone product photos on white, named line-product;
+img/prodotti/           Comfort Zone and Dermalena product photos on white, named line-product;
                         grandi/ holds the same photos at 900×1200 for the full-page view
 img/CREDITS.md          where the images come from
+favicon.svg             the tab icon, a bordeaux circle (favicon-32.png and
+                        apple-touch-icon.png for browsers and phones that want a PNG)
 ```
 
 ## Editing
@@ -97,8 +99,9 @@ img/CREDITS.md          where the images come from
 - **Products:** listed in `data/prodotti.json`, by line; the photo of each product is
   `img/prodotti/<id>.jpg` (and `grandi/<id>.jpg`). The script builds the *Prodotti*
   section from it and the choices of *Prodotti usati* in `.pages.yml`, so after adding a
-  product run it and commit both files. A line without photos (Dermalena) can be chosen
-  as a whole, through its `scheda`. On the site, the lines are on the left; each line
+  product run it and commit both files. A product can also have a `tipo` (the Dermalena
+  ones do: "Crema gel piedi"), shown under its name. A line without photos can be chosen
+  as a whole, through a `scheda`. On the site, the lines are on the left; each line
   shows its products in a row on a sand panel (the white of the photos disappears with
   `mix-blend-mode: multiply`), with arrows when they don't fit. Tapping a product opens
   it full page, with arrows (or a swipe) to the others of the same line.
@@ -157,7 +160,6 @@ so the committed page matches the data (GitHub regenerates it anyway when deploy
 
 - durations of the Bamboo Massage and the pedicure (50 minutes are placeholders),
   and how long Starvac and the pressotherapy last
-- photos for the Dermalena line
 - the background video: it comes from a Pinterest pin of rawpixel.com
   ("Smooth flowing abstract, 4k video"); check that rawpixel's licence covers
   use on the studio's site, or buy/download it from rawpixel directly

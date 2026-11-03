@@ -252,11 +252,53 @@
     {
       "id": "dermalena",
       "nome": "Dermalena",
-      "prodotti": [],
-      "scheda": {
-        "nome": "Linea Dermalena",
-        "sottotitolo": "Cura dei piedi"
-      }
+      "prodotti": [
+        {
+          "id": "dermalena-essenza",
+          "nome": "Essenza",
+          "tipo": "Crema mani e piedi"
+        },
+        {
+          "id": "dermalena-elisir",
+          "nome": "Elisir",
+          "tipo": "Crema mani e piedi riparatrice"
+        },
+        {
+          "id": "dermalena-ultimate",
+          "nome": "Ultimate",
+          "tipo": "Crema multifunzionale"
+        },
+        {
+          "id": "dermalena-piuma",
+          "nome": "Piuma",
+          "tipo": "Crema gel piedi"
+        },
+        {
+          "id": "dermalena-dinamica",
+          "nome": "Dinamica",
+          "tipo": "Crema piedi deodorante"
+        },
+        {
+          "id": "dermalena-velluto",
+          "nome": "Velluto",
+          "tipo": "Scrub naturale"
+        },
+        {
+          "id": "dermalena-ripara",
+          "nome": "Ripara",
+          "tipo": "Lozione riparatrice unghie"
+        },
+        {
+          "id": "dermalena-protegge",
+          "nome": "Protegge",
+          "tipo": "Lozione protettiva unghie"
+        },
+        {
+          "id": "dermalena-rigenera",
+          "nome": "Rigenera",
+          "tipo": "Lozione levigante unghie"
+        }
+      ]
     }
   ]
 }

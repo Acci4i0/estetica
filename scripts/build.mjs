@@ -195,6 +195,13 @@ const tecnologia = () => aree.find((a) => a.tech).trattamenti.map((t) => card(t,
 
 const freccia = '<svg viewBox="0 0 16 10" aria-hidden="true"><path d="M1 5h14M11 1l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>';
 
+// Un prodotto sullo scaffale; tipo (Dermalena) dice che cos'è, sotto il nome
+const prodotto = (p) => {
+  const tipo = String(p.tipo ?? '').trim();
+  const label = tipo ? `${p.nome}, ${tipo.toLowerCase()}` : p.nome;
+  return `<li class="product"><button class="product__btn" type="button" aria-label="${esc(label)}: guarda il prodotto"><img src="img/prodotti/${p.id}.jpg" alt="" width="450" height="600" loading="lazy"><span class="product__name">${esc(p.nome)}${tipo ? `<span class="product__type">${esc(tipo)}</span>` : ''}</span></button></li>`;
+};
+
 // Prodotti: le linee a sinistra; per ognuna i trattamenti che la usano, ricavati dalle card
 function prodottiHtml() {
   const tutti = piene.flatMap((a) => a.trattamenti);
@@ -214,7 +221,7 @@ ${indent(linee.map((l, i) => `<button class="brand-tab" type="button" role="tab"
 </div>`);
     const scaffale = l.prodotti.length
       ? `<ul class="shelf">
-${indent(l.prodotti.map((p) => `<li class="product"><button class="product__btn" type="button" aria-label="${esc(p.nome)}: guarda il prodotto"><img src="img/prodotti/${p.id}.jpg" alt="" width="450" height="600" loading="lazy"><span class="product__name">${esc(p.nome)}</span></button></li>`).join('\n'), 2)}
+${indent(l.prodotti.map(prodotto).join('\n'), 2)}
 </ul>`
       : `<p class="line__mark" aria-hidden="true">${esc(l.nome)}</p>`;
     return `<div class="line" id="line-${l.id}" role="tabpanel" aria-labelledby="tab-line-${l.id}">
@@ -228,7 +235,7 @@ ${indent(scaffale, 2)}
 }
 
 // Le opzioni di «Prodotti usati» nel pannello, dalla stessa lista
-const opzioni = () => linee.flatMap((l) => (l.scheda ? [{ id: l.id, label: `${l.nome} · ${l.scheda.nome}` }] : l.prodotti.map((p) => ({ id: p.id, label: `${l.nome} · ${p.nome}` }))))
+const opzioni = () => linee.flatMap((l) => (l.scheda ? [{ id: l.id, label: `${l.nome} · ${l.scheda.nome}` }] : l.prodotti.map((p) => ({ id: p.id, label: `${l.nome} · ${p.nome}${p.tipo ? ` (${p.tipo.toLowerCase()})` : ''}` }))))
   .map((o) => `- { name: ${o.id}, label: ${JSON.stringify(o.label)} }`).join('\n');
 
 // ---------- Scrittura ----------

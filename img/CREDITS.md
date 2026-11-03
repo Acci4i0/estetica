@@ -14,7 +14,8 @@ Zone (cartella `comfortzone-materiali` di Davines): fondo bianco, prodotto
 ritagliato e appoggiato in basso in un formato 450×600, così nella pagina stanno
 tutti sulla stessa linea, come su uno scaffale. In `prodotti/grandi/` le stesse foto a 900×1200,
 per la vista a tutta pagina. Il nome del file è linea + prodotto, per
-esempio `skin-regimen-vitamin-c-serum.jpg`. La linea Dermalena per ora non ha foto.
+esempio `skin-regimen-vitamin-c-serum.jpg`. Le foto Dermalena (`dermalena-*.jpg`) vengono
+da dermalena.it, con l'autorizzazione dello studio, lavorate allo stesso modo.
 
 Lo sfondo di hero e footer è `../video/crema.avif`, una crema che scorre presa da un
 pin di Pinterest di rawpixel.com («Smooth flowing abstract, 4k video»): 736×414,
