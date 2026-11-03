@@ -283,7 +283,7 @@ main { padding-top: 52px; }
   color: var(--wine);
   text-align: center;
   /* finché l'animazione non è caricata si vede il suo primo fotogramma */
-  background: var(--sand) url("img/crema.jpg") center / cover no-repeat;
+  background: var(--sand) url("img/crema.jpg?v=2") center / cover no-repeat;
 }
 
 /* la crema che scorre (hero e footer) */
@@ -942,7 +942,7 @@ html:has(.viewer[open]) { overflow: hidden; }
   padding: 28px 28px 22px;
   border-radius: clamp(28px, calc(100vw / 18.9), 80px);
   /* come nella hero: prima dell'animazione resta il suo primo fotogramma */
-  background: var(--sand) url("img/crema.jpg") center / cover no-repeat;
+  background: var(--sand) url("img/crema.jpg?v=2") center / cover no-repeat;
   color: var(--wine);
 }
 .footer__card > :not(.bg-cream) { position: relative; z-index: 1; }

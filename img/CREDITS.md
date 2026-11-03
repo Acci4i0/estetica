@@ -18,8 +18,9 @@ esempio `skin-regimen-vitamin-c-serum.jpg`. Le foto Dermalena (`dermalena-*.jpg`
 da dermalena.it, con l'autorizzazione dello studio, lavorate allo stesso modo.
 
 Lo sfondo di hero e footer è `../video/crema.avif`, una crema che scorre presa da un
-pin di Pinterest di rawpixel.com («Smooth flowing abstract, 4k video»): 736×414,
-accorciato a 9 secondi con una dissolvenza tra la fine e l'inizio, così il giro
+pin di Pinterest di rawpixel.com («Smooth flowing abstract, 4k video»). Pinterest lo dà
+solo a 736×414: è stato ingrandito a 1472×828 (con un filtro che toglie i difetti di
+compressione e una leggera nitidezza), accorciato a 9 secondi con una dissolvenza tra la fine e l'inizio, così il giro
 ricomincia senza stacchi, e salvato come immagine animata AVIF (gira da sola
 anche dove i video sono bloccati). `crema.jpg` è il suo primo fotogramma. Prima di andare
 online con il sito vero va verificata la licenza di rawpixel per questo video.
