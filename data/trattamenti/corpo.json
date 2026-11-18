@@ -131,7 +131,7 @@
       "prezzo_da": false,
       "durata": "50 min",
       "descrizione": "Massaggio ispirato dalle tecniche Shiatsu con micropressioni. Favorisce la circolazione e lo sblocco delle contratture.",
-      "foto": "",
+      "foto": "img/trattamenti/aromasoul-oriental.jpg",
       "prodotti": []
     },
     {
@@ -140,7 +140,7 @@
       "prezzo_da": false,
       "durata": "60 min",
       "descrizione": "Un trattamento completo di detossinazione del corpo che allevia i dolori muscolari e stimola efficacemente il metabolismo.",
-      "foto": "",
+      "foto": "img/trattamenti/himalayan-salt.jpg",
       "prodotti": []
     },
     {
@@ -158,7 +158,7 @@
       "prezzo_da": false,
       "durata": "50 min",
       "descrizione": "Esclusivo rituale con originali campane tibetane per ritrovare l'armonia di corpo, mente e anima.",
-      "foto": "",
+      "foto": "img/trattamenti/tibetan-sound-massage.jpg",
       "prodotti": []
     },
     {
@@ -180,7 +180,7 @@
       "prezzo_da": false,
       "durata": "50 min",
       "descrizione": "Armonizzante e riequilibrante con manualità bioenergetiche per una profonda riarmonizzazione posturale ed un ottimale equilibrio psicofisico.",
-      "foto": "",
+      "foto": "img/trattamenti/comfort-touch.jpg",
       "prodotti": []
     },
     {
@@ -190,7 +190,7 @@
       "prezzo_da": false,
       "durata": "50 min",
       "descrizione": "Originale rituale con pietre calde e oli essenziali, allevia il dolore muscolare e favorisce una distensione profonda.",
-      "foto": "",
+      "foto": "img/trattamenti/hot-stone-massage.jpg",
       "prodotti": []
     }
   ]

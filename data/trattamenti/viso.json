@@ -171,7 +171,7 @@
       "prezzo_da": false,
       "durata": "90 min",
       "descrizione": "Una pulizia profonda, adatta a ogni tipo di pelle: detersione, esfoliazione delicata ed estrazione di punti neri e impurità, poi una maschera e una crema scelte per la tua pelle. I pori si vedono meno e il viso torna fresco, luminoso e uniforme.",
-      "foto": "",
+      "foto": "img/trattamenti/pulizia-viso.jpg",
       "prodotti": []
     },
     {
@@ -201,7 +201,7 @@
       "prezzo_da": false,
       "durata": "15 min",
       "descrizione": "Trattamento rapido e altamente efficace per esfoliare e nutrire labbra e contorno labbra, potenziato da uno speciale massaggio che favorisce un profondo rinnovamento e un effetto rimpolpante e luminoso.\n\nAdd-on: si aggiunge a un trattamento viso.",
-      "foto": "",
+      "foto": "img/trattamenti/lip-plumping.jpg",
       "prodotti": []
     }
   ]
