@@ -2,9 +2,9 @@
 
 A one-page site for Estetica Skin Care snc di Ferronato Paola & C., a beauty
 studio in San Giuseppe di Cassola (VI) since 1990, where Paola Ferronato works on
-her own. The treatments come from the studio's Comfort Zone menu (September 2026),
-grouped by area: face, body and massages, hair removal and pedicure, plus two
-technologies (Starvac and Wave pressotherapy). Every treatment opens a card with a
+her own. The treatments come from the studio's Comfort Zone menu, with the prices and
+changes Paola wrote on it (November 2026), grouped by area: face, body and massages,
+hair removal and pedicure, plus Wave pressotherapy. Every treatment opens a card with a
 short description, the price and the products used. There is no online booking: people book
 on WhatsApp or by phone.
 
@@ -158,8 +158,8 @@ so the committed page matches the data (GitHub regenerates it anyway when deploy
 
 ## Still to confirm with the studio
 
-- durations of the Bamboo Massage and the pedicure (50 minutes are placeholders),
-  and how long Starvac and the pressotherapy last
+- the duration of the pedicure (50 minutes is a placeholder) and of the
+  pressotherapy
 - the background video: it comes from a Pinterest pin of rawpixel.com
   ("Smooth flowing abstract, 4k video"); check that rawpixel's licence covers
   use on the studio's site, or buy/download it from rawpixel directly

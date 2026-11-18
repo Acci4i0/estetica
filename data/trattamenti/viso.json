@@ -3,9 +3,10 @@
     {
       "id": "longevity-peel",
       "nome": "Longevity Peel Facial",
+      "prezzo": 80,
       "prezzo_da": false,
       "durata": "50 min",
-      "descrizione": "Il rimedio alla stanchezza della vita di città e ai segni che lascia sul viso. Alfa-idrossiacidi, acido ialuronico e peptidi rinnovano la pelle, contrastano rughe e perdita di tono e le ridanno un aspetto sano e compatto.",
+      "descrizione": "L'antidoto perfetto alla stanchezza moderna, allo stile di vita urbano e ai segni che lascia sul viso. Ideale per rinnovare la pelle e contrastare rughe e mancanza di tono. Caratterizzato dall'efficacia degli Alfa idrossi acidi, dall'Acido Ialuronico Biotecnologico e da una combinazione di Peptidi e Longevity Complex, rivitalizza, tonifica e restituisce un aspetto sano e compatto.\n\nIl 95% del panel ha notato una riduzione della visibilità delle rughe (panel interno professionale, autovalutazione, 20 donne).",
       "foto": "img/trattamenti/longevity-peel.jpg",
       "prodotti": [
         "skin-regimen-multi-acid-ampoule",
@@ -16,9 +17,10 @@
     {
       "id": "longevity-detox",
       "nome": "Longevity Detox Facial",
+      "prezzo": 80,
       "prezzo_da": false,
       "durata": "50 min",
-      "descrizione": "Libera la pelle da smog e impurità e contrasta i primi segni del tempo. Una maschera peel-off con clorella e carbone vegetale, insieme a manualità di massaggio specifiche, dà subito un effetto detossinante, rassodante e antigravità.",
+      "descrizione": "L'antidoto perfetto per detossinare la pelle da inquinamento e impurità e contrastare i primi segni del tempo. L'efficacia della maschera Detox Peel-Off con Clorella e Carbone Vegetale viene potenziata dal Longevity Complex, dall'Acido Ialuronico e dalla sinergia di tecniche di massaggio specifiche, per un immediato effetto detossinante, rassodante e antigravità.\n\nIl 95% trova la pelle purificata e detossinata (panel interno professionale, autovalutazione, 20 persone).",
       "foto": "img/trattamenti/longevity-detox.jpg",
       "prodotti": [
         "skin-regimen-detox-cleanser",
@@ -29,9 +31,10 @@
     {
       "id": "longevity-vitaminic",
       "nome": "Longevity Vitaminic Facial",
+      "prezzo": 80,
       "prezzo_da": false,
       "durata": "50 min",
-      "descrizione": "Per la pelle spenta e grigia, con macchie e primi segni del tempo. Dopo una pulizia profonda, una maschera illuminante all'argilla e un'alta dose di vitamina C ridanno tono e luce; lo skin stretching ridensifica il viso.",
+      "descrizione": "Una proposta ideale per pelli spente, grigie, con pigmentazione irregolare e primi segni del tempo. Grazie a una profonda pulizia della pelle, ad un'innovativa maschera illuminante professionale con Longevity Complex, Argilla rosa e un alto dosaggio di Vitamina C (10%), il viso ritrova un aspetto sano, tono e lucentezza. Specifiche tecniche di skin stretching e massaggio per un effetto ridensificante e antigravity immediato.\n\nIl 100% del panel riscontra una pelle rivitalizzata: più luminosa, più levigata e idratata (panel interno professionale, autovalutazione, 20 persone).",
       "foto": "img/trattamenti/longevity-vitaminic.jpg",
       "prodotti": [
         "skin-regimen-vitamin-c-serum",
@@ -41,9 +44,10 @@
     {
       "id": "longevity-pro-collagen",
       "nome": "Longevity Pro Collagen",
+      "prezzo": 90,
       "prezzo_da": false,
       "durata": "50 min",
-      "descrizione": "Migliora tono e compattezza: aumenta elasticità e idratazione e attenua le rughe dovute al rilassamento della pelle. Il massaggio con il Rolling Roulage e una maschera professionale la lasciano più liscia e piena.",
+      "descrizione": "Studiato per migliorare il tono e la compattezza della pelle, questo trattamento è la soluzione ideale per aumentare elasticità e idratazione, riducendo visibilmente le rughe e combattendo i segni del rilassamento cutaneo. Il trattamento prevede l'utilizzo dell'avanzata tecnica di massaggio Rolling Roulage LX, abbinata a una nuova maschera asciutta professionale arricchita con potenti ingredienti che idratano in profondità e rendono la pelle più liscia e compatta.\n\nIl 100% del panel conferma un effetto rassodante sul viso (panel professionale interno, autovalutazione, 25 persone).",
       "foto": "img/trattamenti/longevity-pro-collagen.jpg",
       "prodotti": [
         "skin-regimen-collagen-serum",
@@ -54,9 +58,10 @@
     {
       "id": "super-peel",
       "nome": "Super Peel",
+      "prezzo": 80,
       "prezzo_da": false,
       "durata": "50 min",
-      "descrizione": "Un doppio peeling intensivo con alfa e poliidrossiacidi, adatto a ogni pelle, dalla più sensibile alla più resistente. Attenua linee d'espressione e rughe e lascia la pelle levigatissima: ideale per ringiovanire la pelle matura.",
+      "descrizione": "Doppio peeling intensivo adatto a diversi tipi di pelle, dalle più sensibili alle più resistenti con Alfa e Poliidrossiacidi. Riduce visibilmente le linee di espressione e le rughe, lasciando la pelle incredibilmente levigata. Ideale per il ringiovanimento della pelle matura.\n\nIl 100% trova la pelle più liscia (autovalutazione dopo 1 trattamento, 20 persone).",
       "foto": "img/trattamenti/super-peel.jpg",
       "prodotti": [
         "sublime-peel-pads",
@@ -67,9 +72,10 @@
     {
       "id": "ultra-glow-peel",
       "nome": "Ultra Glow Peel",
+      "prezzo": 80,
       "prezzo_da": false,
       "durata": "50 min",
-      "descrizione": "Un peeling intensivo per un incarnato uniforme e luminoso, quando il tono è spento o compaiono macchie scure. Rinnova la pelle in profondità: perfetto ai cambi di stagione.",
+      "descrizione": "Peeling intensivo per favorire un incarnato uniforme e radioso, donando luminosità in presenza di tono spento e macchie scure. L'attività di rinnovamento profondo assicura un immediato turnover cellulare per un'intensa azione illuminante. Ideale nei cambi di stagione.\n\nIl 100% trova la pelle più luminosa (autovalutazione dopo 1 trattamento, 20 persone).",
       "foto": "img/trattamenti/ultra-glow-peel.jpg",
       "prodotti": [
         "sublime-peel-pads",
@@ -79,9 +85,10 @@
     {
       "id": "pro-lift",
       "nome": "Pro Lift",
+      "prezzo": 90,
       "prezzo_da": false,
       "durata": "50 min",
-      "descrizione": "Effetto lifting e filler naturale, con una maschera peel-off e il massaggio Kobido. Restituisce pienezza e ridisegna i volumi del viso.",
+      "descrizione": "Effetto lifting e filler naturale, grazie ad una maschera peel-off e al massaggio Kobido. Restituisce pienezza e ridefinisce i volumi del viso.\n\nIl 100% trova la pelle più compatta (autovalutazione dopo 1 trattamento, 20 persone).",
       "foto": "img/trattamenti/pro-lift.jpg",
       "prodotti": [
         "sublime-lift-mask",
@@ -90,23 +97,24 @@
       ]
     },
     {
-      "id": "50-repair",
-      "nome": "50+ Repair",
+      "id": "longevity-shot",
+      "nome": "Longevity Shot Facial",
+      "prezzo": 45,
       "prezzo_da": false,
-      "durata": "60 min",
-      "descrizione": "Il trattamento più completo contro assottigliamento, secchezza e perdita di densità della pelle in menopausa. Texture nutrienti in olio e due tecniche di massaggio, Dermal Petrissage e Kobido, la rivitalizzano e la sostengono.",
-      "foto": "img/trattamenti/50-repair.jpg",
+      "durata": "20 min",
+      "descrizione": "Trattamento viso intensivo di 20 minuti per ottenere immediatamente luminosità ed effetto rimpolpante grazie alla combinazione della Multi Acid Ampoule e del Double Jade Roller.",
+      "foto": "img/trattamenti/longevity-shot.jpg",
       "prodotti": [
-        "sublime-rich-cream",
-        "sublime-intensive-serum"
+        "skin-regimen-multi-acid-ampoule"
       ]
     },
     {
       "id": "recover-touch",
       "nome": "Recover Touch",
+      "prezzo": 60,
       "prezzo_da": false,
       "durata": "60 min",
-      "descrizione": "Nutriente e antiossidante, ripara i danni di sole, smog e tempo. Bacche di goji e olio di macadamia nutrono la pelle e ricostruiscono la sua barriera: torna liscia e ringiovanita.",
+      "descrizione": "Trattamento viso nutriente e antiossidante con effetti immediati sui danni dell'esposizione al sole, dell'inquinamento e dell'invecchiamento. Con Bacche di Goji e Olio di Macadamia, nutre e ripristina la barriera in profondità, lasciando la pelle liscia e ringiovanita. Efficacia clinicamente testata.",
       "foto": "img/trattamenti/recover-touch.jpg",
       "prodotti": [
         "renight-oil",
@@ -117,9 +125,10 @@
     {
       "id": "hydra-glow",
       "nome": "Hydra Glow",
+      "prezzo": 70,
       "prezzo_da": false,
       "durata": "50 min",
-      "descrizione": "Luminosità immediata, idratazione profonda e nuova vitalità. Acido lattico, acido ialuronico e fico d'India funzionano ancora meglio con il freddo degli ice spoons, che tonifica.",
+      "descrizione": "Trattamento rivitalizzante e dinamico che dona una luminosità immediata, un'idratazione profonda e una rinnovata vitalità. L'efficacia di Acido Lattico, Acido Ialuronico ed estratto di Fico d'India da agricoltura biologica rigenerativa è intensificata dall'utilizzo di ice spoons per veicolare i benefici tonificanti del freddo.\n\n+24% di idratazione dopo un trattamento viso (valutazione strumentale, 20 persone, 1 trattamento).",
       "foto": "img/trattamenti/hydra-glow.jpg",
       "prodotti": [
         "hydramemory-water-source-serum",
@@ -130,9 +139,10 @@
     {
       "id": "3-bright-facial",
       "nome": "3-Bright Facial",
+      "prezzo": 75,
       "prezzo_da": false,
       "durata": "50 min",
-      "descrizione": "Un trattamento intensivo contro macchie, iperpigmentazione e tono irregolare, in tre tempi: correzione, luminosità e prevenzione. Adatto a tutte le carnagioni, anche in gravidanza.",
+      "descrizione": "Un trattamento ad azione intensiva e trivalente per la correzione di macchie scure, iperpigmentazione e tono della pelle non uniforme, secondo l'approccio 3-Bright Technology™ ispirato dalla scienza dermatologica: correzione, luminosità e prevenzione. Consigliato a chi desidera un'efficacia duratura contro iperpigmentazione o melasma. Efficacia testata su diverse tonalità di pelle, anche durante la gravidanza.\n\nIl 100% delle donne mostra un miglioramento della texture della pelle e una pelle più luminosa (valutazione clinica del dermatologo).",
       "foto": "img/trattamenti/3-bright-facial.jpg",
       "prodotti": [
         "luminant-serum",
@@ -143,15 +153,56 @@
     {
       "id": "remedy-facial",
       "nome": "Remedy Facial",
+      "prezzo": 70,
       "prezzo_da": false,
       "durata": "50 min",
-      "descrizione": "Per la pelle sensibile e delicata. Prebiotici dalla barbabietola da zucchero e olio di marula leniscono gli arrossamenti e rafforzano le difese naturali della pelle.",
+      "descrizione": "Una soluzione avanzata e rinforzante per la pelle sensibile e delicata, arricchita con Prebiotici derivati dalla barbabietola da zucchero per migliorare la resilienza della pelle e Olio di Marula. Questo trattamento lenisce le irritazioni e rafforza le difese naturali della pelle.",
       "foto": "img/trattamenti/remedy-facial.jpg",
       "prodotti": [
         "remedy-toner",
         "remedy-serum",
         "remedy-cream"
       ]
+    },
+    {
+      "id": "pulizia-viso",
+      "nome": "Pulizia del viso",
+      "prezzo": 60,
+      "prezzo_da": false,
+      "durata": "90 min",
+      "descrizione": "Una pulizia profonda, adatta a ogni tipo di pelle: detersione, esfoliazione delicata ed estrazione di punti neri e impurità, poi una maschera e una crema scelte per la tua pelle. I pori si vedono meno e il viso torna fresco, luminoso e uniforme.",
+      "foto": "",
+      "prodotti": []
+    },
+    {
+      "id": "eye-recovery",
+      "nome": "Eye Recovery",
+      "prezzo": 15,
+      "prezzo_da": false,
+      "durata": "10 min",
+      "descrizione": "Un trattamento multi-attivo per il contorno occhi che riduce borse e gonfiori e migliora l'aspetto di occhiaie e linee sottili.\n\nAdd-on: si aggiunge a un trattamento viso.",
+      "foto": "img/trattamenti/eye-recovery.jpg",
+      "prodotti": []
+    },
+    {
+      "id": "glow-peel",
+      "nome": "Glow Peel",
+      "prezzo": 15,
+      "prezzo_da": false,
+      "durata": "15 min",
+      "descrizione": "Un rapido boost di AHA con il metodo del doppio peeling per donare immediatamente luminosità, levigatezza e uniformità all'incarnato.\n\nAdd-on: si aggiunge a un trattamento viso.",
+      "foto": "img/trattamenti/glow-peel.jpg",
+      "prodotti": []
+    },
+    {
+      "id": "lip-plumping",
+      "nome": "Lip Plumping Treatment",
+      "prezzo": 15,
+      "prezzo_da": false,
+      "durata": "15 min",
+      "descrizione": "Trattamento rapido e altamente efficace per esfoliare e nutrire labbra e contorno labbra, potenziato da uno speciale massaggio che favorisce un profondo rinnovamento e un effetto rimpolpante e luminoso.\n\nAdd-on: si aggiunge a un trattamento viso.",
+      "foto": "",
+      "prodotti": []
     }
   ]
 }

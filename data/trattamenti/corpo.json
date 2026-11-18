@@ -1,226 +1,197 @@
 {
   "trattamenti": [
     {
-      "id": "osmotic-bliss-massage",
-      "nome": "Osmotic Bliss Massage",
-      "prezzo": "",
+      "id": "body-scrub",
+      "nome": "Body Scrub",
+      "prezzo": 55,
+      "prezzo_da": false,
+      "durata": "40 min",
+      "descrizione": "Uno scrub su tutto il corpo che elimina le cellule morte e leviga la pelle, seguito da un'applicazione nutriente. La pelle resta morbida, luminosa e pronta ad assorbire meglio creme e oli: perfetto da solo o prima di un massaggio.",
+      "foto": "img/trattamenti/body-scrub.jpg",
+      "prodotti": []
+    },
+    {
+      "id": "double-peel-body",
+      "nome": "Double Peel Body",
+      "prezzo": 70,
       "prezzo_da": false,
       "durata": "50 min",
-      "descrizione": "Un massaggio drenante profondo che riduce la ritenzione di liquidi e dà subito leggerezza. Con la Osmotic Cream Mud tonifica anche la muscolatura: la pelle appare più compatta già dalla prima volta.",
-      "foto": "img/trattamenti/osmotic-bliss-massage.jpg",
+      "descrizione": "Peeling meccanico e chimico per una rigenerazione completa e profonda, che lascia la pelle perfettamente compatta, liscia e morbida. I benefici comprendono protezione antiossidante, ringiovanimento dei tessuti e un aumento dell'elasticità e dell'idratazione cutanea.",
+      "foto": "img/trattamenti/double-peel-body.jpg",
       "prodotti": [
-        "body-osmotic-cream-mud"
-      ],
-      "video": []
+        "body-peel-scrub",
+        "hydramemory-body-lotion"
+      ]
+    },
+    {
+      "id": "detox-and-drain",
+      "nome": "Detox & Drain",
+      "prezzo": 70,
+      "prezzo_da": false,
+      "durata": "50 min",
+      "descrizione": "Trattamento intensivo cellulite drenante e detossinante con acqua termale di Bormio e oli essenziali.",
+      "foto": "img/trattamenti/detox-and-drain.jpg",
+      "prodotti": [
+        "body-cryo-leg-gel",
+        "body-oil"
+      ]
     },
     {
       "id": "3in1-treatment",
       "nome": "3in1 Treatment",
-      "prezzo": "",
+      "prezzo": 70,
       "prezzo_da": false,
       "durata": "60 min",
-      "descrizione": "Rimodellante, in tre fasi: una fase termogenica che riattiva la microcircolazione, un massaggio lipolitico vigoroso e una fase drenante e tonificante. Riduce adiposità e cellulite e lascia le gambe leggere.",
+      "descrizione": "Un trattamento rimodellante intensivo in tre fasi: una prima fase termogenica riattiva la microcircolazione, segue un vigoroso massaggio lipolitico e infine una fase drenante, rivitalizzante e tonificante. Riduce visibilmente l'aspetto degli accumuli adiposi e della cellulite fin dalla prima applicazione, migliorando la microcircolazione e donando una piacevole sensazione di leggerezza alle gambe.",
       "foto": "img/trattamenti/3in1-treatment.jpg",
       "prodotti": [
         "body-thermo-cream",
         "body-attack-serum",
         "body-cryo-leg-gel"
-      ],
-      "video": []
-    },
-    {
-      "id": "detox-and-drain",
-      "nome": "Detox & Drain",
-      "prezzo": "",
-      "prezzo_da": false,
-      "durata": "50 min",
-      "descrizione": "Un trattamento intensivo per la cellulite, drenante e detossinante, con l'acqua termale di Bormio e oli essenziali.",
-      "foto": "img/trattamenti/detox-and-drain.jpg",
-      "prodotti": [
-        "body-cryo-leg-gel",
-        "body-oil"
-      ],
-      "video": []
+      ]
     },
     {
       "id": "thermal-mud",
       "nome": "Thermal Mud",
-      "prezzo": "",
+      "prezzo": 70,
       "prezzo_da": false,
       "durata": "50 min",
-      "descrizione": "Con le acque termali di Bormio, disintossica e combatte la cellulite. Oli essenziali e alghe purificano i tessuti, aiutano a eliminare le tossine e riattivano il metabolismo. Adatto a ogni tipo di cellulite.",
+      "descrizione": "Un trattamento intensivo con le acque termali di Bormio, che offre benefici disintossicanti e anticellulite. Una miscela di oli essenziali purifica profondamente i tessuti, mentre le alghe fucus e laminaria favoriscono la lipolisi, aiutando l'eliminazione delle tossine e restituendo vitalità alla pelle. Adatto a tutti i tipi di cellulite, favorisce l'eliminazione delle tossine, la riduzione degli edemi e la stimolazione del metabolismo.",
       "foto": "img/trattamenti/thermal-mud.jpg",
       "prodotti": [
         "body-attack-serum",
         "body-contour-cream"
-      ],
-      "video": []
-    },
-    {
-      "id": "gua-sha-mud-massage",
-      "nome": "Gua Sha Mud Massage",
-      "prezzo": "",
-      "prezzo_da": false,
-      "durata": "50 min",
-      "descrizione": "Ispirato alla medicina tradizionale cinese, si fa con il gua sha in acciaio. Dinamico e stimolante: rimodella, rivitalizza, aiuta la postura e scioglie la stanchezza.",
-      "foto": "img/trattamenti/gua-sha-mud-massage.jpg",
-      "prodotti": [
-        "body-osmotic-cream-mud",
-        "body-oil"
-      ],
-      "video": []
-    },
-    {
-      "id": "thermoshock",
-      "nome": "Thermoshock Treatment",
-      "prezzo": "",
-      "prezzo_da": false,
-      "durata": "50 min",
-      "descrizione": "Un trattamento intensivo in tre fasi, tra caldo e freddo, che rimodella, riattiva e tonifica: un'azione d'urto sulle adiposità localizzate.",
-      "foto": "img/trattamenti/thermoshock.jpg",
-      "prodotti": [
-        "body-thermo-cream",
-        "body-cryo-leg-gel"
-      ],
-      "video": []
-    },
-    {
-      "id": "cellulite-shaping",
-      "nome": "Cellulite Shaping Massage",
-      "prezzo": "",
-      "prezzo_da": false,
-      "durata": "50 min",
-      "descrizione": "Un massaggio rimodellante e rivitalizzante: riattiva la circolazione e aiuta a eliminare i liquidi in eccesso.",
-      "foto": "img/trattamenti/cellulite-shaping.jpg",
-      "prodotti": [
-        "body-contour-cream",
-        "body-attack-serum"
-      ],
-      "video": []
-    },
-    {
-      "id": "bamboo-massage",
-      "nome": "Bamboo Massage",
-      "prezzo": "",
-      "prezzo_da": false,
-      "durata": "50 min",
-      "descrizione": "Canne di bambù di diverse misure scorrono e premono sul corpo come un mattarello: sciolgono le tensioni, drenano i liquidi e modellano la silhouette. Un massaggio avvolgente e profondo.",
-      "foto": "img/trattamenti/bamboo-massage.jpg",
-      "prodotti": [
-        "body-oil",
-        "body-cream-gel"
-      ],
-      "video": []
-    },
-    {
-      "id": "head-spa",
-      "nome": "Head Spa",
-      "prezzo": "",
-      "prezzo_da": false,
-      "durata": "60 min",
-      "descrizione": "Un rituale che parte dalla testa e si allarga a tutto il corpo. Acqua calda e manualità profonde sciolgono le tensioni di collo, spalle e schiena, fino a mani e piedi: silenzio, leggerezza, equilibrio.",
-      "foto": "img/trattamenti/head-spa.jpg",
-      "prodotti": [
-        "tranquillity-oil"
-      ],
-      "video": []
+      ]
     },
     {
       "id": "active-toning",
       "nome": "Active Toning",
-      "prezzo": "",
+      "prezzo": 80,
       "prezzo_da": false,
       "durata": "50 min",
-      "descrizione": "Rassodante, rimodellante e rimineralizzante: potenzia i risultati dell'allenamento e aiuta a eliminare le tossine. L'argilla gialla brasiliana reintegra vitamine e sali minerali, il bamboo roller scioglie le tensioni. Per chi è attivo, viaggia molto o è sotto stress.",
+      "descrizione": "Un trattamento rassodante, rimodellante e rimineralizzante studiato per potenziare i benefici dell'allenamento ed eliminare le tossine. Aiuta a migliorare il tono muscolare e a reintegrare vitamine e sali minerali essenziali grazie al potere dell'Argilla Gialla Brasiliana. Il potenziamento dei Bamboo Roller offre un profondo sollievo dalle tensioni muscolari, rendendolo perfetto per persone attive, viaggiatrici o stressate.",
       "foto": "img/trattamenti/active-toning.jpg",
       "prodotti": [
         "body-deep-toning-tool",
         "body-cream-gel"
-      ],
-      "video": []
+      ]
     },
     {
-      "id": "back-and-neck-massage",
-      "nome": "Back and Neck Massage",
-      "prezzo": "",
+      "id": "tranquillity-magnesium",
+      "nome": "Tranquillity™ Magnesium Ritual",
       "prezzo_da": false,
       "durata": "50 min",
-      "descrizione": "Un massaggio intensivo per testa, collo, spalle e schiena: dà sollievo subito, e un sollievo che dura se lo fai con regolarità. Per chi accumula lì le tensioni e vuole muscoli più elastici.",
-      "foto": "img/trattamenti/back-and-neck-massage.jpg",
-      "prodotti": [
-        "tranquillity-oil",
-        "body-arnica"
-      ],
-      "video": []
+      "descrizione": "Un rituale contemporaneo ispirato alle antiche tradizioni di guarigione indonesiane. Adatto a tutti. Un'immersione sensoriale totale che offre molteplici benefici per corpo e mente in qualsiasi periodo dell'anno. Allevia la fatica mentale e fisica, favorisce il rilassamento muscolare e aiuta il corpo a ritrovare una piacevole sensazione di leggerezza e vitalità, armonizzando mente e corpo. La pelle appare luminosa, ben idratata e nutrita, morbida come seta.",
+      "foto": "img/trattamenti/tranquillity-magnesium.jpg",
+      "prodotti": []
     },
     {
-      "id": "collagen-wellness",
-      "nome": "Collagen Wellness",
-      "prezzo": "",
+      "id": "tranquillity-rituale-sonno",
+      "nome": "Tranquillity™ Rituale del Sonno",
+      "prezzo_da": false,
+      "durata": "60 min",
+      "descrizione": "Un innovativo trattamento corpo progettato per rilassare profondamente mente e corpo coinvolgendo tre distinti percorsi sensoriali. Ideale per favorire un sonno ristoratore e alleviare gli effetti del jet lag, questa esperienza combina una miscela unica di oli essenziali, l'esclusivo Tranquillity™ Sound e una fusione di tecniche di massaggio ayurvedico e Indonesian Sea Malay. Delicate e rilassanti pennellate migliorano ulteriormente l'esperienza, guidandoti in un profondo stato di calma e pace interiore. Consigliato in caso di stress, disturbi del sonno e affaticamento dovuto ai viaggi.",
+      "foto": "img/trattamenti/tranquillity-rituale-sonno.jpg",
+      "prodotti": [
+        "tranquillity-oil"
+      ]
+    },
+    {
+      "id": "tranquillity-face-body",
+      "nome": "Tranquillity™ Face & Body Ritual",
+      "prezzo_da": false,
+      "durata": "60 min",
+      "descrizione": "Un esclusivo massaggio aromaterapico profondo per viso e corpo che scioglie le tensioni muscolari e favorisce un profondo stato di benessere. Ideale per tutti come trattamento antistress e riequilibrante, nutre la pelle del viso e del corpo lasciandola morbida e setosa.",
+      "foto": "img/trattamenti/tranquillity-face-body.jpg",
+      "prodotti": [
+        "tranquillity-oil"
+      ]
+    },
+    {
+      "id": "aromasoul-arabian",
+      "nome": "Aromasoul Arabian Ritual",
       "prezzo_da": false,
       "durata": "50 min",
-      "descrizione": "Il benessere della pelle di tutto il corpo, a ogni età. Formule alle alghe, tecniche professionali e uno strumento innovativo detossinano, energizzano e stimolano collagene ed elastina: ideale ai primi segni del tempo o nei periodi di stress.",
-      "foto": "img/trattamenti/collagen-wellness.jpg",
-      "prodotti": [
-        "body-d-age",
-        "body-oil"
-      ],
-      "video": []
+      "descrizione": "Ispirato da antiche tecniche rivitalizzanti Berbere, ideale per il recupero dall'affaticamento e per il riequilibrio energetico.",
+      "foto": "img/trattamenti/aromasoul-arabian.jpg",
+      "prodotti": []
     },
     {
-      "id": "double-peel-body",
-      "nome": "Double Peel Body",
-      "prezzo": "",
+      "id": "aromasoul-indian",
+      "nome": "Aromasoul Indian Ritual",
       "prezzo_da": false,
-      "durata": "60 min",
-      "descrizione": "Un peeling meccanico e chimico insieme, per rigenerare la pelle in profondità. La lascia compatta, liscia e morbida, più elastica e idratata, e la protegge dai radicali liberi.",
-      "foto": "img/trattamenti/double-peel-body.jpg",
-      "prodotti": [
-        "body-peel-scrub",
-        "hydramemory-body-lotion"
-      ],
-      "video": []
+      "durata": "50 min",
+      "descrizione": "Massaggio ispirato dalla tradizione ayurvedica per una profonda distensione ed un ritrovato equilibrio psicofisico.",
+      "foto": "img/trattamenti/aromasoul-indian.jpg",
+      "prodotti": []
     },
     {
-      "id": "maternity-massage",
-      "nome": "Maternity Massage",
-      "prezzo": "",
+      "id": "aromasoul-oriental",
+      "nome": "Aromasoul Oriental Ritual",
+      "prezzo_da": false,
+      "durata": "50 min",
+      "descrizione": "Massaggio ispirato dalle tecniche Shiatsu con micropressioni. Favorisce la circolazione e lo sblocco delle contratture.",
+      "foto": "",
+      "prodotti": []
+    },
+    {
+      "id": "himalayan-salt",
+      "nome": "Himalayan Salt",
       "prezzo_da": false,
       "durata": "60 min",
-      "descrizione": "Un massaggio delicato, elasticizzante e nutriente, in gravidanza e dopo il parto. Riduce il gonfiore, migliora la circolazione e mantiene la pelle morbida, elastica e tonica.",
-      "foto": "img/trattamenti/maternity-massage.jpg",
+      "descrizione": "Un trattamento completo di detossinazione del corpo che allevia i dolori muscolari e stimola efficacemente il metabolismo.",
+      "foto": "",
+      "prodotti": []
+    },
+    {
+      "id": "aromasoul-mediterranean",
+      "nome": "Aromasoul Mediterranean Ritual",
+      "prezzo_da": false,
+      "durata": "50 min",
+      "descrizione": "Ispirato da tecniche linfodrenanti, ideale per alleggerire e riattivare tutto il corpo in presenza di stasi linfatiche.",
+      "foto": "img/trattamenti/aromasoul-mediterranean.jpg",
+      "prodotti": []
+    },
+    {
+      "id": "tibetan-sound-massage",
+      "nome": "Tibetan Sound Massage",
+      "prezzo_da": false,
+      "durata": "50 min",
+      "descrizione": "Esclusivo rituale con originali campane tibetane per ritrovare l'armonia di corpo, mente e anima.",
+      "foto": "",
+      "prodotti": []
+    },
+    {
+      "id": "bamboo-massage",
+      "nome": "Bamboo Massage",
+      "prezzo": 65,
+      "prezzo_da": true,
+      "durata": "45 o 50 min",
+      "descrizione": "Canne di bambù di diverse misure scorrono e premono sul corpo come un mattarello: sciolgono le tensioni, drenano i liquidi e modellano la silhouette. Un massaggio avvolgente e profondo.\n\nDue versioni: 45 minuti a 65 € e 50 minuti a 75 €.",
+      "foto": "img/trattamenti/bamboo-massage.jpg",
       "prodotti": [
         "body-oil",
-        "hydramemory-body-lotion"
-      ],
-      "video": []
+        "body-cream-gel"
+      ]
     },
     {
-      "id": "vital-bust",
-      "nome": "Vital Bust",
-      "prezzo": "",
+      "id": "comfort-touch",
+      "nome": "Comfort Touch Face & Body Massage",
       "prezzo_da": false,
       "durata": "50 min",
-      "descrizione": "Attivi rassodanti e tonificanti ridanno nutrimento ed elasticità alla zona delicata del seno, che appare più compatta e tonica. Per tutte le età, anche per prevenire la perdita di tono.",
-      "foto": "img/trattamenti/vital-bust.jpg",
-      "prodotti": [
-        "body-bust-serum"
-      ],
-      "video": []
+      "descrizione": "Armonizzante e riequilibrante con manualità bioenergetiche per una profonda riarmonizzazione posturale ed un ottimale equilibrio psicofisico.",
+      "foto": "",
+      "prodotti": []
     },
     {
-      "id": "fisiosport-massage",
-      "nome": "Fisiosport Massage",
-      "prezzo": "",
+      "id": "hot-stone-massage",
+      "nome": "Hot Stone Massage",
+      "prezzo": 80,
       "prezzo_da": false,
       "durata": "50 min",
-      "descrizione": "Ispirato al massaggio sportivo e al Rolfing, con manualità energiche e profonde. Per chi fa sport, prima e dopo l'allenamento, e per chi vuole una postura migliore e più flessibilità.",
-      "foto": "img/trattamenti/fisiosport-massage.jpg",
-      "prodotti": [
-        "body-arnica",
-        "body-oil"
-      ],
-      "video": []
+      "descrizione": "Originale rituale con pietre calde e oli essenziali, allevia il dolore muscolare e favorisce una distensione profonda.",
+      "foto": "",
+      "prodotti": []
     }
   ]
 }

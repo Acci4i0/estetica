@@ -3,8 +3,8 @@
     {
       "id": "pedicure",
       "nome": "Pedicure",
-      "prezzo": "",
-      "prezzo_da": false,
+      "prezzo": 40,
+      "prezzo_da": true,
       "durata": "50 min",
       "descrizione": "Unghie, cuticole e pelle dei piedi curate con calma e con oltre trent'anni di esperienza. Si chiude con un massaggio e, se lo desideri, con lo smalto.",
       "foto": "img/trattamenti/pedicure.jpg",
@@ -13,8 +13,17 @@
         "dermalena-piuma",
         "dermalena-dinamica",
         "dermalena-ripara"
-      ],
-      "video": []
+      ]
+    },
+    {
+      "id": "rituale-della-terra",
+      "nome": "Rituale della Terra",
+      "prezzo": 35,
+      "prezzo_da": false,
+      "durata": "25 min",
+      "descrizione": "Un bagno aromatico per i piedi seguito da un massaggio rilassante sui punti di riflesso, per ritrovare radici ed equilibrio. Scioglie la stanchezza della giornata e lascia una piacevole sensazione di leggerezza.",
+      "foto": "",
+      "prodotti": []
     }
   ]
 }

@@ -56,9 +56,9 @@ components:
         label: Descrizione
         type: text
         required: true
-        description: Due o tre frasi. Una riga vuota comincia un nuovo paragrafo.
+        description: Qualche frase. Una riga vuota comincia un nuovo paragrafo.
         options:
-          maxlength: 600
+          maxlength: 1000
       - name: foto
         label: Foto
         type: image
