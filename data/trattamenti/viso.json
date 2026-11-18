@@ -185,13 +185,13 @@
       "prodotti": []
     },
     {
-      "id": "pantalas-viso",
-      "nome": "Pantalas Massage Viso",
+      "id": "pantholas-viso",
+      "nome": "Pantholas Massage Viso",
       "prezzo": 65,
       "prezzo_da": false,
       "durata": "50 min",
-      "descrizione": "Il massaggio con le Pantalas dedicato al viso: piccole palette di legno modellate scorrono con movimenti ritmici e delicati, sciolgono le tensioni di fronte, mandibola e collo, drenano e ridanno tono. Il viso appare più disteso, definito e luminoso.",
-      "foto": "img/trattamenti/pantalas-viso.jpg",
+      "descrizione": "Il massaggio con le Pantholas dedicato al viso: piccole palette di legno modellate scorrono con movimenti ritmici e delicati, sciolgono le tensioni di fronte, mandibola e collo, drenano e ridanno tono. Il viso appare più disteso, definito e luminoso.",
+      "foto": "img/trattamenti/pantholas-viso.jpg",
       "prodotti": []
     },
     {

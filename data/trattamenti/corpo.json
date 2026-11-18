@@ -100,13 +100,13 @@
       ]
     },
     {
-      "id": "pantalas-corpo",
-      "nome": "Pantalas Massage Corpo",
+      "id": "pantholas-corpo",
+      "nome": "Pantholas Massage Corpo",
       "prezzo": 80,
       "prezzo_da": false,
       "durata": "50 min",
-      "descrizione": "Un massaggio con le Pantalas, palette di legno brasiliane levigate che accompagnano le mani con movimenti profondi, ritmici e avvolgenti. Drena i liquidi, rimodella la silhouette e scioglie le tensioni, lasciando il corpo leggero e la pelle più compatta.",
-      "foto": "img/trattamenti/pantalas-corpo.jpg",
+      "descrizione": "Un massaggio con le Pantholas, palette di legno brasiliane levigate che accompagnano le mani con movimenti profondi, ritmici e avvolgenti. Drena i liquidi, rimodella la silhouette e scioglie le tensioni, lasciando il corpo leggero e la pelle più compatta.",
+      "foto": "img/trattamenti/pantholas-corpo.jpg",
       "prodotti": []
     }
   ]
