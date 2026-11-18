@@ -1,3 +1,37 @@
+// Crema che scorre (hero e footer): un video, che gira quando è sullo schermo e si ferma quando
+// esce. Compare solo quando gira davvero. Se il telefono non lo lascia partire (risparmio
+// energetico, riproduzione automatica spenta) diventa la stessa crema come immagine animata,
+// che gira sempre e non ha pulsanti.
+const creamToImage = (video) => {
+  creamWatcher.unobserve(video);
+  const picture = document.createElement('picture');
+  picture.innerHTML = '<source srcset="video/crema.avif?v=3" type="image/avif"><img src="img/crema.jpg?v=2" alt="">';
+  video.replaceWith(picture);
+};
+const creamWatcher = new IntersectionObserver((entries) => {
+  entries.forEach(({ target: video, isIntersecting }) => {
+    if (!isIntersecting) {
+      video.pause();
+      return;
+    }
+    video.muted = true; // i telefoni fanno partire da soli solo i video muti
+    video.play().catch((err) => {
+      if (err.name !== 'AbortError') creamToImage(video); // AbortError: fermato uscendo dallo schermo
+    });
+  });
+}, { rootMargin: '200px 0px' });
+document.querySelectorAll('.bg-cream video').forEach((video) => {
+  video.addEventListener('playing', () => video.classList.add('is-playing'), { once: true });
+  // nessuna delle due versioni del video si può vedere (formato, file che non arriva): in
+  // quel caso play() resta in attesa per sempre, quindi lo si capisce dall'ultima <source>
+  video.querySelector('source:last-of-type').addEventListener('error', () => creamToImage(video));
+  // ...e se era già successo prima che arrivasse lo script, resta senza sorgente
+  setTimeout(() => {
+    if (video.isConnected && video.networkState === HTMLMediaElement.NETWORK_NO_SOURCE) creamToImage(video);
+  }, 1000);
+  creamWatcher.observe(video);
+});
+
 // Tendine del menu (Trattamenti / Chi siamo): una aperta alla volta
 const menuButtons = [...document.querySelectorAll('.site-menu__btn')];
 

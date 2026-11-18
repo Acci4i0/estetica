@@ -77,88 +77,13 @@
       ]
     },
     {
-      "id": "tranquillity-magnesium",
-      "nome": "Tranquillity™ Magnesium Ritual",
+      "id": "hot-stone-massage",
+      "nome": "Hot Stone Massage",
+      "prezzo": 80,
       "prezzo_da": false,
       "durata": "50 min",
-      "descrizione": "Un rituale contemporaneo ispirato alle antiche tradizioni di guarigione indonesiane. Adatto a tutti. Un'immersione sensoriale totale che offre molteplici benefici per corpo e mente in qualsiasi periodo dell'anno. Allevia la fatica mentale e fisica, favorisce il rilassamento muscolare e aiuta il corpo a ritrovare una piacevole sensazione di leggerezza e vitalità, armonizzando mente e corpo. La pelle appare luminosa, ben idratata e nutrita, morbida come seta.",
-      "foto": "img/trattamenti/tranquillity-magnesium.jpg",
-      "prodotti": []
-    },
-    {
-      "id": "tranquillity-rituale-sonno",
-      "nome": "Tranquillity™ Rituale del Sonno",
-      "prezzo_da": false,
-      "durata": "60 min",
-      "descrizione": "Un innovativo trattamento corpo progettato per rilassare profondamente mente e corpo coinvolgendo tre distinti percorsi sensoriali. Ideale per favorire un sonno ristoratore e alleviare gli effetti del jet lag, questa esperienza combina una miscela unica di oli essenziali, l'esclusivo Tranquillity™ Sound e una fusione di tecniche di massaggio ayurvedico e Indonesian Sea Malay. Delicate e rilassanti pennellate migliorano ulteriormente l'esperienza, guidandoti in un profondo stato di calma e pace interiore. Consigliato in caso di stress, disturbi del sonno e affaticamento dovuto ai viaggi.",
-      "foto": "img/trattamenti/tranquillity-rituale-sonno.jpg",
-      "prodotti": [
-        "tranquillity-oil"
-      ]
-    },
-    {
-      "id": "tranquillity-face-body",
-      "nome": "Tranquillity™ Face & Body Ritual",
-      "prezzo_da": false,
-      "durata": "60 min",
-      "descrizione": "Un esclusivo massaggio aromaterapico profondo per viso e corpo che scioglie le tensioni muscolari e favorisce un profondo stato di benessere. Ideale per tutti come trattamento antistress e riequilibrante, nutre la pelle del viso e del corpo lasciandola morbida e setosa.",
-      "foto": "img/trattamenti/tranquillity-face-body.jpg",
-      "prodotti": [
-        "tranquillity-oil"
-      ]
-    },
-    {
-      "id": "aromasoul-arabian",
-      "nome": "Aromasoul Arabian Ritual",
-      "prezzo_da": false,
-      "durata": "50 min",
-      "descrizione": "Ispirato da antiche tecniche rivitalizzanti Berbere, ideale per il recupero dall'affaticamento e per il riequilibrio energetico.",
-      "foto": "img/trattamenti/aromasoul-arabian.jpg",
-      "prodotti": []
-    },
-    {
-      "id": "aromasoul-indian",
-      "nome": "Aromasoul Indian Ritual",
-      "prezzo_da": false,
-      "durata": "50 min",
-      "descrizione": "Massaggio ispirato dalla tradizione ayurvedica per una profonda distensione ed un ritrovato equilibrio psicofisico.",
-      "foto": "img/trattamenti/aromasoul-indian.jpg",
-      "prodotti": []
-    },
-    {
-      "id": "aromasoul-oriental",
-      "nome": "Aromasoul Oriental Ritual",
-      "prezzo_da": false,
-      "durata": "50 min",
-      "descrizione": "Massaggio ispirato dalle tecniche Shiatsu con micropressioni. Favorisce la circolazione e lo sblocco delle contratture.",
-      "foto": "img/trattamenti/aromasoul-oriental.jpg",
-      "prodotti": []
-    },
-    {
-      "id": "himalayan-salt",
-      "nome": "Himalayan Salt",
-      "prezzo_da": false,
-      "durata": "60 min",
-      "descrizione": "Un trattamento completo di detossinazione del corpo che allevia i dolori muscolari e stimola efficacemente il metabolismo.",
-      "foto": "img/trattamenti/himalayan-salt.jpg",
-      "prodotti": []
-    },
-    {
-      "id": "aromasoul-mediterranean",
-      "nome": "Aromasoul Mediterranean Ritual",
-      "prezzo_da": false,
-      "durata": "50 min",
-      "descrizione": "Ispirato da tecniche linfodrenanti, ideale per alleggerire e riattivare tutto il corpo in presenza di stasi linfatiche.",
-      "foto": "img/trattamenti/aromasoul-mediterranean.jpg",
-      "prodotti": []
-    },
-    {
-      "id": "tibetan-sound-massage",
-      "nome": "Tibetan Sound Massage",
-      "prezzo_da": false,
-      "durata": "50 min",
-      "descrizione": "Esclusivo rituale con originali campane tibetane per ritrovare l'armonia di corpo, mente e anima.",
-      "foto": "img/trattamenti/tibetan-sound-massage.jpg",
+      "descrizione": "Originale rituale con pietre calde e oli essenziali, allevia il dolore muscolare e favorisce una distensione profonda.",
+      "foto": "img/trattamenti/hot-stone-massage.jpg",
       "prodotti": []
     },
     {
@@ -175,22 +100,13 @@
       ]
     },
     {
-      "id": "comfort-touch",
-      "nome": "Comfort Touch Face & Body Massage",
-      "prezzo_da": false,
-      "durata": "50 min",
-      "descrizione": "Armonizzante e riequilibrante con manualità bioenergetiche per una profonda riarmonizzazione posturale ed un ottimale equilibrio psicofisico.",
-      "foto": "img/trattamenti/comfort-touch.jpg",
-      "prodotti": []
-    },
-    {
-      "id": "hot-stone-massage",
-      "nome": "Hot Stone Massage",
+      "id": "pantalas-corpo",
+      "nome": "Pantalas Massage Corpo",
       "prezzo": 80,
       "prezzo_da": false,
       "durata": "50 min",
-      "descrizione": "Originale rituale con pietre calde e oli essenziali, allevia il dolore muscolare e favorisce una distensione profonda.",
-      "foto": "img/trattamenti/hot-stone-massage.jpg",
+      "descrizione": "Un massaggio con le Pantalas, palette di legno brasiliane levigate che accompagnano le mani con movimenti profondi, ritmici e avvolgenti. Drena i liquidi, rimodella la silhouette e scioglie le tensioni, lasciando il corpo leggero e la pelle più compatta.",
+      "foto": "img/trattamenti/pantalas-corpo.jpg",
       "prodotti": []
     }
   ]

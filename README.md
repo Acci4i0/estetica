@@ -4,7 +4,8 @@ A one-page site for Estetica Skin Care snc di Ferronato Paola & C., a beauty
 studio in San Giuseppe di Cassola (VI) since 1990, where Paola Ferronato works on
 her own. The treatments come from the studio's Comfort Zone menu, with the prices and
 changes Paola wrote on it (November 2026), grouped by area: face, body and massages,
-hair removal and pedicure, plus Wave pressotherapy. Every treatment opens a card with a
+hair removal and pedicure, plus two technologies (Starvac and Wave pressotherapy).
+Every treatment opens a card with a
 short description, the price and the products used. There is no online booking: people book
 on WhatsApp or by phone.
 
@@ -60,13 +61,18 @@ privacy.html            privacy notice (GDPR)
 cookie.html             cookie policy: the site sets no cookies
 fonts/                  Belleza and Instrument Sans (woff2, Latin) with their licences
 styles.css              design tokens in :root, then one block per section
-script.js               dropdowns, area and product-line tabs, the treatment dialog,
-                        the product shelf arrows, tiles fading in
-video/crema.avif        flowing cream, the background of the hero and the footer: an
-                        animated AVIF image (9 s, cross-faded so the loop has no
-                        jump). As an image it always plays on its own, also on
-                        iPhones in Low Power Mode, and never shows a play button
-img/crema.jpg           its first frame, shown while it loads and where AVIF is missing
+script.js               the cream video (plays while on screen, falls back to the
+                        animated image), dropdowns, area and product-line tabs, the
+                        treatment dialog, the product shelf arrows, tiles fading in
+video/crema-hevc.mp4    flowing cream, the background of the hero and the footer: a
+video/crema.mp4         9-second loop, cross-faded so it has no jump. HEVC for Apple
+                        devices, H.264 for the rest: as a video it is decoded by the
+                        graphics chip, the smoothest way to play it. It shows up only
+                        once it is actually playing
+video/crema.avif        the same loop as an animated AVIF image: script.js puts it in
+                        place of the video where the phone won't start it on its own
+                        (Low Power Mode, autoplay off); images always play
+img/crema.jpg           its first frame, shown while it loads
 img/trattamenti/        one photo per treatment, named after it (t-<name> in the page)
 img/prodotti/           Comfort Zone and Dermalena product photos on white, named line-product;
                         grandi/ holds the same photos at 900×1200 for the full-page view
@@ -158,8 +164,8 @@ so the committed page matches the data (GitHub regenerates it anyway when deploy
 
 ## Still to confirm with the studio
 
-- the duration of the pedicure (50 minutes is a placeholder) and of the
-  pressotherapy
+- the duration of the pedicure (50 minutes is a placeholder), and how long Starvac
+  and the pressotherapy last
 - the background video: it comes from a Pinterest pin of rawpixel.com
   ("Smooth flowing abstract, 4k video"); check that rawpixel's licence covers
   use on the studio's site, or buy/download it from rawpixel directly

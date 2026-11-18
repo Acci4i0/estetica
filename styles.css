@@ -286,13 +286,24 @@ main { padding-top: 52px; }
   background: var(--sand) url("img/crema.jpg?v=2") center / cover no-repeat;
 }
 
-/* la crema che scorre (hero e footer) */
+/* la crema che scorre (hero e footer): un video o, dove il telefono non lo fa partire, la
+   stessa crema come immagine animata */
 .bg-cream { position: absolute; inset: 0; }
-.bg-cream img {
+.bg-cream img,
+.bg-cream video {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+/* il video compare solo quando gira davvero: prima si vede il suo primo fotogramma, che è lo
+   sfondo del pannello, e Safari non può disegnarci sopra il suo pulsante play */
+.js .bg-cream video { opacity: 0; transition: opacity .6s var(--ease); }
+.js .bg-cream video.is-playing { opacity: 1; }
+.bg-cream video::-webkit-media-controls,
+.bg-cream video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
 }
 
 /* alone chiaro dietro alla scritta, per leggerla su ogni punto della crema */

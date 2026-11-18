@@ -175,6 +175,26 @@
       "prodotti": []
     },
     {
+      "id": "pulizia-microsonic",
+      "nome": "Pulizia viso con Microsonic Facial Device",
+      "prezzo": 60,
+      "prezzo_da": false,
+      "durata": "50 min",
+      "descrizione": "Una pulizia profonda del viso con il Microsonic Facial Device di Comfort Zone, che unisce ultrasuoni e microcorrenti. Le vibrazioni a ultrasuoni liberano i pori da impurità, sebo in eccesso e cellule morte; le microcorrenti stimolano i muscoli del viso e ridanno tono; un massaggio finale idrata e aiuta la pelle ad assorbire meglio i principi attivi. La pelle resta pulita, liscia e più compatta.",
+      "foto": "img/trattamenti/pulizia-microsonic.jpg",
+      "prodotti": []
+    },
+    {
+      "id": "pantalas-viso",
+      "nome": "Pantalas Massage Viso",
+      "prezzo": 65,
+      "prezzo_da": false,
+      "durata": "50 min",
+      "descrizione": "Il massaggio con le Pantalas dedicato al viso: piccole palette di legno modellate scorrono con movimenti ritmici e delicati, sciolgono le tensioni di fronte, mandibola e collo, drenano e ridanno tono. Il viso appare più disteso, definito e luminoso.",
+      "foto": "img/trattamenti/pantalas-viso.jpg",
+      "prodotti": []
+    },
+    {
       "id": "eye-recovery",
       "nome": "Eye Recovery",
       "prezzo": 15,
@@ -185,16 +205,6 @@
       "prodotti": []
     },
     {
-      "id": "glow-peel",
-      "nome": "Glow Peel",
-      "prezzo": 15,
-      "prezzo_da": false,
-      "durata": "15 min",
-      "descrizione": "Un rapido boost di AHA con il metodo del doppio peeling per donare immediatamente luminosità, levigatezza e uniformità all'incarnato.\n\nAdd-on: si aggiunge a un trattamento viso.",
-      "foto": "img/trattamenti/glow-peel.jpg",
-      "prodotti": []
-    },
-    {
       "id": "lip-plumping",
       "nome": "Lip Plumping Treatment",
       "prezzo": 15,
@@ -202,6 +212,16 @@
       "durata": "15 min",
       "descrizione": "Trattamento rapido e altamente efficace per esfoliare e nutrire labbra e contorno labbra, potenziato da uno speciale massaggio che favorisce un profondo rinnovamento e un effetto rimpolpante e luminoso.\n\nAdd-on: si aggiunge a un trattamento viso.",
       "foto": "img/trattamenti/lip-plumping.jpg",
+      "prodotti": []
+    },
+    {
+      "id": "glow-peel",
+      "nome": "Glow Peel",
+      "prezzo": 15,
+      "prezzo_da": false,
+      "durata": "15 min",
+      "descrizione": "Un rapido boost di AHA con il metodo del doppio peeling per donare immediatamente luminosità, levigatezza e uniformità all'incarnato.\n\nAdd-on: si aggiunge a un trattamento viso.",
+      "foto": "img/trattamenti/glow-peel.jpg",
       "prodotti": []
     }
   ]
