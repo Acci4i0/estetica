@@ -8,6 +8,8 @@ persona e una texture.
 
 Sono immagini provvisorie: quando lo studio avrà foto proprie dei trattamenti,
 vanno sostituite tenendo lo stesso formato (880×1100, 4:5) e lo stesso nome file.
+Fa eccezione `trattamenti/pressoterapia-wave-psx.jpg`, la foto ufficiale della PSX Active
+Wave® dal sito di Starvac (starvac-group.com), ritagliata in verticale.
 
 Le foto dei prodotti in `prodotti/` vengono dai materiali per i centri Comfort
 Zone (cartella `comfortzone-materiali` di Davines): fondo bianco, prodotto
@@ -21,7 +23,10 @@ Lo sfondo di hero e footer è una crema che scorre presa da un
 pin di Pinterest di rawpixel.com («Smooth flowing abstract, 4k video»). Pinterest lo dà
 solo a 736×414: è stato ingrandito a 1472×828 (con un filtro che toglie i difetti di
 compressione e una leggera nitidezza), accorciato a 9 secondi con una dissolvenza tra la fine e l'inizio, così il giro
-ricomincia senza stacchi. Sul sito è un video (`crema.mp4` in H.264 e `crema-hevc.mp4`
+ricomincia senza stacchi. Il clip di Pinterest era girato a 24 fotogrammi al secondo e
+portato a 30, così la crema avanzava a scatti (passi diversi dentro ogni gruppo di cinque
+fotogrammi): è stato ricalcolato a 60 fotogrammi al secondo, con fotogrammi intermedi che
+seguono il movimento, scelti in modo che la crema scorra a velocità costante. Sul sito è un video (`crema.mp4` in H.264 e `crema-hevc.mp4`
 in HEVC); dove il telefono blocca i video si vede la stessa crema come immagine animata
-AVIF (`crema.avif`), che gira sempre. `crema.jpg` è il primo fotogramma. Prima di andare
+AVIF (`crema.avif`, a 30 fotogrammi al secondo), che gira sempre. `crema.jpg` è il primo fotogramma. Prima di andare
 online con il sito vero va verificata la licenza di rawpixel per questo video.

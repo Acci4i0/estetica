@@ -3,8 +3,8 @@
 A one-page site for Estetica Skin Care snc di Ferronato Paola & C., a beauty
 studio in San Giuseppe di Cassola (VI) since 1990, where Paola Ferronato works on
 her own. The treatments come from the studio's Comfort Zone menu, with the prices and
-changes Paola wrote on it (November 2026), grouped by area: face, body and massages,
-hair removal and pedicure, plus two technologies (Starvac and Wave pressotherapy).
+changes Paola wrote on it (November 2026), grouped by area: face, body, massages,
+pedicure and hair removal, plus two technologies (Starvac and Wave pressotherapy).
 Every treatment opens a card with a
 short description, the price and the products used. There is no online booking: people book
 on WhatsApp or by phone.
@@ -50,8 +50,8 @@ index.html              the whole page: top bar and dropdowns, hero, treatments
                         by area, Tecnologia, Prodotti, footer, and the <dialog>
                         that shows a treatment. The parts between <!-- dati:… -->
                         and <!-- /dati:… --> are generated: don't edit them by hand
-data/trattamenti/       one JSON file per area (viso, corpo, epilazione, pedicure,
-                        tecnologia): what Paola edits from the panel
+data/trattamenti/       one JSON file per area (viso, corpo, massaggi, pedicure,
+                        epilazione, tecnologia): what Paola edits from the panel
 data/prodotti.json      the Comfort Zone lines and their products (edited by hand)
 scripts/build.mjs       writes data/ into index.html and the product list into
                         .pages.yml; with --foto it also shrinks the uploaded photos
@@ -65,7 +65,7 @@ script.js               the cream video (plays while on screen, falls back to th
                         animated image), dropdowns, area and product-line tabs, the
                         treatment dialog, the product shelf arrows, tiles fading in
 video/crema-hevc.mp4    flowing cream, the background of the hero and the footer: a
-video/crema.mp4         9-second loop, cross-faded so it has no jump. HEVC for Apple
+video/crema.mp4         9-second loop at 60 fps, cross-faded so it has no jump. HEVC for Apple
                         devices, H.264 for the rest: as a video it is decoded by the
                         graphics chip, the smoothest way to play it. It shows up only
                         once it is actually playing

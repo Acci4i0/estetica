@@ -1,0 +1,37 @@
+{
+  "trattamenti": [
+    {
+      "id": "bamboo-massage",
+      "nome": "Bamboo Massage",
+      "prezzo": 65,
+      "prezzo_da": true,
+      "durata": "45 o 50 min",
+      "descrizione": "Canne di bambù di diverse misure scorrono e premono sul corpo come un mattarello: sciolgono le tensioni, drenano i liquidi e modellano la silhouette. Un massaggio avvolgente e profondo.\n\nDue versioni: 45 minuti a 65 € e 50 minuti a 75 €.",
+      "foto": "img/trattamenti/bamboo-massage.jpg",
+      "prodotti": [
+        "body-oil",
+        "body-cream-gel"
+      ]
+    },
+    {
+      "id": "hot-stone-massage",
+      "nome": "Hot Stone Massage",
+      "prezzo": 80,
+      "prezzo_da": false,
+      "durata": "50 min",
+      "descrizione": "Originale rituale con pietre calde e oli essenziali, allevia il dolore muscolare e favorisce una distensione profonda.",
+      "foto": "img/trattamenti/hot-stone-massage.jpg",
+      "prodotti": []
+    },
+    {
+      "id": "pantholas-corpo",
+      "nome": "Pantholas Massage Corpo",
+      "prezzo": 80,
+      "prezzo_da": false,
+      "durata": "50 min",
+      "descrizione": "Un massaggio con le Pantholas, palette di legno brasiliane levigate che accompagnano le mani con movimenti profondi, ritmici e avvolgenti. Drena i liquidi, rimodella la silhouette e scioglie le tensioni, lasciando il corpo leggero e la pelle più compatta.",
+      "foto": "img/trattamenti/pantholas-corpo.jpg",
+      "prodotti": []
+    }
+  ]
+}

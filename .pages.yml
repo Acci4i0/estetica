@@ -128,6 +128,10 @@ components:
             - { name: dermalena-ripara, label: "Dermalena · Ripara (lozione riparatrice unghie)" }
             - { name: dermalena-protegge, label: "Dermalena · Protegge (lozione protettiva unghie)" }
             - { name: dermalena-rigenera, label: "Dermalena · Rigenera (lozione levigante unghie)" }
+            - { name: elastique-crema-di-riso, label: "Elastique · Crema di Riso (cera brasiliana)" }
+            - { name: elastique-melograno, label: "Elastique · Melograno (cera brasiliana)" }
+            - { name: elastique-macadamia-zenzero, label: "Elastique · Macadamia & Zenzero (cera brasiliana)" }
+            - { name: elastique-crema-idratazione, label: "Elastique · Idratazione Quotidiana (crema per il mantenimento a casa)" }
             # /dati:prodotti
       - name: video
         label: Video
@@ -163,7 +167,7 @@ content:
           - name: trattamenti
             component: trattamenti
       - name: corpo
-        label: Corpo e massaggi
+        label: Corpo
         type: file
         path: data/trattamenti/corpo.json
         format: json
@@ -171,10 +175,10 @@ content:
         fields:
           - name: trattamenti
             component: trattamenti
-      - name: epilazione
-        label: Epilazione
+      - name: massaggi
+        label: Massaggi
         type: file
-        path: data/trattamenti/epilazione.json
+        path: data/trattamenti/massaggi.json
         format: json
         operations: { create: false, delete: false }
         fields:
@@ -184,6 +188,15 @@ content:
         label: Pedicure
         type: file
         path: data/trattamenti/pedicure.json
+        format: json
+        operations: { create: false, delete: false }
+        fields:
+          - name: trattamenti
+            component: trattamenti
+      - name: epilazione
+        label: Epilazione
+        type: file
+        path: data/trattamenti/epilazione.json
         format: json
         operations: { create: false, delete: false }
         fields:

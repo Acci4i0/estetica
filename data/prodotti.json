@@ -299,6 +299,32 @@
           "tipo": "Lozione levigante unghie"
         }
       ]
+    },
+    {
+      "id": "elastique",
+      "nome": "Elastique",
+      "prodotti": [
+        {
+          "id": "elastique-crema-di-riso",
+          "nome": "Crema di Riso",
+          "tipo": "Cera brasiliana"
+        },
+        {
+          "id": "elastique-melograno",
+          "nome": "Melograno",
+          "tipo": "Cera brasiliana"
+        },
+        {
+          "id": "elastique-macadamia-zenzero",
+          "nome": "Macadamia & Zenzero",
+          "tipo": "Cera brasiliana"
+        },
+        {
+          "id": "elastique-crema-idratazione",
+          "nome": "Idratazione Quotidiana",
+          "tipo": "Crema per il mantenimento a casa"
+        }
+      ]
     }
   ]
 }

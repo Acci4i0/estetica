@@ -23,8 +23,8 @@ const TELEFONO = { href: 'tel:+390424512529', testo: '0424 512529' };
 // Le aree, nell'ordine della pagina; col è la colonna della tendina
 const AREE = [
   { file: 'viso', nome: 'Viso', tab: 'viso', col: 0 },
-  { file: 'corpo', nome: 'Corpo e massaggi', tab: 'corpo', col: 1 },
-  { file: 'epilazione', nome: 'Epilazione', tab: 'epilazione', col: 2 },
+  { file: 'corpo', nome: 'Corpo', tab: 'corpo', col: 1 },
+  { file: 'massaggi', nome: 'Massaggi', tab: 'massaggi', col: 1 },
   {
     file: 'pedicure', nome: 'Pedicure', tab: 'pedicure', col: 2,
     // accanto alla card, la nota sui prodotti Dermalena
@@ -35,6 +35,7 @@ const AREE = [
   <a class="note-card__link" href="#line-dermalena">I prodotti →</a>
 </aside>`,
   },
+  { file: 'epilazione', nome: 'Epilazione', tab: 'epilazione', col: 2 },
   { file: 'tecnologia', nome: 'Tecnologia', col: 2, tech: true },
 ];
 
@@ -159,7 +160,7 @@ ${indent(parti.join('\n'), 4)}
 </article>`;
 }
 
-// Tendina: una colonna per Viso, una per Corpo, e la terza con le aree più corte
+// Tendina: una colonna per Viso, una per Corpo e Massaggi, e la terza con le aree più corte
 function menu() {
   const colonne = [0, 1, 2].map((c) => piene.filter((a) => a.col === c)).filter((c) => c.length);
   return colonne.map((col) => `<div class="menu-cats__col">

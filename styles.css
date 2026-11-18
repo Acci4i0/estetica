@@ -1139,13 +1139,13 @@ html:has(.viewer[open]) { overflow: hidden; }
 }
 
 @media (max-width: 767px) {
-  /* le quattro aree su una riga sola, senza i numeri */
-  .js .tabs { flex-wrap: nowrap; gap: 6px; overflow-x: auto; scrollbar-width: none; }
+  /* le aree su una riga sola, senza i numeri (se non stanno, scorrono) */
+  .js .tabs { flex-wrap: nowrap; gap: 5px; overflow-x: auto; scrollbar-width: none; }
   .js .tabs::-webkit-scrollbar { display: none; }
   .tab {
     flex: 1 1 auto;
     justify-content: center;
-    padding: 0 clamp(8px, 2.8vw, 14px);
+    padding: 0 clamp(6px, 2vw, 14px);
     font-size: clamp(11.5px, 3.3vw, 13.5px);
     letter-spacing: 0;
   }

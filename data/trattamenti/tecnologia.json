@@ -11,23 +11,19 @@
       "prodotti": [],
       "video": [
         {
-          "titolo": "Video viso",
-          "link": "https://www.facebook.com/esteticaskincare/videos/trattamenti-viso-con-metodologia-starvac/5054137538040862/"
-        },
-        {
-          "titolo": "Video corpo",
-          "link": "https://www.facebook.com/reel/1746513595763666/"
+          "titolo": "Video Starvac",
+          "link": "https://www.facebook.com/starvac.italia/videos/il-brevetto-esclusivo-di-starvac-stretching-cellulaire-permette-di-riequilibrare/962666224229671/"
         }
       ]
     },
     {
       "id": "pressoterapia-wave",
       "nome": "Pressoterapia Wave",
-      "prezzo": "",
+      "prezzo": 50,
       "prezzo_da": false,
       "durata": "Gambe e corpo",
-      "descrizione": "Gambali che si gonfiano e si sgonfiano a onde, dal piede verso l'alto, come un massaggio linfodrenante. Aiuta la circolazione, riduce gonfiore e ritenzione e lascia le gambe leggere. Si fa sdraiate e rilassate, anche dopo un trattamento corpo.",
-      "foto": "img/trattamenti/pressoterapia-wave.jpg",
+      "descrizione": "La pressoterapia di Starvac, PSX Active Wave®, con la tecnologia brevettata Pressodynamie®. I gambali a 10 camere avvolgono le gambe e un'onda di pressione ritmica sale dal piede verso l'alto, regolata in tempo reale sulla forma del corpo: avvolgente e confortevole.\n\nRispetto alla pressoterapia tradizionale dà fino a 12 volte più stimolazioni per ciclo (studio clinico SFAS): favorisce la circolazione venosa e linfatica, aiuta contro la ritenzione idrica e lascia le gambe leggere già dalla prima seduta. Si fa sdraiate e rilassate, anche dopo un trattamento corpo.",
+      "foto": "img/trattamenti/pressoterapia-wave-psx.jpg",
       "prodotti": [],
       "video": []
     }

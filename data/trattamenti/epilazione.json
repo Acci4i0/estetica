@@ -6,9 +6,14 @@
       "prezzo": "",
       "prezzo_da": false,
       "durata": "A zona",
-      "descrizione": "Una cera elastica a bassa temperatura che si toglie senza strisce. Delicata sulle zone sensibili, come inguine, ascelle e viso, e precisa anche sui peli più corti.",
+      "descrizione": "Una cera elastica a bassa temperatura che si toglie senza strisce. Delicata sulle zone sensibili, come inguine, ascelle e viso, e precisa anche sui peli più corti.\n\nUso le tre cere brasiliane Elastique, ipoallergeniche e made in Italy:\nCrema di Riso, super soft e ad asciugatura rapida, con ossido di zinco calmante: per le pelli più sensibili, i peli corti e le piccole zone.\nMelograno, fluida e con olio di melograno lenitivo: per stesure lunghe e sottili sulle zone ampie, dove i peli sono più robusti.\nMacadamia & Zenzero, con olio di macadamia ed estratto di zenzero emollienti: per le zone delicate, come viso, bikini e ascelle.\n\nA casa, la Crema Idratazione Quotidiana Elastique, leggera e vellutata, con acido ialuronico, karité, amido di riso e vitamine A, C ed E, idrata la pelle e fa durare di più il risultato fino all'epilazione successiva.",
       "foto": "img/trattamenti/epilazione-elastique.jpg",
-      "prodotti": [],
+      "prodotti": [
+        "elastique-crema-di-riso",
+        "elastique-melograno",
+        "elastique-macadamia-zenzero",
+        "elastique-crema-idratazione"
+      ],
       "video": []
     }
   ]

@@ -5,7 +5,7 @@
 const creamToImage = (video) => {
   creamWatcher.unobserve(video);
   const picture = document.createElement('picture');
-  picture.innerHTML = '<source srcset="video/crema.avif?v=3" type="image/avif"><img src="img/crema.jpg?v=2" alt="">';
+  picture.innerHTML = '<source srcset="video/crema.avif?v=4" type="image/avif"><img src="img/crema.jpg?v=2" alt="">';
   video.replaceWith(picture);
 };
 const creamWatcher = new IntersectionObserver((entries) => {

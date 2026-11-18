@@ -26,8 +26,8 @@ Non c'è nessuna password da ricordare. La prima volta entri dal link dell'email
 
 ## Cosa trovi
 
-A sinistra c'è **Trattamenti**, con le aree del sito: Viso, Corpo e massaggi,
-Epilazione, Pedicure, Tecnologia. Tocca un'area e vedi l'elenco dei suoi trattamenti,
+A sinistra c'è **Trattamenti**, con le aree del sito: Viso, Corpo, Massaggi,
+Pedicure, Epilazione, Tecnologia. Tocca un'area e vedi l'elenco dei suoi trattamenti,
 chiusi. Tocca un trattamento per aprirlo.
 
 ## Cambiare un prezzo, un nome o una descrizione

@@ -13,7 +13,7 @@
   <link rel="preload" href="fonts/instrument-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/belleza-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="img/crema.jpg?v=2" as="image" fetchpriority="high">
-  <link rel="stylesheet" href="styles.css?v=17">
+  <link rel="stylesheet" href="styles.css?v=19">
   <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
@@ -73,7 +73,7 @@
             </div>
             <div class="menu-cats__col">
               <section>
-                <h2 class="panel-label">Corpo e massaggi</h2>
+                <h2 class="panel-label">Corpo</h2>
                 <ul>
                   <li><a href="#t-body-scrub"><span>Body Scrub</span><span class="menu-cats__time">40 min · 55 €</span></a></li>
                   <li><a href="#t-double-peel-body"><span>Double Peel Body</span><span class="menu-cats__time">50 min · 70 €</span></a></li>
@@ -81,13 +81,25 @@
                   <li><a href="#t-3in1-treatment"><span>3in1 Treatment</span><span class="menu-cats__time">60 min · 70 €</span></a></li>
                   <li><a href="#t-thermal-mud"><span>Thermal Mud</span><span class="menu-cats__time">50 min · 70 €</span></a></li>
                   <li><a href="#t-active-toning"><span>Active Toning</span><span class="menu-cats__time">50 min · 80 €</span></a></li>
-                  <li><a href="#t-hot-stone-massage"><span>Hot Stone Massage</span><span class="menu-cats__time">50 min · 80 €</span></a></li>
+                </ul>
+              </section>
+              <section>
+                <h2 class="panel-label">Massaggi</h2>
+                <ul>
                   <li><a href="#t-bamboo-massage"><span>Bamboo Massage</span><span class="menu-cats__time">45 o 50 min · da 65 €</span></a></li>
+                  <li><a href="#t-hot-stone-massage"><span>Hot Stone Massage</span><span class="menu-cats__time">50 min · 80 €</span></a></li>
                   <li><a href="#t-pantholas-corpo"><span>Pantholas Massage Corpo</span><span class="menu-cats__time">50 min · 80 €</span></a></li>
                 </ul>
               </section>
             </div>
             <div class="menu-cats__col">
+              <section>
+                <h2 class="panel-label">Pedicure</h2>
+                <ul>
+                  <li><a href="#t-pedicure"><span>Pedicure</span><span class="menu-cats__time">da 40 €</span></a></li>
+                  <li><a href="#t-rituale-della-terra"><span>Rituale della Terra</span><span class="menu-cats__time">25 min · 35 €</span></a></li>
+                </ul>
+              </section>
               <section>
                 <h2 class="panel-label">Epilazione</h2>
                 <ul>
@@ -95,17 +107,10 @@
                 </ul>
               </section>
               <section>
-                <h2 class="panel-label">Pedicure</h2>
-                <ul>
-                  <li><a href="#t-pedicure"><span>Pedicure</span><span class="menu-cats__time">50 min · da 40 €</span></a></li>
-                  <li><a href="#t-rituale-della-terra"><span>Rituale della Terra</span><span class="menu-cats__time">25 min · 35 €</span></a></li>
-                </ul>
-              </section>
-              <section>
                 <h2 class="panel-label">Tecnologia</h2>
                 <ul>
                   <li><a href="#t-starvac"><span>Starvac</span><span class="menu-cats__time">Viso e corpo</span></a></li>
-                  <li><a href="#t-pressoterapia-wave"><span>Pressoterapia Wave</span><span class="menu-cats__time">Gambe e corpo</span></a></li>
+                  <li><a href="#t-pressoterapia-wave"><span>Pressoterapia Wave</span><span class="menu-cats__time">Gambe e corpo · 50 €</span></a></li>
                 </ul>
               </section>
             </div>
@@ -152,7 +157,7 @@
            scheda video ed è il modo più fluido. Se il telefono non lo fa partire da solo (risparmio
            energetico), script.js mette al suo posto la stessa crema come immagine animata (AVIF),
            che gira sempre. Finché non parte si vede il primo fotogramma, lo sfondo del pannello -->
-      <div class="bg-cream" aria-hidden="true"><video autoplay muted loop playsinline disablepictureinpicture disableremoteplayback preload="auto"><source src="video/crema-hevc.mp4?v=3" type='video/mp4; codecs="hvc1"'><source src="video/crema.mp4?v=3" type="video/mp4"></video></div>
+      <div class="bg-cream" aria-hidden="true"><video autoplay muted loop playsinline disablepictureinpicture disableremoteplayback preload="auto"><source src="video/crema-hevc.mp4?v=4" type='video/mp4; codecs="hvc1"'><source src="video/crema.mp4?v=4" type="video/mp4"></video></div>
 
       <div class="hero__content">
         <!-- le lettere salgono una alla volta dalla linea di base, come il logo nel footer di Vibrolux -->
@@ -170,9 +175,10 @@
       <!-- dati:aree -->
       <div class="tabs" role="tablist" aria-label="Aree di trattamento">
         <button class="tab" type="button" role="tab" id="tab-viso" aria-controls="cat-viso" aria-selected="true">Viso<span class="tab__count">18</span></button>
-        <button class="tab" type="button" role="tab" id="tab-corpo" aria-controls="cat-corpo" aria-selected="false">Corpo e massaggi<span class="tab__count">9</span></button>
-        <button class="tab" type="button" role="tab" id="tab-epilazione" aria-controls="cat-epilazione" aria-selected="false">Epilazione<span class="tab__count">1</span></button>
+        <button class="tab" type="button" role="tab" id="tab-corpo" aria-controls="cat-corpo" aria-selected="false">Corpo<span class="tab__count">6</span></button>
+        <button class="tab" type="button" role="tab" id="tab-massaggi" aria-controls="cat-massaggi" aria-selected="false">Massaggi<span class="tab__count">3</span></button>
         <button class="tab" type="button" role="tab" id="tab-pedicure" aria-controls="cat-pedicure" aria-selected="false">Pedicure<span class="tab__count">2</span></button>
+        <button class="tab" type="button" role="tab" id="tab-epilazione" aria-controls="cat-epilazione" aria-selected="false">Epilazione<span class="tab__count">1</span></button>
       </div>
 
       <div class="category" id="cat-viso" role="tabpanel" aria-labelledby="tab-viso">
@@ -568,9 +574,9 @@
       </div>
 
       <div class="category" id="cat-corpo" role="tabpanel" aria-labelledby="tab-corpo">
-        <h3 class="category__title">Corpo e massaggi</h3>
+        <h3 class="category__title">Corpo</h3>
         <div class="grid">
-          <article class="treatment" id="t-body-scrub" data-area="Corpo e massaggi" data-time="40 min">
+          <article class="treatment" id="t-body-scrub" data-area="Corpo" data-time="40 min">
             <button class="card" type="button" aria-label="Body Scrub: scopri il trattamento">
               <span class="card__thumb"><img src="img/trattamenti/body-scrub.jpg" alt="" width="880" height="1100" loading="lazy"></span>
               <span class="card__label"><span class="card__cta">Scopri il trattamento</span><span class="card__name" aria-hidden="true">Body Scrub</span></span>
@@ -587,7 +593,7 @@
               </p>
             </div>
           </article>
-          <article class="treatment" id="t-double-peel-body" data-area="Corpo e massaggi" data-time="50 min">
+          <article class="treatment" id="t-double-peel-body" data-area="Corpo" data-time="50 min">
             <button class="card" type="button" aria-label="Double Peel Body: scopri il trattamento">
               <span class="card__thumb"><img src="img/trattamenti/double-peel-body.jpg" alt="" width="880" height="1100" loading="lazy"></span>
               <span class="card__label"><span class="card__cta">Scopri il trattamento</span><span class="card__name" aria-hidden="true">Double Peel Body</span></span>
@@ -609,7 +615,7 @@
               </p>
             </div>
           </article>
-          <article class="treatment" id="t-detox-and-drain" data-area="Corpo e massaggi" data-time="50 min">
+          <article class="treatment" id="t-detox-and-drain" data-area="Corpo" data-time="50 min">
             <button class="card" type="button" aria-label="Detox &amp; Drain: scopri il trattamento">
               <span class="card__thumb"><img src="img/trattamenti/detox-and-drain.jpg" alt="" width="880" height="1100" loading="lazy"></span>
               <span class="card__label"><span class="card__cta">Scopri il trattamento</span><span class="card__name" aria-hidden="true">Detox &amp; Drain</span></span>
@@ -631,7 +637,7 @@
               </p>
             </div>
           </article>
-          <article class="treatment" id="t-3in1-treatment" data-area="Corpo e massaggi" data-time="60 min">
+          <article class="treatment" id="t-3in1-treatment" data-area="Corpo" data-time="60 min">
             <button class="card" type="button" aria-label="3in1 Treatment: scopri il trattamento">
               <span class="card__thumb"><img src="img/trattamenti/3in1-treatment.jpg" alt="" width="880" height="1100" loading="lazy"></span>
               <span class="card__label"><span class="card__cta">Scopri il trattamento</span><span class="card__name" aria-hidden="true">3in1 Treatment</span></span>
@@ -654,7 +660,7 @@
               </p>
             </div>
           </article>
-          <article class="treatment" id="t-thermal-mud" data-area="Corpo e massaggi" data-time="50 min">
+          <article class="treatment" id="t-thermal-mud" data-area="Corpo" data-time="50 min">
             <button class="card" type="button" aria-label="Thermal Mud: scopri il trattamento">
               <span class="card__thumb"><img src="img/trattamenti/thermal-mud.jpg" alt="" width="880" height="1100" loading="lazy"></span>
               <span class="card__label"><span class="card__cta">Scopri il trattamento</span><span class="card__name" aria-hidden="true">Thermal Mud</span></span>
@@ -676,7 +682,7 @@
               </p>
             </div>
           </article>
-          <article class="treatment" id="t-active-toning" data-area="Corpo e massaggi" data-time="50 min">
+          <article class="treatment" id="t-active-toning" data-area="Corpo" data-time="50 min">
             <button class="card" type="button" aria-label="Active Toning: scopri il trattamento">
               <span class="card__thumb"><img src="img/trattamenti/active-toning.jpg" alt="" width="880" height="1100" loading="lazy"></span>
               <span class="card__label"><span class="card__cta">Scopri il trattamento</span><span class="card__name" aria-hidden="true">Active Toning</span></span>
@@ -698,24 +704,13 @@
               </p>
             </div>
           </article>
-          <article class="treatment" id="t-hot-stone-massage" data-area="Corpo e massaggi" data-time="50 min">
-            <button class="card" type="button" aria-label="Hot Stone Massage: scopri il trattamento">
-              <span class="card__thumb"><img src="img/trattamenti/hot-stone-massage.jpg" alt="" width="880" height="1100" loading="lazy"></span>
-              <span class="card__label"><span class="card__cta">Scopri il trattamento</span><span class="card__name" aria-hidden="true">Hot Stone Massage</span></span>
-            </button>
-            <div class="treatment__info">
-              <h4 class="treatment__name">Hot Stone Massage</h4>
-            </div>
-            <div class="treatment__detail">
-              <p class="treatment__price">80 €</p>
-              <p class="treatment__desc">Originale rituale con pietre calde e oli essenziali, allevia il dolore muscolare e favorisce una distensione profonda.</p>
-              <p class="treatment__book">
-                <a class="pill pill--wine" href="https://wa.me/393481515097?text=Ciao%21%20Vorrei%20prenotare%3A%20Hot%20Stone%20Massage" target="_blank" rel="noopener">Prenota su WhatsApp</a>
-                <a class="pill pill--line" href="tel:+390424512529">Chiama 0424 512529</a>
-              </p>
-            </div>
-          </article>
-          <article class="treatment" id="t-bamboo-massage" data-area="Corpo e massaggi" data-time="45 o 50 min">
+        </div>
+      </div>
+
+      <div class="category" id="cat-massaggi" role="tabpanel" aria-labelledby="tab-massaggi">
+        <h3 class="category__title">Massaggi</h3>
+        <div class="grid">
+          <article class="treatment" id="t-bamboo-massage" data-area="Massaggi" data-time="45 o 50 min">
             <button class="card" type="button" aria-label="Bamboo Massage: scopri il trattamento">
               <span class="card__thumb"><img src="img/trattamenti/bamboo-massage.jpg" alt="" width="880" height="1100" loading="lazy"></span>
               <span class="card__label"><span class="card__cta">Scopri il trattamento</span><span class="card__name" aria-hidden="true">Bamboo Massage</span></span>
@@ -738,7 +733,24 @@
               </p>
             </div>
           </article>
-          <article class="treatment" id="t-pantholas-corpo" data-area="Corpo e massaggi" data-time="50 min">
+          <article class="treatment" id="t-hot-stone-massage" data-area="Massaggi" data-time="50 min">
+            <button class="card" type="button" aria-label="Hot Stone Massage: scopri il trattamento">
+              <span class="card__thumb"><img src="img/trattamenti/hot-stone-massage.jpg" alt="" width="880" height="1100" loading="lazy"></span>
+              <span class="card__label"><span class="card__cta">Scopri il trattamento</span><span class="card__name" aria-hidden="true">Hot Stone Massage</span></span>
+            </button>
+            <div class="treatment__info">
+              <h4 class="treatment__name">Hot Stone Massage</h4>
+            </div>
+            <div class="treatment__detail">
+              <p class="treatment__price">80 €</p>
+              <p class="treatment__desc">Originale rituale con pietre calde e oli essenziali, allevia il dolore muscolare e favorisce una distensione profonda.</p>
+              <p class="treatment__book">
+                <a class="pill pill--wine" href="https://wa.me/393481515097?text=Ciao%21%20Vorrei%20prenotare%3A%20Hot%20Stone%20Massage" target="_blank" rel="noopener">Prenota su WhatsApp</a>
+                <a class="pill pill--line" href="tel:+390424512529">Chiama 0424 512529</a>
+              </p>
+            </div>
+          </article>
+          <article class="treatment" id="t-pantholas-corpo" data-area="Massaggi" data-time="50 min">
             <button class="card" type="button" aria-label="Pantholas Massage Corpo: scopri il trattamento">
               <span class="card__thumb"><img src="img/trattamenti/pantholas-corpo.jpg" alt="" width="880" height="1100" loading="lazy"></span>
               <span class="card__label"><span class="card__cta">Scopri il trattamento</span><span class="card__name" aria-hidden="true">Pantholas Massage Corpo</span></span>
@@ -758,32 +770,10 @@
         </div>
       </div>
 
-      <div class="category" id="cat-epilazione" role="tabpanel" aria-labelledby="tab-epilazione">
-        <h3 class="category__title">Epilazione</h3>
-        <div class="grid">
-          <article class="treatment" id="t-epilazione-elastique" data-area="Epilazione" data-time="A zona">
-            <button class="card" type="button" aria-label="Epilazione Elastique: scopri il trattamento">
-              <span class="card__thumb"><img src="img/trattamenti/epilazione-elastique.jpg" alt="" width="880" height="1100" loading="lazy"></span>
-              <span class="card__label"><span class="card__cta">Scopri il trattamento</span><span class="card__name" aria-hidden="true">Epilazione Elastique</span></span>
-            </button>
-            <div class="treatment__info">
-              <h4 class="treatment__name">Epilazione Elastique</h4>
-            </div>
-            <div class="treatment__detail">
-              <p class="treatment__desc">Una cera elastica a bassa temperatura che si toglie senza strisce. Delicata sulle zone sensibili, come inguine, ascelle e viso, e precisa anche sui peli più corti.</p>
-              <p class="treatment__book">
-                <a class="pill pill--wine" href="https://wa.me/393481515097?text=Ciao%21%20Vorrei%20prenotare%3A%20Epilazione%20Elastique" target="_blank" rel="noopener">Prenota su WhatsApp</a>
-                <a class="pill pill--line" href="tel:+390424512529">Chiama 0424 512529</a>
-              </p>
-            </div>
-          </article>
-        </div>
-      </div>
-
       <div class="category" id="cat-pedicure" role="tabpanel" aria-labelledby="tab-pedicure">
         <h3 class="category__title">Pedicure</h3>
         <div class="grid">
-          <article class="treatment" id="t-pedicure" data-area="Pedicure" data-time="50 min">
+          <article class="treatment" id="t-pedicure" data-area="Pedicure">
             <button class="card" type="button" aria-label="Pedicure: scopri il trattamento">
               <span class="card__thumb"><img src="img/trattamenti/pedicure.jpg" alt="" width="880" height="1100" loading="lazy"></span>
               <span class="card__label"><span class="card__cta">Scopri il trattamento</span><span class="card__name" aria-hidden="true">Pedicure</span></span>
@@ -809,7 +799,7 @@
           </article>
           <article class="treatment" id="t-rituale-della-terra" data-area="Pedicure" data-time="25 min">
             <button class="card" type="button" aria-label="Rituale della Terra: scopri il trattamento">
-              <span class="card__thumb"><img src="img/trattamenti/rituale-della-terra.jpg" alt="" width="880" height="1100" loading="lazy"></span>
+              <span class="card__thumb"><img src="img/trattamenti/rituale-della-terra-piedi.jpg" alt="" width="880" height="1100" loading="lazy"></span>
               <span class="card__label"><span class="card__cta">Scopri il trattamento</span><span class="card__name" aria-hidden="true">Rituale della Terra</span></span>
             </button>
             <div class="treatment__info">
@@ -817,7 +807,7 @@
             </div>
             <div class="treatment__detail">
               <p class="treatment__price">35 €</p>
-              <p class="treatment__desc">Un bagno aromatico per i piedi seguito da un massaggio rilassante sui punti di riflesso, per ritrovare radici ed equilibrio. Scioglie la stanchezza della giornata e lascia una piacevole sensazione di leggerezza.</p>
+              <p class="treatment__desc">Bagno aromatico seguito da un massaggio rilassante ai punti di riflesso per ritrovare radici ed equilibrio.</p>
               <p class="treatment__book">
                 <a class="pill pill--wine" href="https://wa.me/393481515097?text=Ciao%21%20Vorrei%20prenotare%3A%20Rituale%20della%20Terra" target="_blank" rel="noopener">Prenota su WhatsApp</a>
                 <a class="pill pill--line" href="tel:+390424512529">Chiama 0424 512529</a>
@@ -830,6 +820,37 @@
             <p class="note-card__text">Nella pedicure uso Dermalena, una linea professionale pensata per la pelle secca, le callosità e le unghie.</p>
             <a class="note-card__link" href="#line-dermalena">I prodotti →</a>
           </aside>
+        </div>
+      </div>
+
+      <div class="category" id="cat-epilazione" role="tabpanel" aria-labelledby="tab-epilazione">
+        <h3 class="category__title">Epilazione</h3>
+        <div class="grid">
+          <article class="treatment" id="t-epilazione-elastique" data-area="Epilazione" data-time="A zona">
+            <button class="card" type="button" aria-label="Epilazione Elastique: scopri il trattamento">
+              <span class="card__thumb"><img src="img/trattamenti/epilazione-elastique.jpg" alt="" width="880" height="1100" loading="lazy"></span>
+              <span class="card__label"><span class="card__cta">Scopri il trattamento</span><span class="card__name" aria-hidden="true">Epilazione Elastique</span></span>
+            </button>
+            <div class="treatment__info">
+              <h4 class="treatment__name">Epilazione Elastique</h4>
+            </div>
+            <div class="treatment__detail">
+              <p class="treatment__desc">Una cera elastica a bassa temperatura che si toglie senza strisce. Delicata sulle zone sensibili, come inguine, ascelle e viso, e precisa anche sui peli più corti.</p>
+              <p class="treatment__desc">Uso le tre cere brasiliane Elastique, ipoallergeniche e made in Italy:<br>Crema di Riso, super soft e ad asciugatura rapida, con ossido di zinco calmante: per le pelli più sensibili, i peli corti e le piccole zone.<br>Melograno, fluida e con olio di melograno lenitivo: per stesure lunghe e sottili sulle zone ampie, dove i peli sono più robusti.<br>Macadamia &amp; Zenzero, con olio di macadamia ed estratto di zenzero emollienti: per le zone delicate, come viso, bikini e ascelle.</p>
+              <p class="treatment__desc">A casa, la Crema Idratazione Quotidiana Elastique, leggera e vellutata, con acido ialuronico, karité, amido di riso e vitamine A, C ed E, idrata la pelle e fa durare di più il risultato fino all'epilazione successiva.</p>
+              <p class="panel-label">Prodotti usati</p>
+              <ul class="product-chips">
+                <li class="product-chip"><span class="product-chip__img"><img src="img/prodotti/elastique-crema-di-riso.jpg" alt="" width="450" height="600" loading="lazy"></span><span><span class="product-chip__name">Crema di Riso</span><span class="product-chip__line">Elastique</span></span></li>
+                <li class="product-chip"><span class="product-chip__img"><img src="img/prodotti/elastique-melograno.jpg" alt="" width="450" height="600" loading="lazy"></span><span><span class="product-chip__name">Melograno</span><span class="product-chip__line">Elastique</span></span></li>
+                <li class="product-chip"><span class="product-chip__img"><img src="img/prodotti/elastique-macadamia-zenzero.jpg" alt="" width="450" height="600" loading="lazy"></span><span><span class="product-chip__name">Macadamia &amp; Zenzero</span><span class="product-chip__line">Elastique</span></span></li>
+                <li class="product-chip"><span class="product-chip__img"><img src="img/prodotti/elastique-crema-idratazione.jpg" alt="" width="450" height="600" loading="lazy"></span><span><span class="product-chip__name">Idratazione Quotidiana</span><span class="product-chip__line">Elastique</span></span></li>
+              </ul>
+              <p class="treatment__book">
+                <a class="pill pill--wine" href="https://wa.me/393481515097?text=Ciao%21%20Vorrei%20prenotare%3A%20Epilazione%20Elastique" target="_blank" rel="noopener">Prenota su WhatsApp</a>
+                <a class="pill pill--line" href="tel:+390424512529">Chiama 0424 512529</a>
+              </p>
+            </div>
+          </article>
         </div>
       </div>
       <!-- /dati:aree -->
@@ -849,13 +870,12 @@
         </button>
         <div class="treatment__info">
           <h3 class="treatment__name">Starvac</h3>
-          <p class="treatment__videos"><a href="https://www.facebook.com/esteticaskincare/videos/trattamenti-viso-con-metodologia-starvac/5054137538040862/" target="_blank" rel="noopener">Video viso ↗</a> · <a href="https://www.facebook.com/reel/1746513595763666/" target="_blank" rel="noopener">Video corpo ↗</a></p>
+          <p class="treatment__videos"><a href="https://www.facebook.com/starvac.italia/videos/il-brevetto-esclusivo-di-starvac-stretching-cellulaire-permette-di-riequilibrare/962666224229671/" target="_blank" rel="noopener">Video Starvac ↗</a></p>
         </div>
         <div class="treatment__detail">
           <p class="treatment__desc">Il metodo francese dello Stretching Cellulaire®: un'aspirazione delicata e due rulli massaggiano la pelle in profondità. Sul viso stimola tono e luminosità e attenua le rughe; sul corpo drena, leviga la cellulite e rassoda.</p>
           <ul class="treatment__links">
-            <li><a href="https://www.facebook.com/esteticaskincare/videos/trattamenti-viso-con-metodologia-starvac/5054137538040862/" target="_blank" rel="noopener">Video viso ↗</a></li>
-            <li><a href="https://www.facebook.com/reel/1746513595763666/" target="_blank" rel="noopener">Video corpo ↗</a></li>
+            <li><a href="https://www.facebook.com/starvac.italia/videos/il-brevetto-esclusivo-di-starvac-stretching-cellulaire-permette-di-riequilibrare/962666224229671/" target="_blank" rel="noopener">Video Starvac ↗</a></li>
           </ul>
           <p class="treatment__book">
             <a class="pill pill--wine" href="https://wa.me/393481515097?text=Ciao%21%20Vorrei%20prenotare%3A%20Starvac" target="_blank" rel="noopener">Prenota su WhatsApp</a>
@@ -865,14 +885,16 @@
       </article>
       <article class="treatment" id="t-pressoterapia-wave" data-area="Tecnologia" data-time="Gambe e corpo">
         <button class="card" type="button" aria-label="Pressoterapia Wave: scopri il trattamento">
-          <span class="card__thumb"><img src="img/trattamenti/pressoterapia-wave.jpg" alt="" width="880" height="1100" loading="lazy"></span>
+          <span class="card__thumb"><img src="img/trattamenti/pressoterapia-wave-psx.jpg" alt="" width="880" height="1100" loading="lazy"></span>
           <span class="card__label"><span class="card__cta">Scopri il trattamento</span><span class="card__name" aria-hidden="true">Pressoterapia Wave</span></span>
         </button>
         <div class="treatment__info">
           <h3 class="treatment__name">Pressoterapia Wave</h3>
         </div>
         <div class="treatment__detail">
-          <p class="treatment__desc">Gambali che si gonfiano e si sgonfiano a onde, dal piede verso l'alto, come un massaggio linfodrenante. Aiuta la circolazione, riduce gonfiore e ritenzione e lascia le gambe leggere. Si fa sdraiate e rilassate, anche dopo un trattamento corpo.</p>
+          <p class="treatment__price">50 €</p>
+          <p class="treatment__desc">La pressoterapia di Starvac, PSX Active Wave®, con la tecnologia brevettata Pressodynamie®. I gambali a 10 camere avvolgono le gambe e un'onda di pressione ritmica sale dal piede verso l'alto, regolata in tempo reale sulla forma del corpo: avvolgente e confortevole.</p>
+          <p class="treatment__desc">Rispetto alla pressoterapia tradizionale dà fino a 12 volte più stimolazioni per ciclo (studio clinico SFAS): favorisce la circolazione venosa e linfatica, aiuta contro la ritenzione idrica e lascia le gambe leggere già dalla prima seduta. Si fa sdraiate e rilassate, anche dopo un trattamento corpo.</p>
           <p class="treatment__book">
             <a class="pill pill--wine" href="https://wa.me/393481515097?text=Ciao%21%20Vorrei%20prenotare%3A%20Pressoterapia%20Wave" target="_blank" rel="noopener">Prenota su WhatsApp</a>
             <a class="pill pill--line" href="tel:+390424512529">Chiama 0424 512529</a>
@@ -902,6 +924,7 @@
           <button class="brand-tab" type="button" role="tab" id="tab-line-sun-soul" aria-controls="line-sun-soul" aria-selected="false"><span>Sun Soul</span></button>
           <button class="brand-tab" type="button" role="tab" id="tab-line-tranquillity" aria-controls="line-tranquillity" aria-selected="false"><span>Tranquillity</span></button>
           <button class="brand-tab" type="button" role="tab" id="tab-line-dermalena" aria-controls="line-dermalena" aria-selected="false"><span>Dermalena</span></button>
+          <button class="brand-tab" type="button" role="tab" id="tab-line-elastique" aria-controls="line-elastique" aria-selected="false"><span>Elastique</span></button>
         </div>
 
         <div class="line" id="line-skin-regimen" role="tabpanel" aria-labelledby="tab-line-skin-regimen">
@@ -1113,6 +1136,25 @@
             <li class="product"><button class="product__btn" type="button" aria-label="Rigenera, lozione levigante unghie: guarda il prodotto"><img src="img/prodotti/dermalena-rigenera.jpg" alt="" width="450" height="600" loading="lazy"><span class="product__name">Rigenera<span class="product__type">Lozione levigante unghie</span></span></button></li>
           </ul>
         </div>
+
+        <div class="line" id="line-elastique" role="tabpanel" aria-labelledby="tab-line-elastique">
+          <div class="line__top">
+            <div class="line__text">
+              <h3 class="line__name">Elastique</h3>
+              <p class="line__uses">Nei trattamenti: <a href="#t-epilazione-elastique">Epilazione Elastique</a></p>
+            </div>
+            <div class="shelf-nav">
+              <button class="shelf-nav__btn shelf-nav__btn--prev" type="button" data-dir="-1" aria-label="Prodotti precedenti"><svg viewBox="0 0 16 10" aria-hidden="true"><path d="M1 5h14M11 1l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></button>
+              <button class="shelf-nav__btn" type="button" data-dir="1" aria-label="Prodotti successivi"><svg viewBox="0 0 16 10" aria-hidden="true"><path d="M1 5h14M11 1l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></button>
+            </div>
+          </div>
+          <ul class="shelf">
+            <li class="product"><button class="product__btn" type="button" aria-label="Crema di Riso, cera brasiliana: guarda il prodotto"><img src="img/prodotti/elastique-crema-di-riso.jpg" alt="" width="450" height="600" loading="lazy"><span class="product__name">Crema di Riso<span class="product__type">Cera brasiliana</span></span></button></li>
+            <li class="product"><button class="product__btn" type="button" aria-label="Melograno, cera brasiliana: guarda il prodotto"><img src="img/prodotti/elastique-melograno.jpg" alt="" width="450" height="600" loading="lazy"><span class="product__name">Melograno<span class="product__type">Cera brasiliana</span></span></button></li>
+            <li class="product"><button class="product__btn" type="button" aria-label="Macadamia &amp; Zenzero, cera brasiliana: guarda il prodotto"><img src="img/prodotti/elastique-macadamia-zenzero.jpg" alt="" width="450" height="600" loading="lazy"><span class="product__name">Macadamia &amp; Zenzero<span class="product__type">Cera brasiliana</span></span></button></li>
+            <li class="product"><button class="product__btn" type="button" aria-label="Idratazione Quotidiana, crema per il mantenimento a casa: guarda il prodotto"><img src="img/prodotti/elastique-crema-idratazione.jpg" alt="" width="450" height="600" loading="lazy"><span class="product__name">Idratazione Quotidiana<span class="product__type">Crema per il mantenimento a casa</span></span></button></li>
+          </ul>
+        </div>
         <!-- /dati:prodotti -->
       </div>
     </section>
@@ -1123,7 +1165,7 @@
   <footer class="footer" id="contatti">
     <div class="footer__card">
       <!-- la stessa crema della hero; script.js la fa partire quando il footer si avvicina -->
-      <div class="bg-cream" aria-hidden="true"><video muted loop playsinline disablepictureinpicture disableremoteplayback preload="none"><source src="video/crema-hevc.mp4?v=3" type='video/mp4; codecs="hvc1"'><source src="video/crema.mp4?v=3" type="video/mp4"></video></div>
+      <div class="bg-cream" aria-hidden="true"><video muted loop playsinline disablepictureinpicture disableremoteplayback preload="none"><source src="video/crema-hevc.mp4?v=4" type='video/mp4; codecs="hvc1"'><source src="video/crema.mp4?v=4" type="video/mp4"></video></div>
 
       <nav class="footer__pills" aria-label="Contatti">
         <a class="footer__pill" href="https://www.google.com/maps/search/?api=1&amp;query=Estetica%20Skin%20Care%2C%20Via%20Ca%27%20Baroncello%2048%2C%20Cassola%20VI" target="_blank" rel="noopener">Via Ca' Baroncello 48, Cassola</a>
@@ -1174,6 +1216,6 @@
     </button>
   </dialog>
 
-  <script src="script.js?v=14" defer></script>
+  <script src="script.js?v=15" defer></script>
 </body>
 </html>
