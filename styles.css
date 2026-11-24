@@ -246,6 +246,19 @@ body { position: relative; }
 /* Chi siamo */
 .about { display: grid; gap: 28px; }
 .about__text { display: grid; gap: 10px; margin-top: 10px; font-size: 14.4px; line-height: 1.45; }
+/* la citazione, con l'autrice in basso a destra */
+.about__quote { margin-top: 8px; }
+.about__quote blockquote {
+  font-family: var(--display);
+  font-size: 18px;
+  line-height: 1.35;
+}
+.about__quote figcaption {
+  margin-top: 8px;
+  text-align: right;
+  font-size: 13px;
+  color: rgba(63, 21, 33, .6);
+}
 .about__rows { list-style: none; }
 .about__rows li {
   display: grid;
